@@ -35,10 +35,7 @@ internal static class FileTypeRegistration
             return;
         }
 
-        if (!IntegrationHelpers.CheckCustomUploaderExtension())
-        {
-            IntegrationHelpers.CreateCustomUploaderExtension(true);
-        }
+        // LShareX: don't take over the .sxcu file association from an installed ShareX on every start.
 #endif
     }
 }

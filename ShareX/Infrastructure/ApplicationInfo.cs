@@ -33,8 +33,10 @@ namespace ShareX;
 
 internal static class ApplicationInfo
 {
-    internal const string Name = "ShareX";
-    internal const string MutexName = "82E6AC09-0FEF-4390-AD9F-0DD3F5561EFC";
+    // LShareX: own name and mutex so it doesn't share the personal folder (Documents\LShareX), single instance mutex/pipe,
+    // startup shortcut and Explorer menu entries with an installed ShareX.
+    internal const string Name = "LShareX";
+    internal const string MutexName = "A9936451-A152-41C5-A552-DB80B7E2D820";
     internal static readonly string PipeName = $"{Environment.MachineName}-{Environment.UserName}-{Name}";
 
     internal const ShareXBuild Build =

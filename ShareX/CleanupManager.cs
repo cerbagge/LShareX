@@ -96,7 +96,7 @@ namespace ShareX
 
             if (!string.IsNullOrEmpty(tempFolder))
             {
-                string folderPath = Path.Combine(tempFolder, "ShareX");
+                string folderPath = Path.Combine(tempFolder, "LShareX"); // LShareX: don't delete the temp folder of an installed ShareX
 
                 if (Directory.Exists(folderPath))
                 {

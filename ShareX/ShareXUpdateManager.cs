@@ -31,11 +31,12 @@ namespace ShareX
     {
         public UpdateChannel UpdateChannel { get; set; }
 
+        // LShareX: check LShareX releases instead of ShareX releases, so it never offers to install the original ShareX.
         public override GitHubUpdateChecker CreateUpdateChecker()
         {
             if (UpdateChannel == UpdateChannel.Dev)
             {
-                return new GitHubUpdateChecker("ShareX", "DevBuilds")
+                return new GitHubUpdateChecker("cerbagge", "LShareX")
                 {
                     IsDev = true,
                     IsPortable = StartupOptions.Portable,
@@ -44,7 +45,7 @@ namespace ShareX
             }
             else
             {
-                return new GitHubUpdateChecker("ShareX", "ShareX")
+                return new GitHubUpdateChecker("cerbagge", "LShareX")
                 {
                     IsPortable = StartupOptions.Portable,
                     IncludePreRelease = UpdateChannel == UpdateChannel.PreRelease,

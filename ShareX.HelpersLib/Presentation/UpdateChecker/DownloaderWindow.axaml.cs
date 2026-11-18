@@ -200,7 +200,7 @@ public partial class DownloaderWindow : Window
         ActionButton.Content = Localization.Strings.DownloaderForm_StartDownload_Cancel;
         DownloadProgress.Value = 0;
 
-        string folderPath = Path.Combine(Path.GetTempPath(), "ShareX");
+        string folderPath = Path.Combine(Path.GetTempPath(), "LShareX"); // LShareX: separate from an installed ShareX
         FileHelpers.CreateDirectory(folderPath);
         DownloadLocation = Path.Combine(folderPath, FileName);
 
