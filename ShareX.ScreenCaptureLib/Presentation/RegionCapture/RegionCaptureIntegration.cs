@@ -31,6 +31,7 @@ using ShareX.ImageEditor.Integration;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ShareX.ScreenCaptureLib.Presentation.RegionCapture;
@@ -43,6 +44,18 @@ public static class RegionCaptureIntegration
 
     /// <summary>Screen rectangles of the last captured regions. Holds more than one item after a multi region capture.</summary>
     public static IReadOnlyList<Rectangle> LastRegionRectangles { get; private set; } = [];
+
+    private static int openSelections;
+
+    /// <summary>LShareX: true while a region selection window is open, so hotkeys can ignore a second press.</summary>
+    public static bool IsSelecting => Volatile.Read(ref openSelections) > 0;
+
+    private static Task<T> TrackSelection<T>(Task<T> selection)
+    {
+        Interlocked.Increment(ref openSelections);
+        selection.ContinueWith(_ => Interlocked.Decrement(ref openSelections), TaskScheduler.Default);
+        return selection;
+    }
 
     internal static void SetLastRegion(Rectangle bounds, IReadOnlyList<Rectangle> regions)
     {
@@ -90,7 +103,7 @@ public static class RegionCaptureIntegration
             }
         });
 
-        return completion.Task;
+        return TrackSelection(completion.Task);
     }
 
     /// <summary>
@@ -123,6 +136,6 @@ public static class RegionCaptureIntegration
             }
         });
 
-        return completion.Task;
+        return TrackSelection(completion.Task);
     }
 }

@@ -34,9 +34,11 @@ using ShareX.Properties;
 using ShareX.ScreenCaptureLib;
 using ShareX.Tools;
 using ShareX.Tools.Integration;
+using ShareX.ScreenCaptureLib.Presentation.RegionCapture;
 using SkiaSharp;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -73,6 +75,12 @@ namespace ShareX
         public static async Task ExecuteJob(TaskSettings taskSettings, HotkeyType job, string filePath = null)
         {
             if (job == HotkeyType.None) return;
+
+            if (ShouldIgnoreJob(job))
+            {
+                DebugHelper.WriteLine("Ignored while a capture is in progress: " + job.GetLocalizedDescription());
+                return;
+            }
 
             DebugHelper.WriteLine("Executing: " + job.GetLocalizedDescription());
 
@@ -1076,6 +1084,18 @@ namespace ShareX
         public static void OpenImageComparer()
         {
             ToolsIntegration.ShowImageComparerWindow();
+        }
+
+        // LShareX: pressing a capture or recording hotkey again must not open another selection on top of the open one,
+        // and a screen capture must not start on top of a running recording. Recording hotkeys still stop a running recording.
+        private static bool ShouldIgnoreJob(HotkeyType job)
+        {
+            string category = typeof(HotkeyType).GetField(job.ToString())?.GetCustomAttributes(typeof(CategoryAttribute), false)
+                .OfType<CategoryAttribute>().FirstOrDefault()?.Category;
+            bool isCapture = category == EnumExtensions.HotkeyType_Category_ScreenCapture;
+            bool isRecording = category == EnumExtensions.HotkeyType_Category_ScreenRecord;
+
+            return ((isCapture || isRecording) && RegionCaptureIntegration.IsSelecting) || (isCapture && ScreenRecordManager.IsRecording);
         }
 
         public static void OpenIconConverter()
