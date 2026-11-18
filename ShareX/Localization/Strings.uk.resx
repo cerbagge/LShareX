@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Чекати завершення завдань</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Не вдалося видалити фон. Збережено вихідне зображення.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Модель видалення фону (.onnx) не знайдено. Збережено вихідне зображення.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>У буфері обміну немає зображення.</value>
   </data>

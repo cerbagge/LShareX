@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Esperar hasta que terminen las tareas</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>No se pudo quitar el fondo. Se guardó la imagen original.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>No se encontró el modelo para quitar el fondo (.onnx). Se guardó la imagen original.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Portapapeles does not contain an imagen.</value>
   </data>

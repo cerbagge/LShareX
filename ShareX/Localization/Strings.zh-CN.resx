@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>等待任务完成</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>背景移除失败，已保存原始图像。</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>未找到背景移除模型 (.onnx)，已保存原始图像。</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>剪贴板中无图片。</value>
   </data>

@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Czekaj na zakończenie zadań</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Nie udało się usunąć tła. Zapisano oryginalny obraz.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Nie znaleziono modelu usuwania tła (.onnx). Zapisano oryginalny obraz.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Schowek nie zawiera obrazu.</value>
   </data>

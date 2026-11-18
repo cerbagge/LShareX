@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Așteaptă finalizarea activităților</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Eliminarea fundalului a eșuat. A fost salvată imaginea originală.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Modelul de eliminare a fundalului (.onnx) nu a fost găsit. A fost salvată imaginea originală.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Clipboardul nu conține o imagine.</value>
   </data>

@@ -436,6 +436,9 @@
   <data name="RegionCaptureWindow_RectangleRegionTab" xml:space="preserve">
     <value>Захоплення області (Tab)</value>
   </data>
+  <data name="RegionCaptureWindow_RemoveBackground" xml:space="preserve">
+    <value>Видалити фон</value>
+  </data>
   <data name="Resume" xml:space="preserve">
     <value>Продовжити</value>
   </data>

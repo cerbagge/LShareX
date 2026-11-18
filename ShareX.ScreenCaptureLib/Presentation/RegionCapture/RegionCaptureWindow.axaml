@@ -156,6 +156,14 @@
                                     AutomationProperties.Name="{x:Static localization:Strings.RegionCaptureWindow_RectangleRegionTab}">
                                 <iconControls:IconPresenter Icon="{x:Static icons:ImageEditorIcons.Region}"/>
                             </Button>
+                            <!-- LShareX: toggles background removal for this capture. -->
+                            <Button x:Name="RemoveBackgroundButton"
+                                    Classes="toolbar-button"
+                                    Click="OnRemoveBackgroundClick"
+                                    ToolTip.Tip="{x:Static localization:Strings.RegionCaptureWindow_RemoveBackground}"
+                                    AutomationProperties.Name="{x:Static localization:Strings.RegionCaptureWindow_RemoveBackground}">
+                                <iconControls:IconPresenter Icon="{x:Static icons:AppIcons.BackgroundRemover}"/>
+                            </Button>
                         </StackPanel>
                     </editorControls:AnnotationToolbar.MainToolbarLeadingContent>
                 </editorControls:AnnotationToolbar>

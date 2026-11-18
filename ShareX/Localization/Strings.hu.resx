@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Várakozás a feladatok befejezésére</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>A háttér eltávolítása sikertelen. Az eredeti kép lett mentve.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Nem található háttéreltávolító modell (.onnx). Az eredeti kép lett mentve.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Vágólap does not contain an kép.</value>
   </data>

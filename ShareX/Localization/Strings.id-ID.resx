@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Tunggu hingga tugas selesai</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Gagal menghapus latar belakang. Gambar asli telah disimpan.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Model penghapus latar belakang (.onnx) tidak ditemukan. Gambar asli telah disimpan.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Clipboard tidak berisi gambar.</value>
   </data>

@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>انتظار تا تکمیل وظایف</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>حذف پس‌زمینه ناموفق بود. تصویر اصلی ذخیره شد.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>مدل حذف پس‌زمینه (.onnx) پیدا نشد. تصویر اصلی ذخیره شد.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>کلیپ‌بورد does not contain an تصویر.</value>
   </data>

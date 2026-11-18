@@ -26,8 +26,14 @@
 using ShareX.HelpersLib;
 using ShareX.ScreenCaptureLib;
 using ShareX.ScreenCaptureLib.Presentation.RegionCapture;
+using ShareX.Localization;
+using ShareX.Tools;
 using SkiaSharp;
+using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.IO;
+using System.Linq;
 using System.Threading.Tasks;
 using Bitmap = SkiaSharp.SKBitmap;
 
@@ -37,6 +43,9 @@ namespace ShareX
     {
         // LShareX: only the "Capture multiple regions" hotkey task allows selecting several regions.
         public bool MultiRegion { get; set; }
+
+        // LShareX: kept for the app lifetime so the model is only loaded once.
+        private static readonly BackgroundRemovalService backgroundRemovalService = new BackgroundRemovalService();
 
         protected override TaskMetadata Execute(TaskSettings taskSettings)
         {
@@ -100,6 +109,11 @@ namespace ShareX
                 return null;
             }
 
+            if (result.RemoveBackground)
+            {
+                result = await RemoveBackgroundAsync(result, taskSettings);
+            }
+
             if (result.AdditionalImages != null)
             {
                 // LShareX: multi region mode saves each region as its own image.
@@ -134,6 +148,68 @@ namespace ShareX
 
                 return metadata;
             }
+        }
+
+        // LShareX: "Remove background" toolbar button. If no model is available or removal fails, the original image is kept.
+        private static async Task<AvaloniaRegionCaptureResult> RemoveBackgroundAsync(AvaloniaRegionCaptureResult result, TaskSettings taskSettings)
+        {
+            BackgroundRemoverOptions options = taskSettings.ToolsSettingsReference.BackgroundRemoverOptions;
+            BackgroundRemovalModel model = FindBackgroundRemovalModel(options.SelectedModelFileName);
+
+            if (model == null)
+            {
+                TaskHelpers.ShowNotificationTip(Strings.CaptureRegion_BackgroundRemovalModelMissing, "LShareX", 5000);
+                return result;
+            }
+
+            try
+            {
+                SKBitmap image = await Task.Run(() => backgroundRemovalService.RemoveBackground(result.Image, model, options.SelectedDevice).Image);
+                List<SKBitmap> additionalImages = null;
+
+                if (result.AdditionalImages != null)
+                {
+                    additionalImages = [];
+                    foreach (SKBitmap regionImage in result.AdditionalImages)
+                    {
+                        additionalImages.Add(await Task.Run(() => backgroundRemovalService.RemoveBackground(regionImage, model, options.SelectedDevice).Image));
+                        regionImage.Dispose();
+                    }
+                }
+
+                result.Image.Dispose();
+                return result with { Image = image, AdditionalImages = additionalImages };
+            }
+            catch (Exception e)
+            {
+                DebugHelper.WriteException(e, "Background removal failed.");
+                TaskHelpers.ShowNotificationTip(Strings.CaptureRegion_BackgroundRemovalFailed, "LShareX", 5000);
+                return result;
+            }
+        }
+
+        private static BackgroundRemovalModel FindBackgroundRemovalModel(string selectedModelFileName)
+        {
+            if (!Directory.Exists(AppPaths.ModelsFolder))
+            {
+                return null;
+            }
+
+            string[] modelPaths = Directory.GetFiles(AppPaths.ModelsFolder, "*.onnx").OrderBy(Path.GetFileName).ToArray();
+            string modelPath = modelPaths.FirstOrDefault(path => Path.GetFileName(path).Equals(selectedModelFileName, StringComparison.OrdinalIgnoreCase)) ??
+                modelPaths.FirstOrDefault();
+
+            if (modelPath == null)
+            {
+                return null;
+            }
+
+            return new BackgroundRemovalModel
+            {
+                FilePath = modelPath,
+                FileName = Path.GetFileName(modelPath),
+                FileSize = new FileInfo(modelPath).Length
+            };
         }
     }
 }

@@ -839,6 +839,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Wait until tasks complete</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Background removal failed. The original image was saved.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Background removal model (.onnx) not found. The original image was saved.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Clipboard does not contain an image.</value>
   </data>

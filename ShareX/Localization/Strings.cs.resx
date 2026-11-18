@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Čekat na dokončení úloh</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Odstranění pozadí se nezdařilo. Byl uložen původní obrázek.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Model pro odstranění pozadí (.onnx) nebyl nalezen. Byl uložen původní obrázek.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Schránka neobsahuje obrázek.</value>
   </data>

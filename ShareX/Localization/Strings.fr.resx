@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Attendre la fin des tâches</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>La suppression de l'arrière-plan a échoué. L'image d'origine a été enregistrée.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Modèle de suppression d'arrière-plan (.onnx) introuvable. L'image d'origine a été enregistrée.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Le presse-papier ne contient pas d'image.</value>
   </data>

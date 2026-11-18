@@ -436,6 +436,9 @@
   <data name="RegionCaptureWindow_RectangleRegionTab" xml:space="preserve">
     <value>Bereich aufnehmen (Tab)</value>
   </data>
+  <data name="RegionCaptureWindow_RemoveBackground" xml:space="preserve">
+    <value>Hintergrund entfernen</value>
+  </data>
   <data name="Resume" xml:space="preserve">
     <value>Fortsetzen</value>
   </data>

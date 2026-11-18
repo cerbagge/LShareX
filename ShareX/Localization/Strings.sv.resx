@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Vänta tills uppgifterna är klara</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>Bakgrundsborttagningen misslyckades. Originalbilden sparades.</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>Ingen modell för bakgrundsborttagning (.onnx) hittades. Originalbilden sparades.</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Urklipp innehåller ingen bild.</value>
   </data>

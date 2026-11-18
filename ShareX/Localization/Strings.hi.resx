@@ -838,6 +838,12 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>कार्य पूरे होने तक प्रतीक्षा करें</value>
   </data>
+  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
+    <value>पृष्ठभूमि हटाना विफल रहा। मूल छवि सहेजी गई।</value>
+  </data>
+  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
+    <value>पृष्ठभूमि हटाने का मॉडल (.onnx) नहीं मिला। मूल छवि सहेजी गई।</value>
+  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>क्लिपबोर्ड में कोई छवि नहीं है।</value>
   </data>

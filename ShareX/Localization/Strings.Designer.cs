@@ -148,6 +148,12 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("MainMenuBuilder_BackgroundRemover", resourceCulture);
             }
         }
+        public static string CaptureRegion_BackgroundRemovalFailed {
+            get { return ResourceManager.GetString("CaptureRegion_BackgroundRemovalFailed", resourceCulture); }
+        }
+        public static string CaptureRegion_BackgroundRemovalModelMissing {
+            get { return ResourceManager.GetString("CaptureRegion_BackgroundRemovalModelMissing", resourceCulture); }
+        }
         
         /// <summary>
         ///   Looks up a localized string similar to Borderless window....
