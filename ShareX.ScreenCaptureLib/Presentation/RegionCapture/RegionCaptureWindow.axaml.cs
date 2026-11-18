@@ -198,6 +198,12 @@ public partial class RegionCaptureWindow : Window
 
     protected override void OnKeyDown(KeyEventArgs e)
     {
+        if (e.Key is Key.LeftShift or Key.RightShift)
+        {
+            _shiftHeld = true;
+            UpdateToolbarPassThrough(null);
+        }
+
         if (_keyboardInputEnabled && !_closing && _request != null &&
             e.KeyModifiers == KeyModifiers.None && _viewModel?.IsModalOpen != true &&
             (e.Key == Key.Tab || (e.Key == Key.NumPad0 && !e.Handled))) // NumPad0 matches ShareX 21; a toolbar hotkey on it wins.
@@ -210,6 +216,7 @@ public partial class RegionCaptureWindow : Window
         if (_keyboardInputEnabled && !_closing && e.Key == Key.H && e.KeyModifiers == KeyModifiers.Control)
         {
             _captureToolbar.Classes.Set("hidden", !_captureToolbar.Classes.Contains("hidden"));
+            UpdateToolbarPassThrough(null);
             e.Handled = true;
             return;
         }
@@ -282,6 +289,12 @@ public partial class RegionCaptureWindow : Window
     protected override void OnKeyUp(KeyEventArgs e)
     {
         base.OnKeyUp(e);
+
+        if (e.Key is Key.LeftShift or Key.RightShift)
+        {
+            _shiftHeld = false;
+            UpdateToolbarPassThrough(null);
+        }
 
         if ((_interaction is RegionInteraction.Creating or RegionInteraction.PendingHover) &&
             (e.Key is Key.LeftCtrl or Key.RightCtrl))
@@ -627,6 +640,7 @@ public partial class RegionCaptureWindow : Window
         _hoverCandidate = null;
         _regionToolButton.Classes.Set("active", false);
         _editorWorkspace.IsHitTestVisible = true;
+        UpdateToolbarPassThrough(null);
         _viewModel?.SetHostToolbarToolsActive(true);
         _annotationToolbar.ShowToolOptions = true;
         _magnifierPanel.IsVisible = false;
@@ -636,6 +650,41 @@ public partial class RegionCaptureWindow : Window
 
     // LShareX: the region input surface is centered and sized in image pixels, so it can leave a thin gap at a screen
     // edge. A press in that gap used to reach the editor workspace and draw a rectangle; now it starts a region selection.
+    private bool _shiftHeld;
+
+    // LShareX: lets a region selection start or pass behind the capture toolbar. While Shift is held the toolbar is
+    // faded and clicks go through it; while dragging a selection the toolbar fades out as the cursor gets closer.
+    private void UpdateToolbarPassThrough(Point? dragPoint)
+    {
+        const double FadeDistance = 150;
+        const double MinimumOpacity = 0.15;
+
+        if (_regionToolActive && !_closing && !_captureToolbar.Classes.Contains("hidden"))
+        {
+            if (_shiftHeld)
+            {
+                _captureToolbar.Opacity = MinimumOpacity;
+                _captureToolbar.IsHitTestVisible = false;
+                return;
+            }
+
+            if (dragPoint is Point point && _captureToolbar.TranslatePoint(default, this) is Point topLeft)
+            {
+                Rect bounds = new Rect(topLeft, _captureToolbar.Bounds.Size);
+                double dx = Math.Max(Math.Max(bounds.Left - point.X, point.X - bounds.Right), 0);
+                double dy = Math.Max(Math.Max(bounds.Top - point.Y, point.Y - bounds.Bottom), 0);
+                double distance = Math.Sqrt(dx * dx + dy * dy);
+                _captureToolbar.Opacity = Math.Clamp(distance / FadeDistance, MinimumOpacity, 1);
+                _captureToolbar.IsHitTestVisible = false;
+                return;
+            }
+        }
+
+        // back to the style values, so Ctrl+H (the "hidden" class) keeps working
+        _captureToolbar.ClearValue(OpacityProperty);
+        _captureToolbar.ClearValue(IsHitTestVisibleProperty);
+    }
+
     private void OnRootPointerPressed(object? sender, PointerPressedEventArgs e)
     {
         if (_regionToolActive && ReferenceEquals(e.Source, sender))
@@ -769,6 +818,9 @@ public partial class RegionCaptureWindow : Window
             return;
         }
 
+        _shiftHeld = e.KeyModifiers.HasFlag(KeyModifiers.Shift);
+        UpdateToolbarPassThrough(e.GetCurrentPoint(this).Properties.IsLeftButtonPressed ? e.GetPosition(this) : null);
+
         Point point = ClampPoint(e.GetPosition(_regionInputSurface));
         _lastPointerPoint = point;
 
@@ -818,6 +870,8 @@ public partial class RegionCaptureWindow : Window
         {
             return;
         }
+
+        UpdateToolbarPassThrough(null);
 
         Point point = ClampPoint(e.GetPosition(_regionInputSurface));
         _lastPointerPoint = point;
