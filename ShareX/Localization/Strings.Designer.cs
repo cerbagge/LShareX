@@ -105,29 +105,11 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add workflows from Hotkey settings....
-        /// </summary>
-        public static string MainMenuBuilder_AddWorkflowsFromHotkeySettings {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_AddWorkflowsFromHotkeySettings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to After capture tasks.
         /// </summary>
         public static string MainMenuBuilder_AfterCaptureTasks {
             get {
                 return ResourceManager.GetString("MainMenuBuilder_AfterCaptureTasks", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to After upload tasks.
-        /// </summary>
-        public static string MainMenuBuilder_AfterUploadTasks {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_AfterUploadTasks", resourceCulture);
             }
         }
         
@@ -213,15 +195,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Custom uploader settings....
-        /// </summary>
-        public static string MainMenuBuilder_CustomUploaderSettings {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_CustomUploaderSettings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Debug.
         /// </summary>
         public static string MainMenuBuilder_Debug {
@@ -231,47 +204,11 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Destinations.
-        /// </summary>
-        public static string MainMenuBuilder_Destinations {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_Destinations", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Destination settings....
-        /// </summary>
-        public static string MainMenuBuilder_DestinationSettings {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_DestinationSettings", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Disable hotkeys.
         /// </summary>
         public static string MainMenuBuilder_DisableHotkeys {
             get {
                 return ResourceManager.GetString("MainMenuBuilder_DisableHotkeys", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Discord....
-        /// </summary>
-        public static string MainMenuBuilder_Discord {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_Discord", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Donate....
-        /// </summary>
-        public static string MainMenuBuilder_Donate {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_Donate", resourceCulture);
             }
         }
         
@@ -321,15 +258,6 @@ namespace ShareX.Localization {
         public static string MainMenuBuilder_FinishEditingTools {
             get {
                 return ResourceManager.GetString("MainMenuBuilder_FinishEditingTools", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Follow ShareX....
-        /// </summary>
-        public static string MainMenuBuilder_FollowShareX {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_FollowShareX", resourceCulture);
             }
         }
         

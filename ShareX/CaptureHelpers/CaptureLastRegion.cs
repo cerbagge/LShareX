@@ -51,20 +51,26 @@ namespace ShareX
 
             if (!bounds.IsEmpty)
             {
-                Bitmap bmp = TaskHelpers.GetScreenshot(taskSettings).CaptureRectangle(bounds);
                 IReadOnlyList<Rectangle> regions = RegionCaptureIntegration.LastRegionRectangles;
 
-                if (bmp != null && regions.Count > 1)
+                if (regions.Count > 1)
                 {
-                    List<Rectangle> localRegions = regions
-                        .Select(region => new Rectangle(region.X - bounds.X, region.Y - bounds.Y, region.Width, region.Height))
-                        .ToList();
+                    // LShareX: multi region mode saves each region as its own image.
+                    Screenshot screenshot = TaskHelpers.GetScreenshot(taskSettings);
 
-                    Bitmap masked = RegionCaptureTasks.ApplyRegionMask(bmp, localRegions);
-                    bmp.Dispose();
-                    bmp = masked;
+                    foreach (Rectangle region in regions.Skip(1))
+                    {
+                        Bitmap regionImage = screenshot.CaptureRectangle(region);
+                        if (regionImage != null)
+                        {
+                            AdditionalCaptures.Add(new TaskMetadata(regionImage));
+                        }
+                    }
+
+                    return new TaskMetadata(screenshot.CaptureRectangle(regions[0]));
                 }
 
+                Bitmap bmp = TaskHelpers.GetScreenshot(taskSettings).CaptureRectangle(bounds);
                 return new TaskMetadata(bmp);
             }
 

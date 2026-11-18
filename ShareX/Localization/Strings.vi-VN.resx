@@ -1496,14 +1496,8 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>Thanh công cụ hành động</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>Thêm quy trình làm việc từ cài đặt phím tắt...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>Tác vụ sau khi chụp</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>Tác vụ sau khi tải lên</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>Phân tích ảnh</value>
@@ -1541,26 +1535,11 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>Sao chép</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>Cài đặt trình tải lên tùy chỉnh...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>Gỡ lỗi</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>Cài đặt đích...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>Đích</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>Vô hiệu hóa phím tắt</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>Quyên góp</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>Kéo và thả để tải lên</value>
@@ -1576,9 +1555,6 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>Đã xong</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>Theo dõi ShareX...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>Toàn màn hình</value>

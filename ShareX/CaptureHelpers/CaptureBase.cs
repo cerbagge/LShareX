@@ -25,7 +25,9 @@
 
 using ShareX.HelpersLib;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace ShareX
@@ -34,6 +36,9 @@ namespace ShareX
     {
         public bool AllowAutoHideForm { get; set; } = true;
         public bool AllowAnnotation { get; set; } = true;
+
+        // LShareX: extra images (for example the other regions of a multi region capture), each run as its own task after the main one.
+        protected List<TaskMetadata> AdditionalCaptures { get; } = [];
 
         public void Capture(bool autoHideForm)
         {
@@ -113,6 +118,7 @@ namespace ShareX
             try
             {
                 AllowAnnotation = true;
+                AdditionalCaptures.Clear();
                 metadata = await ExecuteAsync(taskSettings);
             }
             catch (Exception ex)
@@ -147,7 +153,16 @@ namespace ShareX
                 }
 
                 UploadManager.RunImageTask(metadata, taskSettings);
+
+                foreach (TaskMetadata additional in AdditionalCaptures)
+                {
+                    // File names are generated when a task is created; keep them apart for name patterns with milliseconds.
+                    Thread.Sleep(2);
+                    UploadManager.RunImageTask(additional, taskSettings);
+                }
             }
+
+            AdditionalCaptures.Clear();
         }
 
         protected TaskMetadata CreateMetadata()

@@ -1496,14 +1496,8 @@ Por favor, selecione um atalho diferente ou feche o programa conflituoso e reabr
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>Barra de ferramentas de ações</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>Adicionar fluxos de trabalho a partir das definições de teclas de atalho...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>Tarefas após a captura</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>Tarefas após o carregamento</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>Analisar imagem</value>
@@ -1541,26 +1535,11 @@ Por favor, selecione um atalho diferente ou feche o programa conflituoso e reabr
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>Copiar</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>Definições do carregador personalizado...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>Depuração</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>Definições de destino...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>Destinos</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>Desativar atalhos</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>Doar</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>Upload de arrastar e soltar</value>
@@ -1576,9 +1555,6 @@ Por favor, selecione um atalho diferente ou feche o programa conflituoso e reabr
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>Pronto</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>Seguir o ShareX...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>Tela cheia</value>

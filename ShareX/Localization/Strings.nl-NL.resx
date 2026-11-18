@@ -1496,14 +1496,8 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>Actiewerkbalk</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>Werkstromen toevoegen vanuit de sneltoetsinstellingen...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>Taken na vastleggen</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>Taken na uploaden</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>Afbeelding analyseren</value>
@@ -1541,26 +1535,11 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>Kopieer</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>Aangepaste uploaderinstellingen...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>Foutopsporing</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>Bestemmingsinstellingen...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>Bestemmingen</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>Schakel sneltoetsen uit</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>Doneren</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>Uploaden via slepen</value>
@@ -1576,9 +1555,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>Klaar</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>ShareX volgen...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>Volledig scherm</value>

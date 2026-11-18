@@ -1782,8 +1782,8 @@ public partial class RegionCaptureWindow : Window
     }
 
     /// <summary>
-    /// Captures the bounds of <paramref name="selections"/>. With more than one region, pixels outside
-    /// every region are transparent, matching multi region mode in the classic region capture.
+    /// Captures <paramref name="selections"/>. LShareX: with more than one region, each region becomes its own image
+    /// (the first one in <see cref="AvaloniaRegionCaptureResult.Image"/>, the rest in AdditionalImages) instead of one masked image.
     /// </summary>
     private void Complete(IReadOnlyList<Rect> selections, bool includeWindowInfo = true)
     {
@@ -1813,7 +1813,7 @@ public partial class RegionCaptureWindow : Window
             return;
         }
 
-        DrawingRectangle bounds = regions.Aggregate(DrawingRectangle.Union);
+        DrawingRectangle bounds = regions[0];
         SKBitmap? output = _editorWorkspace.GetSnapshot(new Rect(bounds.X, bounds.Y, bounds.Width, bounds.Height));
         if (output == null)
         {
@@ -1821,14 +1821,15 @@ public partial class RegionCaptureWindow : Window
             return;
         }
 
-        if (regions.Count > 1)
+        List<SKBitmap> additionalImages = [];
+
+        foreach (DrawingRectangle region in regions.Skip(1))
         {
-            List<DrawingRectangle> localRegions = regions
-                .Select(region => new DrawingRectangle(region.X - bounds.X, region.Y - bounds.Y, region.Width, region.Height))
-                .ToList();
-            SKBitmap masked = RegionCaptureTasks.ApplyRegionMask(output, localRegions);
-            output.Dispose();
-            output = masked;
+            SKBitmap? regionImage = _editorWorkspace.GetSnapshot(new Rect(region.X, region.Y, region.Width, region.Height));
+            if (regionImage != null)
+            {
+                additionalImages.Add(regionImage);
+            }
         }
 
         DrawingRectangle screenRectangle = ToScreenRectangle(bounds);
@@ -1838,7 +1839,8 @@ public partial class RegionCaptureWindow : Window
             output,
             screenRectangle,
             windowInfo,
-            _viewModel?.IsDirty == true);
+            _viewModel?.IsDirty == true,
+            additionalImages.Count > 0 ? additionalImages : null);
         RegionCaptureIntegration.SetLastRegion(screenRectangle, regions.Select(ToScreenRectangle).ToArray());
         _closing = true;
         Close();

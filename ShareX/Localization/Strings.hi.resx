@@ -1496,14 +1496,8 @@
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>क्रिया टूलबार</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>हॉटकी सेटिंग से कार्यप्रवाह जोड़ें...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>चित्र लेने के बाद के कार्य</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>अपलोड के बाद के कार्य</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>छवि का विश्लेषण करें...</value>
@@ -1541,26 +1535,11 @@
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>कॉपी करें</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>अनुकूलित अपलोडर सेटिंग...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>डीबग</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>गंतव्य सेटिंग...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>गंतव्य</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>हॉटकी अक्षम करें</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>दान करें...</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>खींचकर छोड़ने वाला अपलोड...</value>
@@ -1576,9 +1555,6 @@
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>पूर्ण</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>ShareX को फ़ॉलो करें...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>पूर्ण स्क्रीन</value>

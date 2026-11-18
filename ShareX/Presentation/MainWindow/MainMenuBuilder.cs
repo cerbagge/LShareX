@@ -58,25 +58,17 @@ internal sealed class MainMenuBuilder
         {
             new(Strings.MainMenuBuilder_Capture, AppIcons.Camera, BuildCaptureMenu),
             new(Strings.MainMenuBuilder_Upload, AppIcons.Upload, BuildUploadMenu, uploadsEnabled),
-            new(Strings.MainMenuBuilder_Workflows, AppIcons.Workflows, BuildWorkflowsMenu),
             new(Strings.MainMenuBuilder_Tools, AppIcons.Wrench, BuildToolsMenu,
                 createCategories: BuildToolCategories),
             new(Strings.MainMenuBuilder_AfterCaptureTasks, AppIcons.AfterCaptureTasks, BuildAfterCaptureMenu),
-            new(Strings.MainMenuBuilder_AfterUploadTasks, AppIcons.AfterUploadTasks, BuildAfterUploadMenu, uploadsEnabled),
-            new(Strings.MainMenuBuilder_Destinations, AppIcons.Destinations, BuildDestinationsMenu, uploadsEnabled),
             new(Strings.MainMenuBuilder_ApplicationSettings, AppIcons.Settings, () => Run(MainFormCommand.ApplicationSettings)),
             new(Strings.MainMenuBuilder_TaskSettings, AppIcons.Sliders, () => Run(MainFormCommand.TaskSettings)),
             new(Strings.MainMenuBuilder_HotkeySettings, AppIcons.Keyboard, () => Run(MainFormCommand.HotkeySettings)),
-            new(Strings.MainMenuBuilder_DestinationSettings, AppIcons.DestinationSettings, () => Run(MainFormCommand.DestinationSettings), uploadsEnabled),
-            new(Strings.MainMenuBuilder_CustomUploaderSettings, AppIcons.CustomUploaderSettings, () => Run(MainFormCommand.CustomUploaderSettings), uploadsEnabled),
             new(Strings.MainMenuBuilder_ScreenshotsFolder, AppIcons.ScreenshotsFolder, () => Run(MainFormCommand.ScreenshotsFolder)),
             new(Strings.MainMenuBuilder_History, AppIcons.History, () => Run(MainFormCommand.History)),
             new(Strings.MainMenuBuilder_ImageHistory, AppIcons.ImageHistory, () => Run(MainFormCommand.ImageHistory)),
             new(Strings.MainMenuBuilder_Stats, AppIcons.BarChart, () => Run(MainFormCommand.Stats)),
             new(Strings.MainMenuBuilder_Debug, AppIcons.Bug, BuildDebugMenu),
-            new(Strings.MainMenuBuilder_Donate, AppIcons.Heart, () => Run(MainFormCommand.Donate)),
-            new(Strings.MainMenuBuilder_FollowShareX, AppIcons.Follow, () => Run(MainFormCommand.X)),
-            new(Strings.MainMenuBuilder_Discord, AppIcons.Discord, () => Run(MainFormCommand.Discord)),
             new(Strings.MainMenuBuilder_About, AppIcons.Info, () => Run(MainFormCommand.About))
         };
     }
@@ -88,12 +80,9 @@ internal sealed class MainMenuBuilder
         {
             Parent(Strings.MainMenuBuilder_Capture, AppIcons.Camera, BuildCaptureMenu),
             Parent(Strings.MainMenuBuilder_Upload, AppIcons.Upload, BuildUploadMenu, uploadsEnabled),
-            Parent(Strings.MainMenuBuilder_Workflows, AppIcons.Workflows, BuildWorkflowsMenu),
             CategoryParent(Strings.MainMenuBuilder_Tools, AppIcons.Wrench, BuildToolCategories),
             MainMenuEntry.Separator(),
             Parent(Strings.MainMenuBuilder_AfterCaptureTasks, AppIcons.AfterCaptureTasks, BuildAfterCaptureMenu),
-            Parent(Strings.MainMenuBuilder_AfterUploadTasks, AppIcons.AfterUploadTasks, BuildAfterUploadMenu, uploadsEnabled),
-            Parent(Strings.MainMenuBuilder_Destinations, AppIcons.Destinations, BuildDestinationsMenu, uploadsEnabled),
             MainMenuEntry.Separator(),
             Item(Strings.MainMenuBuilder_ApplicationSettings, AppIcons.Settings, () => Run(MainFormCommand.ApplicationSettings)),
             Item(Strings.MainMenuBuilder_TaskSettings, AppIcons.Sliders, () => Run(MainFormCommand.TaskSettings)),
@@ -101,8 +90,6 @@ internal sealed class MainMenuBuilder
             Item(ApplicationState.Settings.DisableHotkeys ? Strings.MainMenuBuilder_EnableHotkeys : Strings.MainMenuBuilder_DisableHotkeys,
                 ApplicationState.Settings.DisableHotkeys ? AppIcons.Keyboard : AppIcons.KeyboardOff,
                 () => TaskHelpers.ToggleHotkeys()),
-            Item(Strings.MainMenuBuilder_DestinationSettings, AppIcons.DestinationSettings, () => Run(MainFormCommand.DestinationSettings), uploadsEnabled),
-            Item(Strings.MainMenuBuilder_CustomUploaderSettings, AppIcons.CustomUploaderSettings, () => Run(MainFormCommand.CustomUploaderSettings), uploadsEnabled),
             MainMenuEntry.Separator(),
             Item(Strings.MainMenuBuilder_ScreenshotsFolder, AppIcons.ScreenshotsFolder, () => Run(MainFormCommand.ScreenshotsFolder)),
             Item(Strings.MainMenuBuilder_History, AppIcons.History, () => Run(MainFormCommand.History)),
@@ -311,46 +298,6 @@ internal sealed class MainMenuBuilder
         ])
     ];
 
-    private IReadOnlyList<MainMenuEntry> BuildWorkflowsMenu()
-    {
-        List<MainMenuEntry> items = new();
-
-        if (ApplicationState.HotkeysConfigOrNull?.Hotkeys != null)
-        {
-            foreach (HotkeySettings hotkey in ApplicationState.HotkeysConfig.Hotkeys)
-            {
-                if (hotkey.TaskSettings.Job == HotkeyType.None ||
-                    (ApplicationState.Settings.WorkflowsOnlyShowEdited && hotkey.TaskSettings.IsUsingDefaultSettings))
-                {
-                    continue;
-                }
-
-                HotkeySettings workflow = hotkey;
-                string title = workflow.TaskSettings + (workflow.TaskSettings.IsUsingDefaultSettings ? string.Empty : "*");
-                if (workflow.HotkeyInfo.IsValidHotkey)
-                {
-                    title += $"    {workflow.HotkeyInfo}";
-                }
-
-                items.Add(Item(title, TaskHelpers.FindMenuIcon(workflow.TaskSettings.Job),
-                    async () => await TaskHelpers.ExecuteJob(workflow.TaskSettings)));
-            }
-        }
-
-        if (!_trayMenu)
-        {
-            if (items.Count > 0)
-            {
-                items.Add(MainMenuEntry.Separator());
-            }
-
-            items.Add(Item(Strings.MainMenuBuilder_AddWorkflowsFromHotkeySettings, AppIcons.Keyboard,
-                () => Run(MainFormCommand.HotkeySettings)));
-        }
-
-        return items;
-    }
-
     private IReadOnlyList<MainMenuEntry> BuildAfterCaptureMenu()
     {
         AfterCaptureTasks value = ApplicationState.DefaultTaskSettings.AfterCaptureJob;
@@ -373,19 +320,6 @@ internal sealed class MainMenuBuilder
         }
 
         return tasks.Select(task => (task, task.GetLocalizedDescription(), GetAfterCaptureTaskIcon(task))).ToArray();
-    }
-
-    private IReadOnlyList<MainMenuEntry> BuildAfterUploadMenu()
-    {
-        AfterUploadTasks value = ApplicationState.DefaultTaskSettings.AfterUploadJob;
-        return GetAfterUploadTaskMenuOptions().Select(option => new MainMenuEntry(
-            option.Header,
-            option.Icon,
-            () => ApplicationState.DefaultTaskSettings.AfterUploadJob = ApplicationState.DefaultTaskSettings.AfterUploadJob.Swap(option.Task),
-            isChecked: value.HasFlag(option.Task),
-            toggleType: MainMenuToggleType.CheckBox,
-            staysOpenOnClick: true,
-            boldWhenChecked: true)).ToArray();
     }
 
     internal static IReadOnlyList<(AfterUploadTasks Task, string Header, string Icon)> GetAfterUploadTaskMenuOptions() =>
@@ -431,9 +365,6 @@ internal sealed class MainMenuBuilder
         AfterUploadTasks.ShowQRCode => AppIcons.QrCode,
         _ => AppIcons.Circle
     };
-
-    private static IReadOnlyList<MainMenuEntry> BuildDestinationsMenu() =>
-        BuildDestinationsMenu(ApplicationState.DefaultTaskSettings);
 
     internal static IReadOnlyList<MainMenuEntry> BuildDestinationsMenu(TaskSettings settings)
     {

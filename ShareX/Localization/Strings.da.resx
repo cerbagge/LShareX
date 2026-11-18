@@ -1496,14 +1496,8 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>Handlingsværktøjslinje</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>Tilføj arbejdsforløb fra genvejstastindstillingerne...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>Opgaver efter optagelse</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>Opgaver efter upload</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>Analysér billede...</value>
@@ -1541,26 +1535,11 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>Kopiér</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>Indstillinger for brugerdefinerede uploadere...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>Fejlfinding</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>Destinationsindstillinger...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>Mål</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>Deaktivér genvejstaster</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>Donér...</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>Upload med træk og slip...</value>
@@ -1576,9 +1555,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>Færdig</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>Følg ShareX...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>Fuld skærm</value>

@@ -1496,14 +1496,8 @@
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>การดำเนินการ แถบเครื่องมือ</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>เพิ่มเวิร์กโฟลว์จากการตั้งค่าปุ่มลัด...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>หลังจับภาพ งาน</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>หลังอัปโหลด งาน</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>วิเคราะห์รูปภาพ...</value>
@@ -1541,26 +1535,11 @@
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>คัดลอก</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>ตัวอัปโหลดกำหนดเอง การตั้งค่า...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>ดีบัก</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>การตั้งค่าปลายทาง...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>ปลายทาง</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>ปิดใช้งานปุ่มลัด</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>บริจาค...</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>อัปโหลดด้วยการลากแล้ววาง...</value>
@@ -1576,9 +1555,6 @@
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>เสร็จแล้ว</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>ติดตาม ShareX...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>เต็มหน้าจอ</value>

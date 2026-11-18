@@ -97,6 +97,23 @@ namespace ShareX
                 return null;
             }
 
+            if (result.AdditionalImages != null)
+            {
+                // LShareX: multi region mode saves each region as its own image.
+                foreach (SKBitmap regionImage in result.AdditionalImages)
+                {
+                    using (regionImage)
+                    {
+                        TaskMetadata regionMetadata = new TaskMetadata(regionImage.Copy());
+                        if (result.WindowInfo != null)
+                        {
+                            regionMetadata.UpdateInfo(result.WindowInfo);
+                        }
+                        AdditionalCaptures.Add(regionMetadata);
+                    }
+                }
+            }
+
             using (result.Image)
             {
                 Bitmap output = result.Image.Copy();

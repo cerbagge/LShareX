@@ -27,12 +27,15 @@
 
 using ShareX.HelpersLib;
 using SkiaSharp;
+using System.Collections.Generic;
 using System.Drawing;
 
 namespace ShareX.ScreenCaptureLib.Presentation.RegionCapture;
 
+// LShareX: AdditionalImages holds the other regions of a multi region capture, one image per region.
 public sealed record AvaloniaRegionCaptureResult(
     SKBitmap Image,
     Rectangle ScreenRectangle,
     WindowInfo? WindowInfo,
-    bool ImageModified);
+    bool ImageModified,
+    IReadOnlyList<SKBitmap>? AdditionalImages = null);

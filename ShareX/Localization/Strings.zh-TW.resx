@@ -1496,14 +1496,8 @@
   <data name="MainMenuBuilder_ActionsToolbar" xml:space="preserve">
     <value>動作工具列</value>
   </data>
-  <data name="MainMenuBuilder_AddWorkflowsFromHotkeySettings" xml:space="preserve">
-    <value>從快速鍵設定新增工作流程...</value>
-  </data>
   <data name="MainMenuBuilder_AfterCaptureTasks" xml:space="preserve">
     <value>擷取後工作</value>
-  </data>
-  <data name="MainMenuBuilder_AfterUploadTasks" xml:space="preserve">
-    <value>上傳後工作</value>
   </data>
   <data name="MainMenuBuilder_AnalyzeImage" xml:space="preserve">
     <value>分析圖片</value>
@@ -1541,26 +1535,11 @@
   <data name="MainMenuBuilder_Copy" xml:space="preserve">
     <value>複製</value>
   </data>
-  <data name="MainMenuBuilder_CustomUploaderSettings" xml:space="preserve">
-    <value>自訂上傳器設定...</value>
-  </data>
   <data name="MainMenuBuilder_Debug" xml:space="preserve">
     <value>偵錯</value>
   </data>
-  <data name="MainMenuBuilder_DestinationSettings" xml:space="preserve">
-    <value>目的地設定...</value>
-  </data>
-  <data name="MainMenuBuilder_Destinations" xml:space="preserve">
-    <value>目的地</value>
-  </data>
   <data name="MainMenuBuilder_DisableHotkeys" xml:space="preserve">
     <value>停用快捷鍵</value>
-  </data>
-  <data name="MainMenuBuilder_Discord" xml:space="preserve">
-    <value>Discord...</value>
-  </data>
-  <data name="MainMenuBuilder_Donate" xml:space="preserve">
-    <value>捐贈</value>
   </data>
   <data name="MainMenuBuilder_DragAndDropUpload" xml:space="preserve">
     <value>拖放上傳</value>
@@ -1576,9 +1555,6 @@
   </data>
   <data name="MainMenuBuilder_FinishEditingTools" xml:space="preserve">
     <value>完成</value>
-  </data>
-  <data name="MainMenuBuilder_FollowShareX" xml:space="preserve">
-    <value>追蹤 ShareX...</value>
   </data>
   <data name="MainMenuBuilder_Fullscreen" xml:space="preserve">
     <value>全螢幕</value>
