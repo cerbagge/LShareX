@@ -560,9 +560,11 @@ public partial class RegionCaptureWindow : Window
         }
     }
 
+    // LShareX: drawing mode is entered only by clicking a tool on the toolbar. A tool change from a keyboard shortcut
+    // or from the editor itself keeps region selection active, so a drag always selects a region.
     private void OnViewModelPropertyChanged(object? sender, PropertyChangedEventArgs e)
     {
-        if (e.PropertyName == nameof(MainViewModel.ActiveTool))
+        if (e.PropertyName == nameof(MainViewModel.ActiveTool) && !_regionToolActive)
         {
             ActivateAnnotationTool();
         }
@@ -570,7 +572,10 @@ public partial class RegionCaptureWindow : Window
 
     private void OnAnnotationToolSelected(object? sender, EditorTool tool)
     {
-        ActivateAnnotationTool();
+        if (!_regionToolActive || _captureToolbar.IsPointerOver || _annotationToolbar.IsPointerOver)
+        {
+            ActivateAnnotationTool();
+        }
     }
 
     private void OnRegionToolClick(object? sender, RoutedEventArgs e)
@@ -1696,11 +1701,8 @@ public partial class RegionCaptureWindow : Window
                 TryRemoveRegionAt(_lastPointerPoint);
                 break;
             case RegionCaptureAction.SwapToolType:
-                if (_regionToolActive)
-                {
-                    ActivateAnnotationTool();
-                }
-                else
+                // LShareX: only returns to region selection; drawing mode is entered from the toolbar.
+                if (!_regionToolActive)
                 {
                     ActivateRegionTool();
                 }
