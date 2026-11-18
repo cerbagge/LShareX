@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Čekat na dokončení úloh</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Odstranění pozadí se nezdařilo. Byl uložen původní obrázek.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Model pro odstranění pozadí (.onnx) nebyl nalezen. Byl uložen původní obrázek.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Schránka neobsahuje obrázek.</value>
   </data>
@@ -1120,9 +1114,6 @@ Vyberte jinou klávesovou zkratku nebo ukončete konfliktní aplikaci a znovu ot
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Automatické zachytávání...</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Odstranění pozadí...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Okno bez ohraničení...</value>

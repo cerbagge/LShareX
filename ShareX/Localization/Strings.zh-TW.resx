@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>等待工作完成</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>背景移除失敗，已儲存原始影像。</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>找不到背景移除模型 (.onnx)，已儲存原始影像。</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>剪貼簿無圖片。</value>
   </data>
@@ -1120,9 +1114,6 @@
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>自動擷取</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>背景移除...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>無邊框視窗</value>

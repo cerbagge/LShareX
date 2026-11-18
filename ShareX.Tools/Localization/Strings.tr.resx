@@ -334,61 +334,6 @@
   <data name="AnimatedGifTrimmer_UseReencode" xml:space="preserve">
     <value>Bu kesim önceki karelere ihtiyaç duyduğu için kayıpsız olarak kaydedilemez. Yeniden kodla kırpma modunu seçip tekrar kaydedin.</value>
   </data>
-  <data name="BackgroundRemoverViewModel_Background_removed_ms" xml:space="preserve">
-    <value>Arka plan {0} ms içinde kaldırıldı.</value>
-  </data>
-  <data name="BackgroundRemoverViewModel_Image_saved_file_path" xml:space="preserve">
-    <value>Görüntü kaydedildi.
-Dosya yolu: {0}</value>
-  </data>
-  <data name="BackgroundRemoverViewModel_Select_image_dialog" xml:space="preserve">
-    <value>Görüntü seç</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Background_removal_model" xml:space="preserve">
-    <value>Arka plan kaldırma modeli</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Browse" xml:space="preserve">
-    <value>Gözat...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Device" xml:space="preserve">
-    <value>Cihaz</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Image" xml:space="preserve">
-    <value>Resim</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Models" xml:space="preserve">
-    <value>Modeller</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Open_guide_page" xml:space="preserve">
-    <value>Kılavuz sayfasını aç...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Open_models_folder" xml:space="preserve">
-    <value>Modeller klasörünü aç</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Processing_device" xml:space="preserve">
-    <value>İşleme cihazı</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Refresh_models" xml:space="preserve">
-    <value>Modelleri yenile</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Remove_Background" xml:space="preserve">
-    <value>Arka planı kaldır</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save" xml:space="preserve">
-    <value>Kaydet</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save_as" xml:space="preserve">
-    <value>Farklı kaydet...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save_image_as_dialog" xml:space="preserve">
-    <value>Görüntüyü farklı kaydet</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Select_an_image_to_preview_it_here" xml:space="preserve">
-    <value>Önizlemek için burada bir görüntü seçin.</value>
-  </data>
-  <data name="BackgroundRemoverWindow_ShareX_Background_Remover" xml:space="preserve">
-    <value>ShareX - Arka Plan Kaldırıcı</value>
-  </data>
   <data name="BorderlessWindowViewModel_Unable_to_toggle" xml:space="preserve">
     <value>Seçilen pencere değiştirilemedi. {0}</value>
   </data>
@@ -1250,23 +1195,14 @@ Dosya yolu: {0}</value>
   <data name="InspectWindowWindow_Window_settings" xml:space="preserve">
     <value>Pencere ayarları</value>
   </data>
-  <data name="LocalizedDisplayConverter_Automatic" xml:space="preserve">
-    <value>Otomatik</value>
-  </data>
   <data name="LocalizedDisplayConverter_Backward_diagonal" xml:space="preserve">
     <value>Geri çapraz</value>
-  </data>
-  <data name="LocalizedDisplayConverter_CPU" xml:space="preserve">
-    <value>CPU</value>
   </data>
   <data name="LocalizedDisplayConverter_Checkerboard" xml:space="preserve">
     <value>Dama tahtası</value>
   </data>
   <data name="LocalizedDisplayConverter_Forward_diagonal" xml:space="preserve">
     <value>İleri çapraz</value>
-  </data>
-  <data name="LocalizedDisplayConverter_GPU" xml:space="preserve">
-    <value>GPU</value>
   </data>
   <data name="LocalizedDisplayConverter_Gemini" xml:space="preserve">
     <value>Gemini</value>

@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Attendi il completamento delle attività</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Rimozione dello sfondo non riuscita. È stata salvata l'immagine originale.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Modello di rimozione dello sfondo (.onnx) non trovato. È stata salvata l'immagine originale.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Appunti does not contain an immagine.</value>
   </data>
@@ -1120,9 +1114,6 @@ Selezione una scorciatoia diversa o chiudi l'applicazione che crea conflitto e r
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Cattura Automatica</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Rimozione sfondo...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Finestra senza bordi</value>

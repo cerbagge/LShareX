@@ -33,11 +33,9 @@ using System.Drawing;
 namespace ShareX.ScreenCaptureLib.Presentation.RegionCapture;
 
 // LShareX: AdditionalImages holds the other regions of a multi region capture, one image per region.
-// RemoveBackground is set when the "Remove background" toolbar button was turned on.
 public sealed record AvaloniaRegionCaptureResult(
     SKBitmap Image,
     Rectangle ScreenRectangle,
     WindowInfo? WindowInfo,
     bool ImageModified,
-    IReadOnlyList<SKBitmap>? AdditionalImages = null,
-    bool RemoveBackground = false);
+    IReadOnlyList<SKBitmap>? AdditionalImages = null);

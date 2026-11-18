@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Vent indtil opgaverne er klare</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Fjernelse af baggrund mislykkedes. Det originale billede blev gemt.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Model til fjernelse af baggrund (.onnx) blev ikke fundet. Det originale billede blev gemt.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Udklipsholder indeholder intet billede.</value>
   </data>
@@ -1120,9 +1114,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Automatisk optagelse...</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Fjern baggrund...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Vindue uden kant...</value>

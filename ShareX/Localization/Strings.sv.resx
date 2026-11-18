@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Vänta tills uppgifterna är klara</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Bakgrundsborttagningen misslyckades. Originalbilden sparades.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Ingen modell för bakgrundsborttagning (.onnx) hittades. Originalbilden sparades.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Urklipp innehåller ingen bild.</value>
   </data>
@@ -1120,9 +1114,6 @@ Välj en annan snabbtangent eller avsluta programmet som orsakar konflikten och 
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Automatisk bildtagning...</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Bakgrundsborttagning...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Kantlöst fönster...</value>

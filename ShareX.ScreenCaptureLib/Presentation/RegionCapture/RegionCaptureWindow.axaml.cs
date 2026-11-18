@@ -70,7 +70,6 @@ public partial class RegionCaptureWindow : Window
     private Grid _captureToolbar = null!;
     private AnnotationToolbar _annotationToolbar = null!;
     private Button _regionToolButton = null!;
-    private Button _removeBackgroundButton = null!;
     private StackPanel _magnifierPanel = null!;
     private Grid _magnifierView = null!;
     private Image _magnifierImage = null!;
@@ -101,7 +100,6 @@ public partial class RegionCaptureWindow : Window
     private int _imageWidth;
     private int _imageHeight;
     private bool _regionToolActive = true;
-    private bool _removeBackground;
     private bool _keyboardInputEnabled;
     private bool _isMovingSelectionDuringCreation;
     private bool _wasControlHeldDuringCreation;
@@ -326,7 +324,6 @@ public partial class RegionCaptureWindow : Window
         _captureToolbar.LayoutUpdated += OnCaptureToolbarLayoutUpdated;
         _annotationToolbar = this.FindControl<AnnotationToolbar>("CaptureAnnotationToolbar")!;
         _regionToolButton = this.FindControl<Button>("RegionToolButton")!;
-        _removeBackgroundButton = this.FindControl<Button>("RemoveBackgroundButton")!;
         _magnifierPanel = this.FindControl<StackPanel>("MagnifierPanel")!;
         _magnifierPanel.RenderTransform = _magnifierTransform;
         _magnifierView = this.FindControl<Grid>("MagnifierView")!;
@@ -579,13 +576,6 @@ public partial class RegionCaptureWindow : Window
     private void OnRegionToolClick(object? sender, RoutedEventArgs e)
     {
         ActivateRegionTool();
-        e.Handled = true;
-    }
-
-    private void OnRemoveBackgroundClick(object? sender, RoutedEventArgs e)
-    {
-        _removeBackground = !_removeBackground;
-        _removeBackgroundButton.Classes.Set("active", _removeBackground);
         e.Handled = true;
     }
 
@@ -1850,8 +1840,7 @@ public partial class RegionCaptureWindow : Window
             screenRectangle,
             windowInfo,
             _viewModel?.IsDirty == true,
-            additionalImages.Count > 0 ? additionalImages : null,
-            _removeBackground);
+            additionalImages.Count > 0 ? additionalImages : null);
         RegionCaptureIntegration.SetLastRegion(screenRectangle, regions.Select(ToScreenRectangle).ToArray());
         _closing = true;
         Close();

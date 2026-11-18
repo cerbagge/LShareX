@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Wachten tot taken zijn voltooid</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Achtergrond verwijderen is mislukt. De originele afbeelding is opgeslagen.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Geen model voor achtergrondverwijdering (.onnx) gevonden. De originele afbeelding is opgeslagen.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Klembord does not contain an afbeelding.</value>
   </data>
@@ -1120,9 +1114,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Automatisch vastleggen</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Achtergrondverwijderaar...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Borderless venster</value>

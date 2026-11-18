@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>המתן עד להשלמת המשימות</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>הסרת הרקע נכשלה. התמונה המקורית נשמרה.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>מודל הסרת הרקע (.onnx) לא נמצא. התמונה המקורית נשמרה.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>לוח הגזירה אינו מכיל תמונה.</value>
   </data>
@@ -1120,9 +1114,6 @@
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>צילום מסך אוטומטי</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>מסיר רקע...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>חלון ללא מסגרת</value>

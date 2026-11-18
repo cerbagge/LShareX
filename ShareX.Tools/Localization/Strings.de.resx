@@ -334,61 +334,6 @@
   <data name="AnimatedGifTrimmer_UseReencode" xml:space="preserve">
     <value>Dieser Ausschnitt benötigt frühere Einzelbilder und kann nicht verlustfrei gespeichert werden. Wählen Sie den Schnittmodus „Neu kodieren“ und speichern Sie erneut.</value>
   </data>
-  <data name="BackgroundRemoverViewModel_Background_removed_ms" xml:space="preserve">
-    <value>Hintergrund in {0} ms entfernt.</value>
-  </data>
-  <data name="BackgroundRemoverViewModel_Image_saved_file_path" xml:space="preserve">
-    <value>Bild gespeichert.
-Dateipfad: {0}</value>
-  </data>
-  <data name="BackgroundRemoverViewModel_Select_image_dialog" xml:space="preserve">
-    <value>Bild auswählen</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Background_removal_model" xml:space="preserve">
-    <value>Modell zur Hintergrundentfernung</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Browse" xml:space="preserve">
-    <value>Durchsuchen...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Device" xml:space="preserve">
-    <value>Gerät</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Image" xml:space="preserve">
-    <value>Bild</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Models" xml:space="preserve">
-    <value>Modelle</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Open_guide_page" xml:space="preserve">
-    <value>Anleitungsseite öffnen...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Open_models_folder" xml:space="preserve">
-    <value>Modellordner öffnen</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Processing_device" xml:space="preserve">
-    <value>Verarbeitungsgerät</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Refresh_models" xml:space="preserve">
-    <value>Modelle aktualisieren</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Remove_Background" xml:space="preserve">
-    <value>Hintergrund entfernen</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save" xml:space="preserve">
-    <value>Speichern</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save_as" xml:space="preserve">
-    <value>Speichern unter...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save_image_as_dialog" xml:space="preserve">
-    <value>Bild speichern unter</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Select_an_image_to_preview_it_here" xml:space="preserve">
-    <value>Wählen Sie ein Bild aus, um hier eine Vorschau anzuzeigen.</value>
-  </data>
-  <data name="BackgroundRemoverWindow_ShareX_Background_Remover" xml:space="preserve">
-    <value>ShareX - Hintergrundentferner</value>
-  </data>
   <data name="BorderlessWindowViewModel_Unable_to_toggle" xml:space="preserve">
     <value>Das ausgewählte Fenster konnte nicht umgeschaltet werden. {0}</value>
   </data>
@@ -1250,23 +1195,14 @@ Dateipfad: {0}</value>
   <data name="InspectWindowWindow_Window_settings" xml:space="preserve">
     <value>Fenstereinstellungen</value>
   </data>
-  <data name="LocalizedDisplayConverter_Automatic" xml:space="preserve">
-    <value>Automatisch</value>
-  </data>
   <data name="LocalizedDisplayConverter_Backward_diagonal" xml:space="preserve">
     <value>Diagonal rückwärts</value>
-  </data>
-  <data name="LocalizedDisplayConverter_CPU" xml:space="preserve">
-    <value>CPU</value>
   </data>
   <data name="LocalizedDisplayConverter_Checkerboard" xml:space="preserve">
     <value>Schachbrett</value>
   </data>
   <data name="LocalizedDisplayConverter_Forward_diagonal" xml:space="preserve">
     <value>Diagonal vorwärts</value>
-  </data>
-  <data name="LocalizedDisplayConverter_GPU" xml:space="preserve">
-    <value>GPU</value>
   </data>
   <data name="LocalizedDisplayConverter_Gemini" xml:space="preserve">
     <value>Gemini</value>

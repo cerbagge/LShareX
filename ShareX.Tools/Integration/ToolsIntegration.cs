@@ -48,11 +48,6 @@ public static class ToolsIntegration
         Show(() => new AnalyzeImageWindow(imagePath, options, captureRegion, playNotificationSound));
     }
 
-    public static void ShowBackgroundRemoverWindow(string? modelsFolder, BackgroundRemoverOptions options)
-    {
-        Show(() => new BackgroundRemoverWindow(modelsFolder, options));
-    }
-
     public static void ShowBorderlessWindow(
         BorderlessWindowSettings options,
         Func<string, bool, bool> toggleWindow,

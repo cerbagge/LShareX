@@ -334,61 +334,6 @@
   <data name="AnimatedGifTrimmer_UseReencode" xml:space="preserve">
     <value>Det här klippet behöver tidigare bildrutor och kan inte sparas förlustfritt. Välj trimningsläget Omkodning och spara igen.</value>
   </data>
-  <data name="BackgroundRemoverViewModel_Background_removed_ms" xml:space="preserve">
-    <value>Bakgrunden togs bort på {0} ms.</value>
-  </data>
-  <data name="BackgroundRemoverViewModel_Image_saved_file_path" xml:space="preserve">
-    <value>Bilden sparades.
-Filsökväg: {0}</value>
-  </data>
-  <data name="BackgroundRemoverViewModel_Select_image_dialog" xml:space="preserve">
-    <value>Välj bild</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Background_removal_model" xml:space="preserve">
-    <value>Modell för bakgrundsborttagning</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Browse" xml:space="preserve">
-    <value>Bläddra...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Device" xml:space="preserve">
-    <value>Enhet</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Image" xml:space="preserve">
-    <value>Bild</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Models" xml:space="preserve">
-    <value>Modeller</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Open_guide_page" xml:space="preserve">
-    <value>Öppna guidesidan...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Open_models_folder" xml:space="preserve">
-    <value>Öppna modellmappen</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Processing_device" xml:space="preserve">
-    <value>Uppdatera modeller</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Refresh_models" xml:space="preserve">
-    <value>Bearbetningsenhet</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Remove_Background" xml:space="preserve">
-    <value>Ta bort bakgrund</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save" xml:space="preserve">
-    <value>Spara</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save_as" xml:space="preserve">
-    <value>Spara som...</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Save_image_as_dialog" xml:space="preserve">
-    <value>Spara bild som</value>
-  </data>
-  <data name="BackgroundRemoverWindow_Select_an_image_to_preview_it_here" xml:space="preserve">
-    <value>Välj en bild för att förhandsgranska den här.</value>
-  </data>
-  <data name="BackgroundRemoverWindow_ShareX_Background_Remover" xml:space="preserve">
-    <value>ShareX – Bakgrundsborttagning</value>
-  </data>
   <data name="BorderlessWindowViewModel_Unable_to_toggle" xml:space="preserve">
     <value>Det gick inte att växla det valda fönstret. {0}</value>
   </data>
@@ -1250,23 +1195,14 @@ Filsökväg: {0}</value>
   <data name="InspectWindowWindow_Window_settings" xml:space="preserve">
     <value>Fönsterinställningar</value>
   </data>
-  <data name="LocalizedDisplayConverter_Automatic" xml:space="preserve">
-    <value>Automatiskt</value>
-  </data>
   <data name="LocalizedDisplayConverter_Backward_diagonal" xml:space="preserve">
     <value>Diagonal bakåt</value>
-  </data>
-  <data name="LocalizedDisplayConverter_CPU" xml:space="preserve">
-    <value>Processor</value>
   </data>
   <data name="LocalizedDisplayConverter_Checkerboard" xml:space="preserve">
     <value>Schackmönster</value>
   </data>
   <data name="LocalizedDisplayConverter_Forward_diagonal" xml:space="preserve">
     <value>Diagonal framåt</value>
-  </data>
-  <data name="LocalizedDisplayConverter_GPU" xml:space="preserve">
-    <value>Grafikprocessor</value>
   </data>
   <data name="LocalizedDisplayConverter_Gemini" xml:space="preserve">
     <value>Gemini</value>

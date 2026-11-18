@@ -98,5 +98,4 @@ internal static class AppPaths
     }
 
     internal static string ImageEffectsFolder => Path.Combine(PersonalFolder, "ImageEffects");
-    internal static string ModelsFolder => Path.Combine(PersonalFolder, "Models");
 }

@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>작업이 완료될 때까지 대기</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>배경 제거에 실패해 원본 이미지를 저장했습니다.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>배경 제거 모델(.onnx)이 없어 원본 이미지를 저장했습니다.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>클립보드 does not contain an 이미지.</value>
   </data>
@@ -1120,9 +1114,6 @@
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>자동 촬영</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>배경 제거...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>테두리 없는 창</value>

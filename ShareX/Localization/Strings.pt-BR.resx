@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Aguardar a conclusão das tarefas</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Falha ao remover o fundo. A imagem original foi salva.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Modelo de remoção de fundo (.onnx) não encontrado. A imagem original foi salva.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>A área de transferência não contém uma imagem.</value>
   </data>
@@ -1120,9 +1114,6 @@ Por favor, selecione um atalho diferente ou feche o programa conflituoso e reabr
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Capturar automaticamente</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Removedor de fundo...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Janela sem bordas</value>

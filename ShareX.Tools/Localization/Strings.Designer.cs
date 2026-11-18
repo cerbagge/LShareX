@@ -581,168 +581,6 @@ namespace ShareX.Tools.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Background removed in {0} ms..
-        /// </summary>
-        public static string BackgroundRemoverViewModel_Background_removed_ms {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverViewModel_Background_removed_ms", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Image saved.\nFile path: {0}.
-        /// </summary>
-        public static string BackgroundRemoverViewModel_Image_saved_file_path {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverViewModel_Image_saved_file_path", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Select image.
-        /// </summary>
-        public static string BackgroundRemoverViewModel_Select_image_dialog {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverViewModel_Select_image_dialog", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Background removal model.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Background_removal_model {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Background_removal_model", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Browse....
-        /// </summary>
-        public static string BackgroundRemoverWindow_Browse {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Browse", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Device.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Device {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Device", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Image.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Image {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Image", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Models.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Models {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Models", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Open guide page....
-        /// </summary>
-        public static string BackgroundRemoverWindow_Open_guide_page {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Open_guide_page", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Open models folder.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Open_models_folder {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Open_models_folder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Processing device.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Processing_device {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Processing_device", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Refresh models.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Refresh_models {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Refresh_models", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Remove Background.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Remove_Background {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Remove_Background", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Save.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Save {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Save", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Save as....
-        /// </summary>
-        public static string BackgroundRemoverWindow_Save_as {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Save_as", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Save image as.
-        /// </summary>
-        public static string BackgroundRemoverWindow_Save_image_as_dialog {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Save_image_as_dialog", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Select an image to preview it here..
-        /// </summary>
-        public static string BackgroundRemoverWindow_Select_an_image_to_preview_it_here {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_Select_an_image_to_preview_it_here", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to ShareX - Background Remover.
-        /// </summary>
-        public static string BackgroundRemoverWindow_ShareX_Background_Remover {
-            get {
-                return ResourceManager.GetString("BackgroundRemoverWindow_ShareX_Background_Remover", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Unable to toggle the selected window. {0}.
         /// </summary>
         public static string BorderlessWindowViewModel_Unable_to_toggle {
@@ -3428,15 +3266,6 @@ namespace ShareX.Tools.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Automatic.
-        /// </summary>
-        public static string LocalizedDisplayConverter_Automatic {
-            get {
-                return ResourceManager.GetString("LocalizedDisplayConverter_Automatic", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Backward diagonal.
         /// </summary>
         public static string LocalizedDisplayConverter_Backward_diagonal {
@@ -3455,15 +3284,6 @@ namespace ShareX.Tools.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to CPU.
-        /// </summary>
-        public static string LocalizedDisplayConverter_CPU {
-            get {
-                return ResourceManager.GetString("LocalizedDisplayConverter_CPU", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Forward diagonal.
         /// </summary>
         public static string LocalizedDisplayConverter_Forward_diagonal {
@@ -3478,15 +3298,6 @@ namespace ShareX.Tools.Localization {
         public static string LocalizedDisplayConverter_Gemini {
             get {
                 return ResourceManager.GetString("LocalizedDisplayConverter_Gemini", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to GPU.
-        /// </summary>
-        public static string LocalizedDisplayConverter_GPU {
-            get {
-                return ResourceManager.GetString("LocalizedDisplayConverter_GPU", resourceCulture);
             }
         }
         

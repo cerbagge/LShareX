@@ -19,6 +19,7 @@ Removed:
 - `ShareX.UploadersLib` project and every upload feature: upload destinations and uploader settings, custom uploaders (`.sxcu`), after upload tasks, URL shortening/sharing, remote deletion, Google Lens/Bing image search, remote storage browser, "Upload" main/tray menus, upload hotkeys, clipboard upload, uploader filters and `UploadersConfig.json`
   - Upload results are replaced by a small local `UploadResult` class (errors and file paths only); captures are always saved locally.
 - The `AddImageEffects` / `OpenInPhotoEditor` / `ShowBeforeUploadWindow` / `UploadImageToHost` after capture tasks and the `PhotoEditor` / `ImageEffects` / upload hotkey types are hidden from the UI but kept in the enums, so existing ShareX settings files still load.
+- Background remover tool (Tools menu, hotkey, models folder) and the `Microsoft.ML.OnnxRuntime.DirectML` package it needed.
 - Resource strings that were only used by removed features.
 - Debug symbol files (`*.pdb`, ~100 MB) are deleted from the Release publish output.
 
@@ -27,7 +28,6 @@ Changed:
 - Default after capture tasks: save image to file + copy image to clipboard + copy file to clipboard.
 - When both "Copy image to clipboard" and "Copy file to clipboard" are enabled, the image and the saved file are put on the clipboard together (image formats + `CF_HDROP`). Apps that can paste images get the image; apps that can't (file attachments, Explorer, upload fields) get the file. Screen recordings (MP4/GIF) are copied as files.
 - Multi region capture is its own hotkey task, "Capture multiple regions". "Capture region" always captures a single region at once; the "Multi region mode" option in task settings was removed.
-- Region capture toolbar has a "Remove background" toggle button. When it is on, the captured image (every region of a multi region capture) goes through the Background remover tool's model before it is saved and copied. It uses the model selected in the Background remover tool (or the first `.onnx` file in the models folder); without a model, or if removal fails, the original image is kept and a notification is shown.
 - Multi region capture saves each selected region as its own image (each one is saved and copied separately) instead of one combined image with transparent gaps. "Capture last region" does the same for multiple regions.
 - Executable `LShareX.exe` (assembly name `LShareX`, root namespace still `ShareX`); window title, tray icon and Task Manager show `LShareX`.
 - Application, window and tray icon (`ShareX/ShareX_Icon.ico`, `ShareX.HelpersLib/Resources/ShareX_Icon.ico`) replaced with an LShareX icon derived from the ShareX logo.

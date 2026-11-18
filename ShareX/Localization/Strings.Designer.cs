@@ -141,21 +141,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Background remover....
-        /// </summary>
-        public static string MainMenuBuilder_BackgroundRemover {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_BackgroundRemover", resourceCulture);
-            }
-        }
-        public static string CaptureRegion_BackgroundRemovalFailed {
-            get { return ResourceManager.GetString("CaptureRegion_BackgroundRemovalFailed", resourceCulture); }
-        }
-        public static string CaptureRegion_BackgroundRemovalModelMissing {
-            get { return ResourceManager.GetString("CaptureRegion_BackgroundRemovalModelMissing", resourceCulture); }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Borderless window....
         /// </summary>
         public static string MainMenuBuilder_BorderlessWindow {

@@ -258,9 +258,6 @@ namespace ShareX
                         OpenImageViewer();
                     }
                     break;
-                case HotkeyType.BackgroundRemover:
-                    OpenBackgroundRemover(safeTaskSettings);
-                    break;
                 case HotkeyType.ImageComparer:
                     OpenImageComparer();
                     break;
@@ -1084,13 +1081,6 @@ namespace ShareX
         public static void OpenIconConverter()
         {
             ToolsIntegration.ShowIconConverterWindow();
-        }
-
-        public static void OpenBackgroundRemover(TaskSettings taskSettings = null)
-        {
-            if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
-
-            ToolsIntegration.ShowBackgroundRemoverWindow(AppPaths.ModelsFolder, taskSettings.ToolsSettingsReference.BackgroundRemoverOptions);
         }
 
         public static void CombineImages(IEnumerable<string> imageFiles, ImageOrientation orientation, TaskSettings taskSettings = null)

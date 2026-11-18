@@ -436,9 +436,6 @@
   <data name="RegionCaptureWindow_RectangleRegionTab" xml:space="preserve">
     <value>التقاط مساحة (Tab)</value>
   </data>
-  <data name="RegionCaptureWindow_RemoveBackground" xml:space="preserve">
-    <value>إزالة الخلفية</value>
-  </data>
   <data name="Resume" xml:space="preserve">
     <value>متابعة</value>
   </data>

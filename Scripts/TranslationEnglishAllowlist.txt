@@ -289,7 +289,6 @@ ShareX.Tools|AnalyzeImageOptionsWindow_OpenRouter|eb70c3bc14fa7ae14285b750955958
 ShareX.Tools|AnalyzeImageWindow_Image|1aa4cb0bcca76e92e30677e809bb3d4b5c066715ef4d558184e319496bcc5125|fr
 ShareX.Tools|AnalyzeImageWindow_Options|230845cfa94150d519b8d8c92d096e70f9253f22059291c6a54f476434af2307|fr
 ShareX.Tools|AnalyzeImageWindow_Prompt|5c39123805ffb4e2f01ba096f17a5b18afb43c4f223afa4ba2d5a3f31cf74e09|it-IT,nl-NL,pt-BR,pt-PT,ro
-ShareX.Tools|BackgroundRemoverWindow_Image|1aa4cb0bcca76e92e30677e809bb3d4b5c066715ef4d558184e319496bcc5125|fr
 ShareX.Tools|BorderlessWindowWindow_Options|d0db8b5e364b6989e4b8f38a2b3846b87d99a51c1592ebf35d21cc66405a8e39|fr,nl-NL
 ShareX.Tools|ClipboardViewerViewModel_Format_count|29e3ea86c4da6f156dddaa84e0519caa41311e3a13373354104ae8bc42ec404a|fr
 ShareX.Tools|ClipboardViewerViewModel_Image_details|3120be30f0eaadd9bc2452737d060ace81fbfb680c4fb45ef3e192fd0b890eea|fr
@@ -333,9 +332,7 @@ ShareX.Tools|ImageThumbnailerWindow_Output|b2439bcb8dee14b685f137f294b0e0cb62f5a
 ShareX.Tools|IndexerHtml_One_file|772a5da10792cb4c1309a1ec6a50771018b4fc804b96b71675e4b734a105c66f|id-ID,it-IT
 ShareX.Tools|IndexerHtml_One_folder|4321bf4c650476da0b93453d1f0bc13e8e76a9cf7541ac50e4d0f85d711e9768|id-ID,pl
 ShareX.Tools|InspectWindowViewModel_Control|32d7e82082479b8cb546187ff0af11e4915e4d17bc28e02dca7425288b79badd|es-MX,es,ro
-ShareX.Tools|LocalizedDisplayConverter_CPU|db9a4c7d4c195ebf80068dd04120accce1cbfbef342bb43a53cbd651eb96e37b|ar-YE,de,es-MX,es,fa-IR,fr,he-IL,hi,hu,id-ID,it-IT,ja-JP,ko-KR,nl-NL,pl,pt-BR,pt-PT,ro,th,tr,vi-VN,zh-CN,zh-TW
 ShareX.Tools|LocalizedDisplayConverter_Gemini|f6ece80b88d6dfbd2f65dad5ccde8e5ec2a0d4dbfadc2fe87bdf58642f17e446|ar-YE,cs,da,de,es-MX,es,fa-IR,fr,he-IL,hi,hu,id-ID,it-IT,ja-JP,ko-KR,nl-NL,pl,pt-BR,pt-PT,ro,ru,sv,th,tr,uk,vi-VN,zh-CN,zh-TW
-ShareX.Tools|LocalizedDisplayConverter_GPU|ea49523d744c40bc900b4462c43132d1c8a8de5216fa8436cc0e8b3e89dddbe3|ar-YE,de,es-MX,es,fa-IR,fr,he-IL,hi,hu,id-ID,it-IT,ja-JP,ko-KR,nl-NL,pl,pt-BR,pt-PT,ro,th,tr,vi-VN,zh-CN,zh-TW
 ShareX.Tools|LocalizedDisplayConverter_Horizontal|0abba441f16eff90782e7a820fd5abb05a1749cca37bff515e4cc968238a2d26|de,es-MX,es,fr,pt-BR,pt-PT
 ShareX.Tools|LocalizedDisplayConverter_Minimal|057b5de48d7b90f123ec28d7e15f65d99b508d6b7cc2958c39472070f0f0f6bb|da,de,fr,id-ID,sv
 ShareX.Tools|LocalizedDisplayConverter_OpenAI|8b7d1a3187ab355dc31bc683aaa71ab5ed217940c12196a9cd5f4ca984babfa4|ar-YE,cs,da,de,es-MX,es,fa-IR,fr,he-IL,hi,hu,id-ID,it-IT,ja-JP,ko-KR,nl-NL,pl,pt-BR,pt-PT,ro,ru,sv,th,tr,uk,vi-VN,zh-CN,zh-TW

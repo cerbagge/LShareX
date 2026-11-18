@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Görevler tamamlanana kadar bekle</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Arka plan kaldırılamadı. Orijinal görüntü kaydedildi.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Arka plan kaldırma modeli (.onnx) bulunamadı. Orijinal görüntü kaydedildi.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Pano resim içermiyor.</value>
   </data>
@@ -1120,9 +1114,6 @@ Lütfen başka bir kısayol seçin veya çakışan uygulamayı kapatın ve Share
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Otomatik yakalama...</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Arka plan kaldırıcı...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Kenarsız pencere...</value>

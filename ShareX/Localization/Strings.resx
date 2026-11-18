@@ -839,12 +839,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Wait until tasks complete</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Background removal failed. The original image was saved.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Background removal model (.onnx) not found. The original image was saved.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Clipboard does not contain an image.</value>
   </data>
@@ -1123,9 +1117,6 @@ Please select a different hotkey or quit the conflicting application and reopen 
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Auto capture...</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Background remover...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Borderless window...</value>

@@ -239,7 +239,6 @@ internal sealed class MainMenuBuilder
         ]),
         new(Strings.MainMenuBuilder_ToolCategoryImages,
         [
-            Tool(nameof(Strings.MainMenuBuilder_BackgroundRemover), Strings.MainMenuBuilder_BackgroundRemover, AppIcons.BackgroundRemover, () => TaskHelpers.OpenBackgroundRemover()),
             Tool(nameof(Strings.MainMenuBuilder_IconConverter), Strings.MainMenuBuilder_IconConverter, AppIcons.IconConverter, () => TaskHelpers.OpenIconConverter()),
             Tool(nameof(Strings.MainMenuBuilder_ImageBeautifier), Strings.MainMenuBuilder_ImageBeautifier, AppIcons.ImageBeautifier, () => TaskHelpers.OpenImageBeautifier()),
             Tool(nameof(Strings.MainMenuBuilder_ImageCombiner), Strings.MainMenuBuilder_ImageCombiner, AppIcons.Combine, () => TaskHelpers.OpenImageCombiner()),

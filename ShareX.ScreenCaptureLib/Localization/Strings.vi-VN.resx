@@ -436,9 +436,6 @@
   <data name="RegionCaptureWindow_RectangleRegionTab" xml:space="preserve">
     <value>Chụp theo vùng (Tab)</value>
   </data>
-  <data name="RegionCaptureWindow_RemoveBackground" xml:space="preserve">
-    <value>Xóa nền</value>
-  </data>
   <data name="Resume" xml:space="preserve">
     <value>Tiếp tục</value>
   </data>

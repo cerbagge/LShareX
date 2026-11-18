@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>รอจนกว่างานจะเสร็จสมบูรณ์</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>ลบพื้นหลังไม่สำเร็จ จึงบันทึกภาพต้นฉบับไว้</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>ไม่พบโมเดลลบพื้นหลัง (.onnx) จึงบันทึกภาพต้นฉบับไว้</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>คลิปบอร์ด ไม่ มี รูปภาพ.</value>
   </data>
@@ -1120,9 +1114,6 @@
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>จับภาพอัตโนมัติ...</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>พื้นหลัง ตัวลบ...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>ไร้ขอบ หน้าต่าง...</value>

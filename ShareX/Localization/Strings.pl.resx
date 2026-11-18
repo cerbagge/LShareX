@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Czekaj na zakończenie zadań</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Nie udało się usunąć tła. Zapisano oryginalny obraz.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Nie znaleziono modelu usuwania tła (.onnx). Zapisano oryginalny obraz.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Schowek nie zawiera obrazu.</value>
   </data>
@@ -1120,9 +1114,6 @@ Proszę wybrać inny skrót klawiszowy lub zamknąć konfliktową aplikację i p
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Automatyczne przechwytywanie</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Usuwanie tła...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Okno bez obramowania</value>

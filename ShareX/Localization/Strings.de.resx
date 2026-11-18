@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Warten, bis Aufgaben abgeschlossen sind</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>Hintergrundentfernung fehlgeschlagen. Das Originalbild wurde gespeichert.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>Kein Modell zur Hintergrundentfernung (.onnx) gefunden. Das Originalbild wurde gespeichert.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>Die Zwischenablage enthält kein Bild.</value>
   </data>
@@ -1120,9 +1114,6 @@ Bitte wähle ein anderes Tastenkürzel aus oder beende das widersprüchliche Pro
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Autoaufnahme</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Hintergrundentferner...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Randloses Fenster</value>

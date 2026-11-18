@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>タスクが完了するまで待機</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>背景の削除に失敗したため、元の画像を保存しました。</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>背景削除モデル (.onnx) が見つからないため、元の画像を保存しました。</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>クリップボードに画像が含まれません。</value>
   </data>
@@ -1120,9 +1114,6 @@
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>自動キャプチャー</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>背景リムーバー...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>ボーダーレスウィンドウ</value>

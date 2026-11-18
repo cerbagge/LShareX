@@ -436,9 +436,6 @@
   <data name="RegionCaptureWindow_RectangleRegionTab" xml:space="preserve">
     <value>Bölge yakala (Tab)</value>
   </data>
-  <data name="RegionCaptureWindow_RemoveBackground" xml:space="preserve">
-    <value>Arka planı kaldır</value>
-  </data>
   <data name="Resume" xml:space="preserve">
     <value>Devam et</value>
   </data>

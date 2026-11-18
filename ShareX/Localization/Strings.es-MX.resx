@@ -838,12 +838,6 @@
   <data name="AutoCaptureWindow_WaitTasks" xml:space="preserve">
     <value>Esperar hasta que terminen las tareas</value>
   </data>
-  <data name="CaptureRegion_BackgroundRemovalFailed" xml:space="preserve">
-    <value>No se pudo quitar el fondo. Se guardó la imagen original.</value>
-  </data>
-  <data name="CaptureRegion_BackgroundRemovalModelMissing" xml:space="preserve">
-    <value>No se encontró el modelo para quitar el fondo (.onnx). Se guardó la imagen original.</value>
-  </data>
   <data name="ClipboardDoesNotContainAnImage" xml:space="preserve">
     <value>El portapapeles no contiene una imagen.</value>
   </data>
@@ -1120,9 +1114,6 @@ Por favor seleccione un atajo de teclado diferente o salga de la aplicación que
   </data>
   <data name="MainMenuBuilder_AutoCapture" xml:space="preserve">
     <value>Captura automática</value>
-  </data>
-  <data name="MainMenuBuilder_BackgroundRemover" xml:space="preserve">
-    <value>Eliminador de fondo...</value>
   </data>
   <data name="MainMenuBuilder_BorderlessWindow" xml:space="preserve">
     <value>Ventana sin bordes</value>
