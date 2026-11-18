@@ -29,7 +29,6 @@ using ShareX.HelpersLib;
 using ShareX.ImageEditor.Integration;
 using ShareX.ScreenCaptureLib;
 using ShareX.Tools;
-using ShareX.UploadersLib;
 using SkiaSharp;
 using System;
 using System.Collections.Generic;
@@ -58,13 +57,6 @@ namespace ShareX
         public AfterUploadTasks AfterUploadJob = AfterUploadTasks.CopyURLToClipboard;
 
         public bool UseDefaultDestinations = true;
-        public ImageDestination ImageDestination = ImageDestination.Imgur;
-        public FileDestination ImageFileDestination = FileDestination.Dropbox;
-        public TextDestination TextDestination = TextDestination.Pastebin;
-        public FileDestination TextFileDestination = FileDestination.Dropbox;
-        public FileDestination FileDestination = FileDestination.Dropbox;
-        public UrlShortenerType URLShortenerDestination = UrlShortenerType.BITLY;
-        public URLSharingServices URLSharingServiceDestination = URLSharingServices.Email;
 
         public bool OverrideFTP = false;
         public int FTPIndex = 0;
@@ -200,17 +192,6 @@ namespace ShareX
                     AfterUploadJob = defaultTaskSettings.AfterUploadJob;
                 }
 
-                if (UseDefaultDestinations)
-                {
-                    ImageDestination = defaultTaskSettings.ImageDestination;
-                    ImageFileDestination = defaultTaskSettings.ImageFileDestination;
-                    TextDestination = defaultTaskSettings.TextDestination;
-                    TextFileDestination = defaultTaskSettings.TextFileDestination;
-                    FileDestination = defaultTaskSettings.FileDestination;
-                    URLShortenerDestination = defaultTaskSettings.URLShortenerDestination;
-                    URLSharingServiceDestination = defaultTaskSettings.URLSharingServiceDestination;
-                }
-
                 if (UseDefaultGeneralSettings)
                 {
                     GeneralSettings = defaultTaskSettings.GeneralSettings;
@@ -283,20 +264,6 @@ namespace ShareX
             if (UseDefaultAdvancedSettings)
             {
                 AdvancedSettings = null;
-            }
-        }
-
-        public FileDestination GetFileDestinationByDataType(EDataType dataType)
-        {
-            switch (dataType)
-            {
-                case EDataType.Image:
-                    return ImageFileDestination;
-                case EDataType.Text:
-                    return TextFileDestination;
-                default:
-                case EDataType.File:
-                    return FileDestination;
             }
         }
     }
@@ -463,11 +430,6 @@ namespace ShareX
 
         #endregion Upload / Clipboard upload
 
-        #region Upload / Uploader filters
-
-        public List<UploaderFilter> UploaderFilters = new List<UploaderFilter>();
-
-        #endregion Upload / Uploader filters
     }
 
     public class TaskSettingsTools

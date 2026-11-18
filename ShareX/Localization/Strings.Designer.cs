@@ -213,15 +213,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Drag and drop upload....
-        /// </summary>
-        public static string MainMenuBuilder_DragAndDropUpload {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_DragAndDropUpload", resourceCulture);
-            }
-        }
-
-        /// <summary>
         ///   Looks up a localized string similar to Edit.
         /// </summary>
         public static string MainMenuBuilder_EditTools {
@@ -612,15 +603,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shorten URL....
-        /// </summary>
-        public static string MainMenuBuilder_ShortenUrl {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_ShortenUrl", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Show cursor.
         /// </summary>
         public static string MainMenuBuilder_ShowCursor {
@@ -656,51 +638,6 @@ namespace ShareX.Localization {
             }
         }
         
-        /// <summary>
-        ///   Looks up a localized string similar to Test file upload.
-        /// </summary>
-        public static string MainMenuBuilder_TestFileUpload {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_TestFileUpload", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Test image upload.
-        /// </summary>
-        public static string MainMenuBuilder_TestImageUpload {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_TestImageUpload", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Test text upload.
-        /// </summary>
-        public static string MainMenuBuilder_TestTextUpload {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_TestTextUpload", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Test URL sharing.
-        /// </summary>
-        public static string MainMenuBuilder_TestUrlSharing {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_TestUrlSharing", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Test URL shortener.
-        /// </summary>
-        public static string MainMenuBuilder_TestUrlShortener {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_TestUrlShortener", resourceCulture);
-            }
-        }
-
         /// <summary>
         ///   Looks up a localized string similar to Data &amp; text.
         /// </summary>
@@ -752,60 +689,6 @@ namespace ShareX.Localization {
         public static string MainMenuBuilder_Tools {
             get {
                 return ResourceManager.GetString("MainMenuBuilder_Tools", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upload.
-        /// </summary>
-        public static string MainMenuBuilder_Upload {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_Upload", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upload clipboard....
-        /// </summary>
-        public static string MainMenuBuilder_UploadClipboard {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_UploadClipboard", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upload file....
-        /// </summary>
-        public static string MainMenuBuilder_UploadFile {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_UploadFile", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upload folder....
-        /// </summary>
-        public static string MainMenuBuilder_UploadFolder {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_UploadFolder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upload text....
-        /// </summary>
-        public static string MainMenuBuilder_UploadText {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_UploadText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Upload URL....
-        /// </summary>
-        public static string MainMenuBuilder_UploadUrl {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_UploadUrl", resourceCulture);
             }
         }
         
@@ -917,51 +800,6 @@ namespace ShareX.Localization {
             }
         }
 
-        /// <summary>
-        ///   Looks up a localized string similar to Delete item remotely....
-        /// </summary>
-        public static string MainWindow_DeleteItemRemotely {
-            get {
-                return ResourceManager.GetString("MainWindow_DeleteItemRemotely", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Do you really want to delete this item remotely?.
-        /// </summary>
-        public static string MainWindow_DeleteItemRemotelyConfirmation {
-            get {
-                return ResourceManager.GetString("MainWindow_DeleteItemRemotelyConfirmation", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Remote deletion.
-        /// </summary>
-        public static string MainWindow_RemoteDeletion {
-            get {
-                return ResourceManager.GetString("MainWindow_RemoteDeletion", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to The item was deleted remotely..
-        /// </summary>
-        public static string MainWindow_RemoteDeleteSucceeded {
-            get {
-                return ResourceManager.GetString("MainWindow_RemoteDeleteSucceeded", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Failed to delete the item remotely..
-        /// </summary>
-        public static string MainWindow_RemoteDeleteFailed {
-            get {
-                return ResourceManager.GetString("MainWindow_RemoteDeleteFailed", resourceCulture);
-            }
-        }
-        
         /// <summary>
         ///   Looks up a localized string similar to Deletion URL.
         /// </summary>
@@ -1242,33 +1080,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Search with Bing Visual Search....
-        /// </summary>
-        public static string MainWindow_SearchWithBingVisualSearch {
-            get {
-                return ResourceManager.GetString("MainWindow_SearchWithBingVisualSearch", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Search with Google Lens....
-        /// </summary>
-        public static string MainWindow_SearchWithGoogleLens {
-            get {
-                return ResourceManager.GetString("MainWindow_SearchWithGoogleLens", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Share selected URL.
-        /// </summary>
-        public static string MainWindow_ShareSelectedUrl {
-            get {
-                return ResourceManager.GetString("MainWindow_ShareSelectedUrl", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to ShareX hotkeys.
         /// </summary>
         public static string MainWindow_ShareXHotkeys {
@@ -1287,15 +1098,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Shorten selected URL.
-        /// </summary>
-        public static string MainWindow_ShortenSelectedUrl {
-            get {
-                return ResourceManager.GetString("MainWindow_ShortenSelectedUrl", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Show errors....
         /// </summary>
         public static string MainWindow_ShowErrors {
@@ -1310,15 +1112,6 @@ namespace ShareX.Localization {
         public static string MainWindow_ShowQRCode {
             get {
                 return ResourceManager.GetString("MainWindow_ShowQRCode", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Show response....
-        /// </summary>
-        public static string MainWindow_ShowResponse {
-            get {
-                return ResourceManager.GetString("MainWindow_ShowResponse", resourceCulture);
             }
         }
         
@@ -1573,11 +1366,6 @@ namespace ShareX.Localization {
         public static string ApplicationSettingsWindow_Windows {
             get {
                 return ResourceManager.GetString("ApplicationSettingsWindow_Windows", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_ShowUploadWithShareXButtonInWindowsExplorerContextMenu {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_ShowUploadWithShareXButtonInWindowsExplorerContextMenu", resourceCulture);
             }
         }
         public static string ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu {
@@ -2055,11 +1843,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("ApplicationSettingsWindow_AdvancedImage", resourceCulture);
             }
         }
-        public static string ApplicationSettingsWindow_AdvancedUpload {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_AdvancedUpload", resourceCulture);
-            }
-        }
         public static string ApplicationSettingsWindow_AdvancedPaths {
             get {
                 return ResourceManager.GetString("ApplicationSettingsWindow_AdvancedPaths", resourceCulture);
@@ -2148,36 +1931,6 @@ namespace ShareX.Localization {
         public static string ApplicationSettingsWindow_PNGStripColorSpaceInformation {
             get {
                 return ResourceManager.GetString("ApplicationSettingsWindow_PNGStripColorSpaceInformation", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_DisableUpload {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_DisableUpload", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_URLEncodeIgnoreEmoji {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_URLEncodeIgnoreEmoji", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_ShowMultiUploadWarning {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_ShowMultiUploadWarning", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_ShowLargeFileSizeWarning {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_ShowLargeFileSizeWarning", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_UseMachineSpecificUploadersConfig {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_UseMachineSpecificUploadersConfig", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_CustomUploadersConfigPath {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_CustomUploadersConfigPath", resourceCulture);
             }
         }
         public static string ApplicationSettingsWindow_CustomHotkeysConfigPath {
@@ -2545,26 +2298,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("TaskSettingsWindow_ChooseWatchFolder", resourceCulture);
             }
         }
-        public static string TaskSettingsWindow_OverrideDefaultFTPAccount {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_OverrideDefaultFTPAccount", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_FTPAccount {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_FTPAccount", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_OverrideDefaultCustomUploader {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_OverrideDefaultCustomUploader", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_CustomUploader {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_CustomUploader", resourceCulture);
-            }
-        }
         public static string TaskSettingsWindow_ChooseScreenshotsFolder {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_ChooseScreenshotsFolder", resourceCulture);
@@ -2593,31 +2326,6 @@ namespace ShareX.Localization {
         public static string TaskSettingsWindow_OverrideAfterCaptureTasks {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_OverrideAfterCaptureTasks", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_AfterUploadTasks {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_AfterUploadTasks", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_OverrideAfterUploadTasks {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_OverrideAfterUploadTasks", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Destinations {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Destinations", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_OverrideDestinations {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_OverrideDestinations", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_UploaderAccounts {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_UploaderAccounts", resourceCulture);
             }
         }
         public static string TaskSettingsWindow_ScreenshotsFolder {
@@ -2968,11 +2676,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("TaskSettingsWindow_UseSquareMagnifier", resourceCulture);
             }
         }
-        public static string TaskSettingsWindow_Add {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Add", resourceCulture);
-            }
-        }
         public static string TaskSettingsWindow_QuickCapture {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_QuickCapture", resourceCulture);
@@ -3143,16 +2846,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("TaskSettingsWindow_WindowCapture", resourceCulture);
             }
         }
-        public static string TaskSettingsWindow_UseNamePatternForFileUploads {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_UseNamePatternForFileUploads", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_ReplaceURLProblematicCharactersWithUnderscores {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ReplaceURLProblematicCharactersWithUnderscores", resourceCulture);
-            }
-        }
         public static string TaskSettingsWindow_AutoIncrementNumber {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_AutoIncrementNumber", resourceCulture);
@@ -3166,61 +2859,6 @@ namespace ShareX.Localization {
         public static string TaskSettingsWindow_TimeZoneLabel {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_TimeZoneLabel", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_ReplaceResultURLUsingARegularExpression {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ReplaceResultURLUsingARegularExpression", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Pattern {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Pattern", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Replacement {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Replacement", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_IfClipboardContainsAFileURLDownloadAndUploadIt {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_IfClipboardContainsAFileURLDownloadAndUploadIt", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_IfClipboardContainsAURLUseURLShortener {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_IfClipboardContainsAURLUseURLShortener", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_IfClipboardContainsAURLShareItUsingURLSharingService {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_IfClipboardContainsAURLShareItUsingURLSharingService", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_IfClipboardContainsAFolderPathIndexAndUploadIt {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_IfClipboardContainsAFolderPathIndexAndUploadIt", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Update {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Update", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Uploader {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Uploader", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Extensions {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Extensions", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_SeparateExtensionsWithCommasForExamplePngJpgJpeg {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_SeparateExtensionsWithCommasForExamplePngJpgJpeg", resourceCulture);
             }
         }
         public static string TaskSettingsWindow_Format {
@@ -3363,21 +3001,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("TaskSettingsWindow_TimeZone", resourceCulture);
             }
         }
-        public static string TaskSettingsWindow_URLReplacement {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_URLReplacement", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_ClipboardContent {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ClipboardContent", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Filters {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Filters", resourceCulture);
-            }
-        }
         public static string TaskSettingsWindow_OverrideToolsSettings {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_OverrideToolsSettings", resourceCulture);
@@ -3446,16 +3069,6 @@ namespace ShareX.Localization {
         public static string TaskSettingsWindow_FileNaming {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_FileNaming", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_ClipboardUpload {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ClipboardUpload", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_UploaderFilters {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_UploaderFilters", resourceCulture);
             }
         }
         public static string TaskSettingsWindow_Tools {
@@ -3551,11 +3164,6 @@ namespace ShareX.Localization {
         public static string TaskSettingsWindow_OverrideGeneralSettings {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_OverrideGeneralSettings", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_OverrideUploadSettings {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_OverrideUploadSettings", resourceCulture);
             }
         }
         public static string TaskSettingsWindow_WaveAudio {
@@ -3958,56 +3566,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("URLUploadWindow_Upload", resourceCulture);
             }
         }
-        public static string BeforeUploadWindow_Title {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_Title", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_Heading {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_Heading", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_Destination {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_Destination", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_CopyPreviewImage {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_CopyPreviewImage", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_Cancel {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_Cancel", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_Upload {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_Upload", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_CustomUploader {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_CustomUploader", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_ChooseDestination {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_ChooseDestination", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_UploadPrompt {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_UploadPrompt", resourceCulture);
-            }
-        }
-        public static string BeforeUploadWindow_NoPreview {
-            get {
-                return ResourceManager.GetString("BeforeUploadWindow_NoPreview", resourceCulture);
-            }
-        }
         public static string ActionsToolbarEditorWindow_Title {
             get {
                 return ResourceManager.GetString("ActionsToolbarEditorWindow_Title", resourceCulture);
@@ -4218,86 +3776,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("AfterCaptureWindow_NoPreview", resourceCulture);
             }
         }
-        public static string AfterCaptureWindow_CustomUploader {
-            get {
-                return ResourceManager.GetString("AfterCaptureWindow_CustomUploader", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_Title {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_Title", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_UploadComplete {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_UploadComplete", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_ClipboardFormats {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_ClipboardFormats", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_CopyPreviewImage {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_CopyPreviewImage", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_NoPreview {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_NoPreview", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_CopyImage {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_CopyImage", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_CopySelectedFormat {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_CopySelectedFormat", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_OpenLink {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_OpenLink", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_OpenFile {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_OpenFile", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_OpenContainingFolder {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_OpenContainingFolder", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_Close {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_Close", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_GroupCustom {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_GroupCustom", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_GroupForums {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_GroupForums", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_GroupLocal {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_GroupLocal", resourceCulture);
-            }
-        }
-        public static string AfterUploadWindow_GroupLinks {
-            get {
-                return ResourceManager.GetString("AfterUploadWindow_GroupLinks", resourceCulture);
-            }
-        }
         public static string AutoCaptureWindow_Title {
             get {
                 return ResourceManager.GetString("AutoCaptureWindow_Title", resourceCulture);
@@ -4366,26 +3844,6 @@ namespace ShareX.Localization {
         public static string AutoCaptureWindow_Region {
             get {
                 return ResourceManager.GetString("AutoCaptureWindow_Region", resourceCulture);
-            }
-        }
-        public static string CustomUploaderKeyValueEditor_Add {
-            get {
-                return ResourceManager.GetString("CustomUploaderKeyValueEditor_Add", resourceCulture);
-            }
-        }
-        public static string CustomUploaderKeyValueEditor_Name {
-            get {
-                return ResourceManager.GetString("CustomUploaderKeyValueEditor_Name", resourceCulture);
-            }
-        }
-        public static string CustomUploaderKeyValueEditor_Value {
-            get {
-                return ResourceManager.GetString("CustomUploaderKeyValueEditor_Value", resourceCulture);
-            }
-        }
-        public static string CustomUploaderKeyValueEditor_Remove {
-            get {
-                return ResourceManager.GetString("CustomUploaderKeyValueEditor_Remove", resourceCulture);
             }
         }
         public static string QuickTaskMenuEditorWindow_Title {
@@ -4578,494 +4036,9 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("AboutWindow_Team", resourceCulture);
             }
         }
-        public static string CustomUploaderSettingsWindow_Title {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Title", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UploaderLibrary {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UploaderLibrary", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Guide {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Guide", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_SearchUploaders {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_SearchUploaders", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_New {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_New", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Import {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Import", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Duplicate {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Duplicate", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Export {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Export", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Remove {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Remove", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ExportAll {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ExportAll", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ClearAll {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ClearAll", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UpdateFolder {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UpdateFolder", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Overview {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Overview", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Request {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Request", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Body {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Body", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Response {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Response", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Test {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Test", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Identity {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Identity", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Name {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Name", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_NamePlaceholder {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_NamePlaceholder", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Capabilities {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Capabilities", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ImageUploader {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ImageUploader", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TextUploader {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TextUploader", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_FileUploader {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_FileUploader", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_URLShortener {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_URLShortener", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_URLSharingService {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_URLSharingService", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Endpoint {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Endpoint", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ChangesApplied {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ChangesApplied", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_CreateOrImport {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_CreateOrImport", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_NoSearchMatches {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_NoSearchMatches", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_AllRemoved {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_AllRemoved", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Arguments {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Arguments", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Base64Encoding {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Base64Encoding", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Beautify {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Beautify", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_BodyType {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_BodyType", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ClearConfirmation {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ClearConfirmation", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Close {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Close", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ConfirmationTitle {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ConfirmationTitle", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_CustomUploaderFileType {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_CustomUploaderFileType", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_DeletionURL {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_DeletionURL", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_DestinationRequired {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_DestinationRequired", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_DisplayOutputText {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_DisplayOutputText", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Duplicated {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Duplicated", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_DuplicateNamesNotAllowed {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_DuplicateNamesNotAllowed", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Error {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Error", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ErrorMessage {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ErrorMessage", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ExportAllDialogTitle {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ExportAllDialogTitle", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ExportDialogTitle {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ExportDialogTitle", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ExportedCount {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ExportedCount", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ExportedOne {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ExportedOne", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_FileFormName {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_FileFormName", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_FileFormNameDescription {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_FileFormNameDescription", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_FilteredUploaderCount {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_FilteredUploaderCount", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Headers {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Headers", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ImportDialogTitle {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ImportDialogTitle", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ImportedCount {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ImportedCount", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_JSONPathResponseValue {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_JSONPathResponseValue", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Method {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Method", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Minify {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Minify", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_NewCreated {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_NewCreated", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_NoAdditionalBodyFields {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_NoAdditionalBodyFields", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Parameters {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Parameters", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_RandomSelection {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_RandomSelection", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_RegularExpressionResult {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_RegularExpressionResult", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Removed {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Removed", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_RequestData {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_RequestData", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_RequestURL {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_RequestURL", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_RequestURLRequired {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_RequestURLRequired", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ResponseHeader {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ResponseHeader", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ResponseOrRedirectionURL {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ResponseOrRedirectionURL", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ResponseText {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ResponseText", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Result {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Result", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ResultURL {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ResultURL", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_SelectToExport {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_SelectToExport", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_SelectUploaderToEdit {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_SelectUploaderToEdit", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TestCancelled {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TestCancelled", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TestCompleted {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TestCompleted", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TestFailed {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TestFailed", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_Testing {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_Testing", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TestURLSyntax {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TestURLSyntax", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TestURLSyntaxButton {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TestURLSyntaxButton", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TextOrURLInput {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TextOrURLInput", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_TextUploadSample {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_TextUploadSample", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_ThumbnailURL {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_ThumbnailURL", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UpdatedCount {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UpdatedCount", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UpdateFolderDialogTitle {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UpdateFolderDialogTitle", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UploadedFile {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UploadedFile", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UploadedFileName {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UploadedFileName", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UploaderCount {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UploaderCount", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UploaderCountPlural {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UploaderCountPlural", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_URLSyntax {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_URLSyntax", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UserSelection {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UserSelection", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_UserTextInput {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_UserTextInput", resourceCulture);
-            }
-        }
-        public static string CustomUploaderSettingsWindow_XPathResponseValue {
-            get {
-                return ResourceManager.GetString("CustomUploaderSettingsWindow_XPathResponseValue", resourceCulture);
-            }
-        }
         public static string TaskHelpers_FileDoesNotExist {
             get {
                 return ResourceManager.GetString("TaskHelpers_FileDoesNotExist", resourceCulture);
-            }
-        }
-        public static string TaskHelpers_AddCustomUploaderConfirmation {
-            get {
-                return ResourceManager.GetString("TaskHelpers_AddCustomUploaderConfirmation", resourceCulture);
-            }
-        }
-        public static string TaskHelpers_SetActiveCustomUploaderConfirmation {
-            get {
-                return ResourceManager.GetString("TaskHelpers_SetActiveCustomUploaderConfirmation", resourceCulture);
-            }
-        }
-        public static string TaskHelpers_CustomUploaderConfirmationTitle {
-            get {
-                return ResourceManager.GetString("TaskHelpers_CustomUploaderConfirmationTitle", resourceCulture);
             }
         }
         public static string SettingManager_ExportBackupError {
@@ -5081,16 +4054,6 @@ namespace ShareX.Localization {
         public static string SettingManager_ErrorTitle {
             get {
                 return ResourceManager.GetString("SettingManager_ErrorTitle", resourceCulture);
-            }
-        }
-        public static string WorkerTask_ErrorTitle {
-            get {
-                return ResourceManager.GetString("WorkerTask_ErrorTitle", resourceCulture);
-            }
-        }
-        public static string TaskManager_UploadCompletedURL {
-            get {
-                return ResourceManager.GetString("TaskManager_UploadCompletedURL", resourceCulture);
             }
         }
         public static string WorkerTask_AllFilesFilter {
@@ -5148,16 +4111,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("MainForm_UploadDebugLogWarning", resourceCulture);
             }
         }
-        public static string UploadTask_ThreadDoWork_URL_is_empty_ {
-            get {
-                return ResourceManager.GetString("UploadTask_ThreadDoWork_URL_is_empty_", resourceCulture);
-            }
-        }
-        public static string TaskSettingsForm_UpdateUploaderMenuNames_URL_shortener___0_ {
-            get {
-                return ResourceManager.GetString("TaskSettingsForm_UpdateUploaderMenuNames_URL_shortener___0_", resourceCulture);
-            }
-        }
         public static string ApplicationSettingsForm_cbStartWithWindows_Text {
             get {
                 return ResourceManager.GetString("ApplicationSettingsForm_cbStartWithWindows_Text", resourceCulture);
@@ -5178,16 +4131,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("FFmpegOnlySupports64BitOperatingSystems", resourceCulture);
             }
         }
-        public static string UploadTask_DoUploadJob_Uploading {
-            get {
-                return ResourceManager.GetString("UploadTask_DoUploadJob_Uploading", resourceCulture);
-            }
-        }
-        public static string UploadTask_CreateShareURLTask_Share_URL___0__ {
-            get {
-                return ResourceManager.GetString("UploadTask_CreateShareURLTask_Share_URL___0__", resourceCulture);
-            }
-        }
         public static string ApplicationSettingsForm_cbSteamShowInApp_CheckedChanged_For_settings_to_take_effect_ShareX_needs_to_be_reopened_from_Steam_ {
             get {
                 return ResourceManager.GetString("ApplicationSettingsForm_cbSteamShowInApp_CheckedChanged_For_settings_to_take_effect_ShareX_needs_to_be_reopened_from_Steam_", resourceCulture);
@@ -5203,11 +4146,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("FFmpegIsMissing", resourceCulture);
             }
         }
-        public static string TaskSettingsForm_UpdateUploaderMenuNames_File_uploader___0_ {
-            get {
-                return ResourceManager.GetString("TaskSettingsForm_UpdateUploaderMenuNames_File_uploader___0_", resourceCulture);
-            }
-        }
         public static string UploadTask_DoAfterCaptureJobs_Choose_a_folder_to_save {
             get {
                 return ResourceManager.GetString("UploadTask_DoAfterCaptureJobs_Choose_a_folder_to_save", resourceCulture);
@@ -5221,26 +4159,6 @@ namespace ShareX.Localization {
         public static string TaskHelpers_OpenQuickScreenColorPicker_Copied_to_clipboard___0_ {
             get {
                 return ResourceManager.GetString("TaskHelpers_OpenQuickScreenColorPicker_Copied_to_clipboard___0_", resourceCulture);
-            }
-        }
-        public static string WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_ {
-            get {
-                return ResourceManager.GetString("WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_", resourceCulture);
-            }
-        }
-        public static string UploadTask_CreateURLShortenerTask_Shorten_URL___0__ {
-            get {
-                return ResourceManager.GetString("UploadTask_CreateURLShortenerTask_Shorten_URL___0__", resourceCulture);
-            }
-        }
-        public static string ThisFeatureWillNotWorkWhenDisableUploadOptionIsEnabled {
-            get {
-                return ResourceManager.GetString("ThisFeatureWillNotWorkWhenDisableUploadOptionIsEnabled", resourceCulture);
-            }
-        }
-        public static string MainForm_tsmiTestTextUpload_Click_Text_upload_test {
-            get {
-                return ResourceManager.GetString("MainForm_tsmiTestTextUpload_Click_Text_upload_test", resourceCulture);
             }
         }
         public static string IntegrationHelpers_EditWithShareX {
@@ -5303,11 +4221,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("ScreenColorPicker", resourceCulture);
             }
         }
-        public static string TaskSettingsForm_UpdateUploaderMenuNames_Text_uploader___0_ {
-            get {
-                return ResourceManager.GetString("TaskSettingsForm_UpdateUploaderMenuNames_Text_uploader___0_", resourceCulture);
-            }
-        }
         public static string UploadTask_OnUploadCompleted_Done {
             get {
                 return ResourceManager.GetString("UploadTask_OnUploadCompleted_Done", resourceCulture);
@@ -5321,11 +4234,6 @@ namespace ShareX.Localization {
         public static string UploadTask_DownloadAndUpload_Downloading {
             get {
                 return ResourceManager.GetString("UploadTask_DownloadAndUpload_Downloading", resourceCulture);
-            }
-        }
-        public static string TaskSettingsForm_UpdateUploaderMenuNames_URL_sharing_service___0_ {
-            get {
-                return ResourceManager.GetString("TaskSettingsForm_UpdateUploaderMenuNames_URL_sharing_service___0_", resourceCulture);
             }
         }
         public static string Confirmation {
@@ -5418,11 +4326,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("HotkeyManager_ShowFailedHotkeys_Hotkey_registration_failed", resourceCulture);
             }
         }
-        public static string TaskSettingsForm_UpdateUploaderMenuNames_Image_uploader___0_ {
-            get {
-                return ResourceManager.GetString("TaskSettingsForm_UpdateUploaderMenuNames_Image_uploader___0_", resourceCulture);
-            }
-        }
         public static string ImageData_Write_Error_Message {
             get {
                 return ResourceManager.GetString("ImageData_Write_Error_Message", resourceCulture);
@@ -5441,11 +4344,6 @@ namespace ShareX.Localization {
         public static string ScreenshotDelay0S {
             get {
                 return ResourceManager.GetString("ScreenshotDelay0S", resourceCulture);
-            }
-        }
-        public static string YourSystemAdminDisabledTheUploadFeature {
-            get {
-                return ResourceManager.GetString("YourSystemAdminDisabledTheUploadFeature", resourceCulture);
             }
         }
         public static string UploadManager_UploadFolder_Folder_upload {
@@ -5512,23 +4410,12 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("MainMenuBuilder_NetworkMonitor", resourceCulture);
             }
         }
-        public static string MainMenuBuilder_RemoteStorageBrowser {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_RemoteStorageBrowser", resourceCulture);
-            }
-        }
         /// <summary>
         ///   Video trimmer
         /// </summary>
         public static string MainMenuBuilder_VideoTrimmer {
             get {
                 return ResourceManager.GetString("MainMenuBuilder_VideoTrimmer", resourceCulture);
-            }
-        }
-
-        public static string TaskHelpers_RemoteStorageNotConfigured {
-            get {
-                return ResourceManager.GetString("TaskHelpers_RemoteStorageNotConfigured", resourceCulture);
             }
         }
 
@@ -5589,7 +4476,6 @@ namespace ShareX.Localization {
         public static string ApplicationSettingsWindow_IconPackLegacy => ResourceManager.GetString("ApplicationSettingsWindow_IconPackLegacy", resourceCulture);
         public static string ApplicationSettingsWindow_IconPackModern => ResourceManager.GetString("ApplicationSettingsWindow_IconPackModern", resourceCulture);
         public static string ApplicationSettingsWindow_Icons => ResourceManager.GetString("ApplicationSettingsWindow_Icons", resourceCulture);
-        public static string TaskSettingsWindow_MultiRegionMode => ResourceManager.GetString("TaskSettingsWindow_MultiRegionMode", resourceCulture);
         public static string TaskSettingsWindow_CompactRegionCaptureToolbar => ResourceManager.GetString("TaskSettingsWindow_CompactRegionCaptureToolbar", resourceCulture);
         public static string MainMenuBuilder_RegionTransparent => ResourceManager.GetString("MainMenuBuilder_RegionTransparent", resourceCulture);
         public static string IconPackPrompt_ChangeLater => ResourceManager.GetString("IconPackPrompt_ChangeLater", resourceCulture);

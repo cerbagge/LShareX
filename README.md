@@ -16,13 +16,17 @@ Removed:
 - `ShareX.ImageEffectsLib` project (Image effects tool, image effect presets, "Add image effects" after capture task, `.sxie` import, task settings "Effects" page)
   - Thumbnail creation that used the removed `Resize` effect now calls `SkiaImageHelpers.ResizeImage` directly (same result).
 - Main window and tray menu entries: Workflows, After upload tasks, Destinations, Destination settings, Custom uploader settings, Donate, Follow ShareX, Discord (and the resource strings they used)
-- The `AddImageEffects` / `OpenInPhotoEditor` after capture tasks and `PhotoEditor` / `ImageEffects` hotkey types are hidden from the UI but kept in the enums, so existing ShareX settings files still load.
+- `ShareX.UploadersLib` project and every upload feature: upload destinations and uploader settings, custom uploaders (`.sxcu`), after upload tasks, URL shortening/sharing, remote deletion, Google Lens/Bing image search, remote storage browser, "Upload" main/tray menus, upload hotkeys, clipboard upload, uploader filters and `UploadersConfig.json`
+  - Upload results are replaced by a small local `UploadResult` class (errors and file paths only); captures are always saved locally.
+- The `AddImageEffects` / `OpenInPhotoEditor` / `ShowBeforeUploadWindow` / `UploadImageToHost` after capture tasks and the `PhotoEditor` / `ImageEffects` / upload hotkey types are hidden from the UI but kept in the enums, so existing ShareX settings files still load.
+- Resource strings that were only used by removed features.
 
 Changed:
 
 - Default after capture tasks: save image to file + copy image to clipboard + copy file to clipboard.
 - When both "Copy image to clipboard" and "Copy file to clipboard" are enabled, the image and the saved file are put on the clipboard together (image formats + `CF_HDROP`). Apps that can paste images get the image; apps that can't (file attachments, Explorer, upload fields) get the file. Screen recordings (MP4/GIF) are copied as files.
-- Multi region mode saves each selected region as its own image (each one is saved and copied separately) instead of one combined image with transparent gaps. "Capture last region" does the same for multiple regions.
+- Multi region capture is its own hotkey task, "Capture multiple regions". "Capture region" always captures a single region at once; the "Multi region mode" option in task settings was removed.
+- Multi region capture saves each selected region as its own image (each one is saved and copied separately) instead of one combined image with transparent gaps. "Capture last region" does the same for multiple regions.
 - Executable `LShareX.exe` (assembly name `LShareX`, root namespace still `ShareX`); window title, tray icon and Task Manager show `LShareX`.
 - Separated from an installed ShareX so both can run side by side:
   - Personal folder `Documents\LShareX` (settings, history, logs, screenshots), `%LocalAppData%\LShareX\PersonalPath.cfg`, system options registry key `HKLM\SOFTWARE\LShareX`

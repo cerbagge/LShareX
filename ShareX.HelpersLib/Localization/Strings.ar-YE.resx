@@ -792,6 +792,9 @@
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>التقاط مساحة</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>التقاط مناطق متعددة</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>التقاط مساحة (شفافة)</value>
   </data>

@@ -76,7 +76,7 @@ public partial class ActionsToolbarWindow : Window
             ToolbarItems.Children.RemoveAt(1);
         }
 
-        foreach (HotkeyType action in ApplicationState.Settings.ActionsToolbarList)
+        foreach (HotkeyType action in ApplicationState.Settings.ActionsToolbarList.Where(action => !RemovedFeatures.IsRemoved(action)))
         {
             if (action == HotkeyType.None)
             {

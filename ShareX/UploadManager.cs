@@ -28,7 +28,6 @@ using Avalonia.Platform.Storage;
 using ShareX.HelpersLib;
 using ShareX.Localization;
 using ShareX.Tools;
-using ShareX.UploadersLib;
 using System;
 using System.IO;
 using System.Linq;
@@ -151,18 +150,6 @@ namespace ShareX
                         DownloadAndUploadFile(url, taskSettings);
                         return;
                     }
-
-                    if (taskSettings.UploadSettings.ClipboardUploadShortenURL)
-                    {
-                        ShortenURL(url, taskSettings);
-                        return;
-                    }
-
-                    if (taskSettings.UploadSettings.ClipboardUploadShareURL)
-                    {
-                        ShareURL(url, taskSettings);
-                        return;
-                    }
                 }
 
                 if (taskSettings.UploadSettings.ClipboardUploadAutoIndexFolder && text.Length <= 260 && Directory.Exists(text))
@@ -256,18 +243,6 @@ namespace ShareX
             }
         }
 
-        public static async Task ShowTextUploadDialog(TaskSettings taskSettings = null)
-        {
-            if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
-
-            string content = await TextUploadWindow.ShowAsync();
-
-            if (!string.IsNullOrEmpty(content))
-            {
-                UploadText(content, taskSettings);
-            }
-        }
-
         public static void DragDropUpload(Avalonia.Input.IDataTransfer data, TaskSettings taskSettings = null)
         {
             taskSettings ??= TaskSettings.GetDefaultTaskSettings();
@@ -304,27 +279,6 @@ namespace ShareX
             if (!string.IsNullOrEmpty(url))
             {
                 DownloadAndUploadFile(url, taskSettings);
-            }
-        }
-
-        public static async Task ShowShortenURLDialog(TaskSettings taskSettings = null)
-        {
-            if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
-
-            string inputText = null;
-
-            string text = ClipboardHelpers.GetText(true);
-
-            if (URLHelpers.IsValidURL(text))
-            {
-                inputText = text;
-            }
-
-            string url = await ShortenURLWindow.ShowAsync(inputText);
-
-            if (!string.IsNullOrEmpty(url))
-            {
-                ShortenURL(url, taskSettings);
             }
         }
 
@@ -405,28 +359,6 @@ namespace ShareX
             }
         }
 
-        public static void UploadImage(Bitmap bmp, ImageDestination imageDestination, FileDestination imageFileDestination, TaskSettings taskSettings = null)
-        {
-            if (bmp != null)
-            {
-                if (taskSettings == null)
-                {
-                    taskSettings = TaskSettings.GetDefaultTaskSettings();
-                }
-
-                if (taskSettings.IsSafeTaskSettings)
-                {
-                    taskSettings.UseDefaultAfterCaptureJob = false;
-                    taskSettings.AfterCaptureJob = AfterCaptureTasks.UploadImageToHost;
-                    taskSettings.UseDefaultDestinations = false;
-                    taskSettings.ImageDestination = imageDestination;
-                    taskSettings.ImageFileDestination = imageFileDestination;
-                }
-
-                RunImageTask(bmp, taskSettings);
-            }
-        }
-
         public static void UploadText(string text, TaskSettings taskSettings = null, bool allowCustomText = false)
         {
             if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
@@ -460,52 +392,6 @@ namespace ShareX
             if (stream != null && stream.Length > 0 && !string.IsNullOrEmpty(fileName))
             {
                 WorkerTask task = WorkerTask.CreateDataUploaderTask(EDataType.Image, stream, fileName, taskSettings);
-                TaskManager.Start(task);
-            }
-        }
-
-        public static void ShortenURL(string url, TaskSettings taskSettings = null)
-        {
-            if (!string.IsNullOrEmpty(url))
-            {
-                if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
-
-                WorkerTask task = WorkerTask.CreateURLShortenerTask(url, taskSettings);
-                TaskManager.Start(task);
-            }
-        }
-
-        public static void ShortenURL(string url, UrlShortenerType urlShortener)
-        {
-            if (!string.IsNullOrEmpty(url))
-            {
-                TaskSettings taskSettings = TaskSettings.GetDefaultTaskSettings();
-                taskSettings.URLShortenerDestination = urlShortener;
-
-                WorkerTask task = WorkerTask.CreateURLShortenerTask(url, taskSettings);
-                TaskManager.Start(task);
-            }
-        }
-
-        public static void ShareURL(string url, TaskSettings taskSettings = null)
-        {
-            if (!string.IsNullOrEmpty(url))
-            {
-                if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
-
-                WorkerTask task = WorkerTask.CreateShareURLTask(url, taskSettings);
-                TaskManager.Start(task);
-            }
-        }
-
-        public static void ShareURL(string url, URLSharingServices urlSharingService)
-        {
-            if (!string.IsNullOrEmpty(url))
-            {
-                TaskSettings taskSettings = TaskSettings.GetDefaultTaskSettings();
-                taskSettings.URLSharingServiceDestination = urlSharingService;
-
-                WorkerTask task = WorkerTask.CreateShareURLTask(url, taskSettings);
                 TaskManager.Start(task);
             }
         }

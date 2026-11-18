@@ -357,7 +357,6 @@
                                 <StackPanel Spacing="4">
                                     <TextBlock Classes="section-title" Text="{x:Static res:Strings.ApplicationSettingsWindow_Windows}"/>
                                     <CheckBox Classes="setting" Content="{Binding StartWithWindowsText}" IsEnabled="{Binding StartWithWindowsEnabled}" IsChecked="{Binding StartWithWindows, Mode=TwoWay}"/>
-                                    <CheckBox Classes="setting" IsVisible="{Binding WindowsIntegrationVisible}" Content="{x:Static res:Strings.ApplicationSettingsWindow_ShowUploadWithShareXButtonInWindowsExplorerContextMenu}" IsChecked="{Binding ShellContextMenu, Mode=TwoWay}"/>
                                     <CheckBox Classes="setting" IsVisible="{Binding WindowsIntegrationVisible}" Content="{x:Static res:Strings.ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu}" IsChecked="{Binding EditWithShareX, Mode=TwoWay}"/>
                                     <CheckBox Classes="setting" IsVisible="{Binding WindowsIntegrationVisible}" Content="{x:Static res:Strings.ApplicationSettingsWindow_ShowShareXInSendToMenu}" IsChecked="{Binding SendToMenu, Mode=TwoWay}"/>
                                 </StackPanel>
@@ -755,37 +754,7 @@
 
                             <Border Classes="section-card" controls:SettingsSearch.IsPanel="True">
                                 <StackPanel Spacing="6">
-                                    <TextBlock Classes="section-title" Text="{x:Static res:Strings.ApplicationSettingsWindow_AdvancedUpload}"/>
-                                    <StackPanel>
-                                        <CheckBox Classes="setting" Content="{x:Static res:Strings.ApplicationSettingsWindow_DisableUpload}" IsChecked="{Binding DisableUpload, Mode=TwoWay}"/>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <CheckBox Classes="setting" Content="{x:Static res:Strings.ApplicationSettingsWindow_URLEncodeIgnoreEmoji}" IsChecked="{Binding URLEncodeIgnoreEmoji, Mode=TwoWay}"/>
-                                    </StackPanel>
-                                    <StackPanel>
-                                        <CheckBox Classes="setting" Content="{x:Static res:Strings.ApplicationSettingsWindow_ShowMultiUploadWarning}" IsChecked="{Binding ShowMultiUploadWarning, Mode=TwoWay}"/>
-                                    </StackPanel>
-                                    <Grid ColumnDefinitions="240,*" ColumnSpacing="8">
-                                        <StackPanel VerticalAlignment="Center">
-                                            <TextBlock Text="{x:Static res:Strings.ApplicationSettingsWindow_ShowLargeFileSizeWarning}" FontWeight="Normal"/>
-                                        </StackPanel>
-                                        <NumericUpDown Grid.Column="1" Classes="form-control" Minimum="0" Maximum="2147483647" Value="{Binding ShowLargeFileSizeWarning, Mode=TwoWay}"/>
-                                    </Grid>
-                                </StackPanel>
-                            </Border>
-
-                            <Border Classes="section-card" controls:SettingsSearch.IsPanel="True">
-                                <StackPanel Spacing="6">
                                     <TextBlock Classes="section-title" Text="{x:Static res:Strings.ApplicationSettingsWindow_AdvancedPaths}"/>
-                                    <StackPanel>
-                                        <CheckBox Classes="setting" Content="{x:Static res:Strings.ApplicationSettingsWindow_UseMachineSpecificUploadersConfig}" IsChecked="{Binding UseMachineSpecificUploadersConfig, Mode=TwoWay}"/>
-                                    </StackPanel>
-                                    <Grid ColumnDefinitions="240,*" ColumnSpacing="8">
-                                        <StackPanel VerticalAlignment="Center">
-                                            <TextBlock Text="{x:Static res:Strings.ApplicationSettingsWindow_CustomUploadersConfigPath}" FontWeight="Normal"/>
-                                        </StackPanel>
-                                        <TextBox Grid.Column="1" Classes="form-control" Text="{Binding CustomUploadersConfigPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-                                    </Grid>
                                     <Grid ColumnDefinitions="240,*" ColumnSpacing="8">
                                         <StackPanel VerticalAlignment="Center">
                                             <TextBlock Text="{x:Static res:Strings.ApplicationSettingsWindow_CustomHotkeysConfigPath}" FontWeight="Normal"/>

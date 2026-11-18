@@ -274,8 +274,8 @@ internal sealed class ThumbnailItemViewModel : INotifyPropertyChanged, IDisposab
         Title = !string.IsNullOrEmpty(info?.FileName) ? info.FileName : Path.GetFileName(info?.FilePath) ?? Strings.ThumbnailItemViewModel_UntitledTask;
         Status = !string.IsNullOrEmpty(info?.Status) ? info.Status : Task.Status.ToString();
         Details = info?.ToString() ?? string.Empty;
-        Progress = info?.Progress?.Percentage ?? 0;
-        IsProgressVisible = Task.IsWorking && info?.Progress != null;
+        Progress = 0;
+        IsProgressVisible = false;
         IsFailed = Task.Status == TaskStatus.Failed;
         PlaceholderIcon = GetPlaceholderIcon(info?.FilePath ?? info?.FileName);
         RefreshListColumns(info);
@@ -312,26 +312,7 @@ internal sealed class ThumbnailItemViewModel : INotifyPropertyChanged, IDisposab
             return;
         }
 
-        bool binaryUnits = ApplicationState.Settings.BinaryUnits;
-        var progress = info?.Progress;
-
-        if (status == TaskStatus.Working && progress != null && progress.Length > 0)
-        {
-            ListStatus = string.Format("{0:0.0}%", progress.Percentage);
-            ListProgress = string.Format("{0} / {1}", progress.Position.ToSizeString(binaryUnits), progress.Length.ToSizeString(binaryUnits));
-
-            if (progress.Speed > 0)
-            {
-                ListSpeed = ((long)progress.Speed).ToSizeString(binaryUnits) + "/s";
-            }
-
-            ListElapsed = Helpers.ProperTimeSpan(progress.Elapsed);
-            ListRemaining = Helpers.ProperTimeSpan(progress.Remaining);
-        }
-        else
-        {
-            ListStatus = !string.IsNullOrEmpty(info?.Status) ? info.Status : string.Empty;
-        }
+        ListStatus = !string.IsNullOrEmpty(info?.Status) ? info.Status : string.Empty;
 
         if (status == TaskStatus.Failed)
         {

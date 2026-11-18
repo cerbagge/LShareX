@@ -26,7 +26,6 @@
 #nullable enable
 
 using ShareX.HistoryLib;
-using ShareX.UploadersLib;
 using System;
 
 namespace ShareX;
@@ -34,7 +33,6 @@ namespace ShareX;
 internal static class ApplicationState
 {
     private static ApplicationConfig? _settings;
-    private static UploadersConfig? _uploadersConfig;
     private static HotkeysConfig? _hotkeysConfig;
 
     internal static ApplicationConfig Settings
@@ -45,14 +43,6 @@ internal static class ApplicationState
 
     internal static ApplicationConfig? SettingsOrNull => _settings;
     internal static TaskSettings DefaultTaskSettings { get; set; } = null!;
-
-    internal static UploadersConfig UploadersConfig
-    {
-        get => _uploadersConfig ?? throw new InvalidOperationException("Uploader settings have not been loaded.");
-        set => _uploadersConfig = value;
-    }
-
-    internal static UploadersConfig? UploadersConfigOrNull => _uploadersConfig;
 
     internal static HotkeysConfig HotkeysConfig
     {

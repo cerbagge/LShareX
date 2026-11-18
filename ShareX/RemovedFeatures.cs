@@ -25,18 +25,21 @@
 
 namespace ShareX
 {
-    // LShareX: the Photo editor (ShareX.PhotoEditor) and Image effects (ShareX.ImageEffectsLib) projects were removed.
-    // Their enum values are kept so that existing ShareX settings files still deserialize; they are only hidden from the UI.
+    // LShareX: the Photo editor (ShareX.PhotoEditor), Image effects (ShareX.ImageEffectsLib) and uploaders (ShareX.UploadersLib)
+    // were removed. Their enum values are kept so that existing ShareX settings files still deserialize; they are only hidden from the UI.
     internal static class RemovedFeatures
     {
         public static bool IsRemoved(HotkeyType hotkeyType)
         {
-            return hotkeyType is HotkeyType.PhotoEditor or HotkeyType.ImageEffects;
+            return hotkeyType is HotkeyType.PhotoEditor or HotkeyType.ImageEffects or
+                HotkeyType.FileUpload or HotkeyType.FolderUpload or HotkeyType.ClipboardUpload or HotkeyType.ClipboardUploadWithContentViewer or
+                HotkeyType.UploadText or HotkeyType.UploadURL or HotkeyType.DragDropUpload or HotkeyType.ShortenURL or HotkeyType.StopUploads;
         }
 
         public static bool IsRemoved(AfterCaptureTasks afterCaptureTask)
         {
-            return afterCaptureTask is AfterCaptureTasks.AddImageEffects or AfterCaptureTasks.OpenInPhotoEditor;
+            return afterCaptureTask is AfterCaptureTasks.AddImageEffects or AfterCaptureTasks.OpenInPhotoEditor or
+                AfterCaptureTasks.ShowBeforeUploadWindow or AfterCaptureTasks.UploadImageToHost;
         }
     }
 }

@@ -792,6 +792,9 @@ Doriți totuși să îl executați?</value>
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>Regiune de captură</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>Capturează mai multe regiuni</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>Regiune de captură (Transparentă)</value>
   </data>

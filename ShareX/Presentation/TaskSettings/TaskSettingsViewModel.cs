@@ -76,17 +76,14 @@ public sealed class TaskSettingsViewModel : INotifyPropertyChanged
         }
 
         NavigationItems.Add(Parent("general", Strings.TaskSettingsWindow_General, AppIcons.Settings,
-            Child("general-notifications", Strings.TaskSettingsWindow_Notifications, AppIcons.Bell)));
+            Child("general-notifications", Strings.TaskSettingsWindow_Notifications, AppIcons.Bell),
+            Child("upload-file-naming", Strings.TaskSettingsWindow_FileNaming, AppIcons.FileEdit)));
         NavigationItems.Add(Parent("image", Strings.TaskSettingsWindow_Image, AppIcons.Image,
             Child("image-thumbnail", Strings.TaskSettingsWindow_Thumbnail, AppIcons.Images)));
         NavigationItems.Add(Parent("capture", Strings.TaskSettingsWindow_Capture, AppIcons.Camera,
             Child("capture-region", Strings.TaskSettingsWindow_RegionCapture, AppIcons.Crop),
             Child("capture-screen-recorder", Strings.TaskSettingsWindow_ScreenRecorder, AppIcons.Video),
             Child("capture-ocr", Strings.TaskSettingsWindow_OCR, AppIcons.TextRecognition)));
-        NavigationItems.Add(Parent("upload", Strings.TaskSettingsWindow_Upload, AppIcons.Upload,
-            Child("upload-file-naming", Strings.TaskSettingsWindow_FileNaming, AppIcons.FileEdit),
-            Child("upload-clipboard", Strings.TaskSettingsWindow_ClipboardUpload, AppIcons.Clipboard),
-            Child("upload-filters", Strings.TaskSettingsWindow_UploaderFilters, AppIcons.Filter)));
         NavigationItems.Add(Parent("tools", Strings.TaskSettingsWindow_Tools, AppIcons.Wrench,
             Child("tools-image-editor", Strings.TaskSettingsWindow_ImageEditor, AppIcons.Image),
             Child("tools-mouse-highlighter", Strings.MouseHighlighter, AppIcons.PointerClick)));

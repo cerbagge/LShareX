@@ -792,6 +792,9 @@ Chcete jej přesto spustit?</value>
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>Zachytit oblast</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>Zachytit více oblastí</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>Zachytit oblast (průhledná)</value>
   </data>

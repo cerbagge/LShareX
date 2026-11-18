@@ -25,7 +25,6 @@
 
 using ShareX.HelpersLib;
 using ShareX.HistoryLib;
-using ShareX.UploadersLib;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -61,8 +60,6 @@ namespace ShareX
             }
         }
 
-        public ProgressManager Progress { get; set; }
-
         private string filePath;
 
         public string FilePath
@@ -90,57 +87,6 @@ namespace ShareX
         public string ThumbnailFilePath { get; set; }
         public EDataType DataType { get; set; }
         public TaskMetadata Metadata { get; set; }
-
-        public EDataType UploadDestination
-        {
-            get
-            {
-                if ((DataType == EDataType.Image && TaskSettings.ImageDestination == ImageDestination.FileUploader) ||
-                    (DataType == EDataType.Text && TaskSettings.TextDestination == TextDestination.FileUploader))
-                {
-                    return EDataType.File;
-                }
-
-                return DataType;
-            }
-        }
-
-        public string UploaderHost
-        {
-            get
-            {
-                if (IsUploadJob)
-                {
-                    switch (UploadDestination)
-                    {
-                        case EDataType.Image:
-                            return TaskSettings.ImageDestination.GetLocalizedDescription();
-                        case EDataType.Text:
-                            return TaskSettings.TextDestination.GetLocalizedDescription();
-                        case EDataType.File:
-                            switch (DataType)
-                            {
-                                case EDataType.Image:
-                                    return TaskSettings.ImageFileDestination.GetLocalizedDescription();
-                                case EDataType.Text:
-                                    return TaskSettings.TextFileDestination.GetLocalizedDescription();
-                                default:
-                                case EDataType.File:
-                                    return TaskSettings.FileDestination.GetLocalizedDescription();
-                            }
-                        case EDataType.URL:
-                            if (Job == TaskJob.ShareURL)
-                            {
-                                return TaskSettings.URLSharingServiceDestination.GetLocalizedDescription();
-                            }
-
-                            return TaskSettings.URLShortenerDestination.GetLocalizedDescription();
-                    }
-                }
-
-                return null;
-            }
-        }
 
         public DateTime TaskStartTime { get; set; }
         public DateTime TaskEndTime { get; set; }
@@ -208,7 +154,6 @@ namespace ShareX
                 FilePath = FilePath,
                 DateTime = TaskEndTime,
                 Type = DataType.ToString(),
-                Host = UploaderHost,
                 URL = Result.URL,
                 ThumbnailURL = Result.ThumbnailURL,
                 DeletionURL = Result.DeletionURL,

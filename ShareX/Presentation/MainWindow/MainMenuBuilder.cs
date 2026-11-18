@@ -29,7 +29,6 @@ using ShareX.HelpersLib;
 using ShareX.Icons;
 using ShareX.Localization;
 using ShareX.ScreenCaptureLib;
-using ShareX.UploadersLib;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -57,7 +56,6 @@ internal sealed class MainMenuBuilder
         return new List<MainNavigationSection>
         {
             new(Strings.MainMenuBuilder_Capture, AppIcons.Camera, BuildCaptureMenu),
-            new(Strings.MainMenuBuilder_Upload, AppIcons.Upload, BuildUploadMenu, uploadsEnabled),
             new(Strings.MainMenuBuilder_Tools, AppIcons.Wrench, BuildToolsMenu,
                 createCategories: BuildToolCategories),
             new(Strings.MainMenuBuilder_AfterCaptureTasks, AppIcons.AfterCaptureTasks, BuildAfterCaptureMenu),
@@ -79,7 +77,6 @@ internal sealed class MainMenuBuilder
         List<MainMenuEntry> items = new()
         {
             Parent(Strings.MainMenuBuilder_Capture, AppIcons.Camera, BuildCaptureMenu),
-            Parent(Strings.MainMenuBuilder_Upload, AppIcons.Upload, BuildUploadMenu, uploadsEnabled),
             CategoryParent(Strings.MainMenuBuilder_Tools, AppIcons.Wrench, BuildToolCategories),
             MainMenuEntry.Separator(),
             Parent(Strings.MainMenuBuilder_AfterCaptureTasks, AppIcons.AfterCaptureTasks, BuildAfterCaptureMenu),
@@ -212,20 +209,6 @@ internal sealed class MainMenuBuilder
         return items;
     }
 
-    private static IReadOnlyList<MainMenuEntry> BuildUploadMenu()
-    {
-        return new List<MainMenuEntry>
-        {
-            Item(Strings.MainMenuBuilder_UploadFile, AppIcons.FileUpload, () => UploadManager.UploadFile()),
-            Item(Strings.MainMenuBuilder_UploadFolder, AppIcons.FolderUpload, () => UploadManager.UploadFolder()),
-            Item(Strings.MainMenuBuilder_UploadClipboard, AppIcons.UploadClipboard, () => UploadManager.ClipboardUploadMainWindow()),
-            Item(Strings.MainMenuBuilder_UploadText, AppIcons.FileText, async () => await UploadManager.ShowTextUploadDialog()),
-            Item(Strings.MainMenuBuilder_UploadUrl, AppIcons.Link, async () => await UploadManager.UploadURL()),
-            Item(Strings.MainMenuBuilder_DragAndDropUpload, AppIcons.DragDropUpload, () => TaskHelpers.OpenDropWindow()),
-            Item(Strings.MainMenuBuilder_ShortenUrl, AppIcons.ShortLink, async () => await UploadManager.ShowShortenURLDialog())
-        };
-    }
-
     private static IReadOnlyList<MainMenuEntry> BuildToolsMenu()
     {
         List<MainMenuEntry> items = new();
@@ -285,8 +268,7 @@ internal sealed class MainMenuBuilder
             Tool(nameof(Strings.MainMenuBuilder_IndexFolder), Strings.MainMenuBuilder_IndexFolder, AppIcons.FolderTree, () => TaskHelpers.OpenDirectoryIndexer()),
             Tool(nameof(Strings.MainMenuBuilder_Metadata), Strings.MainMenuBuilder_Metadata, AppIcons.Tag, () => TaskHelpers.OpenMetadataWindow()),
             Tool(nameof(Strings.MainMenuBuilder_OCR), Strings.MainMenuBuilder_OCR, AppIcons.TextRecognition, async () => await TaskHelpers.OCRImage()),
-            Tool(nameof(Strings.MainMenuBuilder_QRCode), Strings.MainMenuBuilder_QRCode, AppIcons.QrCode, () => TaskHelpers.OpenQRCode()),
-            Tool(nameof(Strings.MainMenuBuilder_RemoteStorageBrowser), Strings.MainMenuBuilder_RemoteStorageBrowser, AppIcons.RemoteStorageBrowser, () => TaskHelpers.OpenRemoteStorageBrowser())
+            Tool(nameof(Strings.MainMenuBuilder_QRCode), Strings.MainMenuBuilder_QRCode, AppIcons.QrCode, () => TaskHelpers.OpenQRCode())
         ]),
         new(Strings.MainMenuBuilder_ToolCategorySystem,
         [
@@ -322,11 +304,6 @@ internal sealed class MainMenuBuilder
         return tasks.Select(task => (task, task.GetLocalizedDescription(), GetAfterCaptureTaskIcon(task))).ToArray();
     }
 
-    internal static IReadOnlyList<(AfterUploadTasks Task, string Header, string Icon)> GetAfterUploadTaskMenuOptions() =>
-        Helpers.GetEnums<AfterUploadTasks>().Skip(1)
-            .Select(task => (task, task.GetLocalizedDescription(), GetAfterUploadTaskIcon(task)))
-            .ToArray();
-
     internal static string GetAfterCaptureTaskIcon(AfterCaptureTasks task) => task switch
     {
         AfterCaptureTasks.ShowQuickTaskMenu => AppIcons.Menu,
@@ -355,117 +332,11 @@ internal sealed class MainMenuBuilder
         _ => AppIcons.Circle
     };
 
-    private static string GetAfterUploadTaskIcon(AfterUploadTasks task) => task switch
-    {
-        AfterUploadTasks.ShowAfterUploadWindow => AppIcons.Window,
-        AfterUploadTasks.UseURLShortener => AppIcons.ShortLink,
-        AfterUploadTasks.ShareURL => AppIcons.Share,
-        AfterUploadTasks.CopyURLToClipboard => AppIcons.ClipboardLink,
-        AfterUploadTasks.OpenURL => AppIcons.ExternalLink,
-        AfterUploadTasks.ShowQRCode => AppIcons.QrCode,
-        _ => AppIcons.Circle
-    };
-
-    internal static IReadOnlyList<MainMenuEntry> BuildDestinationsMenu(TaskSettings settings)
-    {
-        return new List<MainMenuEntry>
-        {
-            Parent(Strings.TaskSettingsForm_UpdateUploaderMenuNames_Image_uploader___0_,
-                () => GetImageUploaderName(settings), AppIcons.Image, () => BuildImageDestinations(settings)),
-            Parent(Strings.TaskSettingsForm_UpdateUploaderMenuNames_Text_uploader___0_,
-                () => GetTextUploaderName(settings), AppIcons.FileText, () => BuildTextDestinations(settings)),
-            Parent(Strings.TaskSettingsForm_UpdateUploaderMenuNames_File_uploader___0_,
-                () => settings.FileDestination.GetLocalizedDescription(), AppIcons.FileUpload, () => BuildEnumDestinations(
-                settings.FileDestination,
-                value => settings.FileDestination = value)),
-            Parent(Strings.TaskSettingsForm_UpdateUploaderMenuNames_URL_shortener___0_,
-                () => settings.URLShortenerDestination.GetLocalizedDescription(), AppIcons.ShortLink, () => BuildEnumDestinations(
-                settings.URLShortenerDestination,
-                value => settings.URLShortenerDestination = value)),
-            Parent(Strings.TaskSettingsForm_UpdateUploaderMenuNames_URL_sharing_service___0_,
-                () => settings.URLSharingServiceDestination.GetLocalizedDescription(), AppIcons.Share, () => BuildEnumDestinations(
-                settings.URLSharingServiceDestination,
-                value => settings.URLSharingServiceDestination = value))
-        };
-    }
-
-    private static string GetImageUploaderName(TaskSettings settings)
-    {
-        return settings.ImageDestination == ImageDestination.FileUploader
-            ? settings.ImageFileDestination.GetLocalizedDescription()
-            : settings.ImageDestination.GetLocalizedDescription();
-    }
-
-    private static string GetTextUploaderName(TaskSettings settings)
-    {
-        return settings.TextDestination == TextDestination.FileUploader
-            ? settings.TextFileDestination.GetLocalizedDescription()
-            : settings.TextDestination.GetLocalizedDescription();
-    }
-
-    private static IReadOnlyList<MainMenuEntry> BuildImageDestinations(TaskSettings settings)
-    {
-        return Helpers.GetEnums<ImageDestination>().Select(value => new MainMenuEntry(
-            value.GetLocalizedDescription(),
-            string.Empty,
-            () => settings.ImageDestination = value,
-            createChildren: value == ImageDestination.FileUploader
-                ? () => BuildEnumDestinations(settings.ImageFileDestination,
-                    selected =>
-                    {
-                        settings.ImageDestination = ImageDestination.FileUploader;
-                        settings.ImageFileDestination = selected;
-                    })
-                : null,
-            isChecked: settings.ImageDestination == value,
-            toggleType: MainMenuToggleType.Radio,
-            staysOpenOnClick: true,
-            boldWhenChecked: true)).ToArray();
-    }
-
-    private static IReadOnlyList<MainMenuEntry> BuildTextDestinations(TaskSettings settings)
-    {
-        return Helpers.GetEnums<TextDestination>().Select(value => new MainMenuEntry(
-            value.GetLocalizedDescription(),
-            string.Empty,
-            () => settings.TextDestination = value,
-            createChildren: value == TextDestination.FileUploader
-                ? () => BuildEnumDestinations(settings.TextFileDestination,
-                    selected =>
-                    {
-                        settings.TextDestination = TextDestination.FileUploader;
-                        settings.TextFileDestination = selected;
-                    })
-                : null,
-            isChecked: settings.TextDestination == value,
-            toggleType: MainMenuToggleType.Radio,
-            staysOpenOnClick: true,
-            boldWhenChecked: true)).ToArray();
-    }
-
-    private static IReadOnlyList<MainMenuEntry> BuildEnumDestinations<T>(T selected, Action<T> setValue) where T : struct, Enum
-    {
-        return Helpers.GetEnums<T>().Select(value => new MainMenuEntry(
-            value.GetLocalizedDescription(),
-            string.Empty,
-            () => setValue(value),
-            isChecked: EqualityComparer<T>.Default.Equals(selected, value),
-            toggleType: MainMenuToggleType.Radio,
-            staysOpenOnClick: true,
-            boldWhenChecked: true)).ToArray();
-    }
-
     private IReadOnlyList<MainMenuEntry> BuildDebugMenu()
     {
-        bool uploadsEnabled = !SystemOptions.DisableUpload;
         return new List<MainMenuEntry>
         {
-            Item(Strings.MainMenuBuilder_ShowDebugLog, AppIcons.FileText, () => Run(MainFormCommand.DebugLog)),
-            Item(Strings.MainMenuBuilder_TestImageUpload, AppIcons.ImageUpload, () => Run(MainFormCommand.TestImageUpload), uploadsEnabled),
-            Item(Strings.MainMenuBuilder_TestTextUpload, AppIcons.FileUpload, () => Run(MainFormCommand.TestTextUpload), uploadsEnabled),
-            Item(Strings.MainMenuBuilder_TestFileUpload, AppIcons.Upload, () => Run(MainFormCommand.TestFileUpload), uploadsEnabled),
-            Item(Strings.MainMenuBuilder_TestUrlShortener, AppIcons.ShortLink, () => Run(MainFormCommand.TestUrlShortener), uploadsEnabled),
-            Item(Strings.MainMenuBuilder_TestUrlSharing, AppIcons.Share, () => Run(MainFormCommand.TestUrlSharing), uploadsEnabled)
+            Item(Strings.MainMenuBuilder_ShowDebugLog, AppIcons.FileText, () => Run(MainFormCommand.DebugLog))
         };
     }
 
@@ -513,13 +384,5 @@ internal sealed class MainMenuBuilder
     private static MainMenuEntry CategoryParent(string header, string icon,
         Func<IReadOnlyList<MainMenuCategory>> categories, bool isVisible = true) =>
         new(header, icon, createCategories: categories, isVisible: isVisible);
-
-    private static MainMenuEntry Parent(string headerFormat, Func<string> createAccentText, string icon,
-        Func<IReadOnlyList<MainMenuEntry>> children, bool isVisible = true)
-    {
-        string CreateHeader() => string.Format(headerFormat, createAccentText());
-        return new MainMenuEntry(CreateHeader(), icon, createChildren: children, isVisible: isVisible,
-            createHeader: CreateHeader, createAccentText: createAccentText);
-    }
 
 }

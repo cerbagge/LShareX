@@ -792,6 +792,9 @@
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>領域をキャプチャー</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>複数の領域をキャプチャ</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>領域をキャプチャー (透過モード)</value>
   </data>

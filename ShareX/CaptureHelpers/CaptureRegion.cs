@@ -35,6 +35,9 @@ namespace ShareX
 {
     public class CaptureRegion : CaptureBase
     {
+        // LShareX: only the "Capture multiple regions" hotkey task allows selecting several regions.
+        public bool MultiRegion { get; set; }
+
         protected override TaskMetadata Execute(TaskSettings taskSettings)
         {
             return null;
@@ -86,7 +89,7 @@ namespace ShareX
                 RegionCaptureOptions = taskSettings.CaptureSettingsReference.RegionCaptureOptions,
                 ImageEditorOptions = taskSettings.ToolsSettingsReference.ImageEditorOptions,
                 EnableAnnotations = !taskSettings.AdvancedSettings.RegionCaptureDisableAnnotation,
-                AllowMultipleRegions = true,
+                AllowMultipleRegions = MultiRegion,
                 CursorBitmap = cursorBitmap,
                 CursorPosition = cursorPosition
             };

@@ -792,6 +792,9 @@ Bạn vẫn muốn chạy tệp này chứ?</value>
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>Chụp theo vùng</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>Chụp nhiều vùng</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>Chụp theo vùng (Trong suốt)</value>
   </data>

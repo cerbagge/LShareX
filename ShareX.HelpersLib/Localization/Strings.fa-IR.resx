@@ -792,6 +792,9 @@
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>ضبط ناحیه</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>گرفتن چند ناحیه</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>ضبط ناحیه (شفاف)</value>
   </data>

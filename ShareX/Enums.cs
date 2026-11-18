@@ -231,6 +231,8 @@ namespace ShareX
         [Category(EnumExtensions.HotkeyType_Category_ScreenCapture)]
         RectangleRegion,
         [Category(EnumExtensions.HotkeyType_Category_ScreenCapture)]
+        RectangleRegionMulti, // LShareX
+        [Category(EnumExtensions.HotkeyType_Category_ScreenCapture)]
         RectangleTransparent,
         [Category(EnumExtensions.HotkeyType_Category_ScreenCapture)]
         CustomRegion,

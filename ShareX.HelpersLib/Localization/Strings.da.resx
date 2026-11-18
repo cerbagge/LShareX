@@ -792,6 +792,9 @@ Vil du stadig køre den?</value>
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>Tag billede af område</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>Optag flere områder</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>Tag billede af område (gennemsigtigt)</value>
   </data>

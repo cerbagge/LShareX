@@ -39,8 +39,6 @@ using ShareX.AvaloniaUI.Theming;
 using ShareX.HelpersLib;
 using ShareX.Icons;
 using ShareX.Localization;
-using ShareX.UploadersLib;
-using ShareX.UploadersLib.FileUploaders;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -1722,7 +1720,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
         UploadInfoStatus[] statuses = _uploadInfoManager.SelectedItems ?? Array.Empty<UploadInfoStatus>();
         bool hasSelection = selected != null;
         bool isWorking = selectedTasks.Any(x => x.IsWorking);
-        bool canDeleteRemotely = selectedModels.Length == 1 && !isWorking && CanDeleteAmazonS3Object(selected);
 
         List<MainMenuEntry> entries = new()
         {
@@ -1759,26 +1756,14 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             Item(Strings.MainWindow_DeleteSelectedFile, AppIcons.FileDelete, DeleteSelectedFiles,
                 hasSelection && !isWorking && selected!.IsFileExist,
                 new KeyGesture(Key.Delete, KeyModifiers.Shift)),
-            Item(Strings.MainWindow_DeleteItemRemotely, AppIcons.CloudOff, DeleteSelectedItemRemotelyAsync,
-                canDeleteRemotely),
-            Submenu(Strings.MainWindow_ShortenSelectedUrl, AppIcons.ShortLink, BuildUrlShortenerMenu,
-                !SystemOptions.DisableUpload && hasSelection && !isWorking && selected!.IsURLExist),
-            Submenu(Strings.MainWindow_ShareSelectedUrl, AppIcons.Share, BuildUrlSharingMenu,
-                !SystemOptions.DisableUpload && hasSelection && !isWorking && selected!.IsURLExist),
             Item(Strings.MainWindow_AnalyzeImage, AppIcons.Robot, _uploadInfoManager.AnalyzeImage,
                 hasSelection && !isWorking && selected!.IsImageFile),
-            Item(Strings.MainWindow_SearchWithGoogleLens, AppIcons.Search, _uploadInfoManager.SearchImageUsingGoogleLens,
-                hasSelection && !isWorking && selected!.IsURLExist),
-            Item(Strings.MainWindow_SearchWithBingVisualSearch, AppIcons.InspectWindow, _uploadInfoManager.SearchImageUsingBing,
-                hasSelection && !isWorking && selected!.IsURLExist),
             Item(Strings.MainWindow_ShowQRCode, AppIcons.QrCode, _uploadInfoManager.ShowQRCode,
                 hasSelection && !isWorking && selected!.IsURLExist),
             Item(Strings.MainWindow_OCRImage, AppIcons.TextRecognition, async () => await _uploadInfoManager.OCRImage(),
                 hasSelection && !isWorking && selected!.IsImageFile),
             Submenu(Strings.MainWindow_CombineImagesDialog, AppIcons.Combine, BuildCombineImagesMenu,
                 hasSelection && !isWorking && statuses.Count(x => x.IsImageFile) > 1),
-            Item(Strings.MainWindow_ShowResponse, AppIcons.FileText, _uploadInfoManager.ShowResponse,
-                hasSelection && !isWorking && !string.IsNullOrEmpty(selected!.Info.Result.Response)),
             MainMenuEntry.Separator(),
             Item(ClearTasksText, AppIcons.ClearList, ClearTasks, ThumbnailItems.Count > 0),
             CreateSwitchTaskViewModeItem()
@@ -1868,14 +1853,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
                 async () => await action.RunAsync(filePath))).ToArray();
     }
 
-    private IReadOnlyList<MainMenuEntry> BuildUrlShortenerMenu() =>
-        Helpers.GetEnums<UrlShortenerType>().Select(value => Item(value.GetLocalizedDescription(), AppIcons.ShortLink,
-            () => _uploadInfoManager.ShortenURL(value))).ToArray();
-
-    private IReadOnlyList<MainMenuEntry> BuildUrlSharingMenu() =>
-        Helpers.GetEnums<URLSharingServices>().Select(value => Item(value.GetLocalizedDescription(), AppIcons.Share,
-            () => _uploadInfoManager.ShareURL(value))).ToArray();
-
     private IReadOnlyList<MainMenuEntry> BuildCombineImagesMenu() => new List<MainMenuEntry>
     {
             Item(Strings.MainWindow_Horizontally, AppIcons.Rows, () => _uploadInfoManager.CombineImages(ImageOrientation.Horizontal)),
@@ -1897,58 +1874,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             _uploadInfoManager.DeleteFiles();
             RemoveSelectedTasks();
         }
-    }
-
-    private static bool CanDeleteAmazonS3Object(UploadInfoStatus? selected)
-    {
-        if (selected?.Info is not TaskInfo info ||
-            string.IsNullOrEmpty(info.Result?.URL) ||
-            !info.IsUploadJob ||
-            info.UploadDestination != EDataType.File ||
-            info.TaskSettings.GetFileDestinationByDataType(info.DataType) != FileDestination.AmazonS3)
-        {
-            return false;
-        }
-
-        return ApplicationState.UploadersConfigOrNull != null &&
-            UploadersConfigValidator.Validate(FileDestination.AmazonS3, ApplicationState.UploadersConfig);
-    }
-
-    private async Task DeleteSelectedItemRemotelyAsync()
-    {
-        UploadInfoStatus? selected = _uploadInfoManager.SelectedItem;
-
-        if (!CanDeleteAmazonS3Object(selected))
-        {
-            return;
-        }
-
-        if (MessageBox.Show(Strings.MainWindow_DeleteItemRemotelyConfirmation,
-            "ShareX - " + Strings.MainWindow_RemoteDeletion,
-            MessageBoxButtons.YesNo) != MessageBoxResult.Yes)
-        {
-            return;
-        }
-
-        bool isSuccess = false;
-
-        try
-        {
-            AmazonS3 uploader = new AmazonS3(ApplicationState.UploadersConfig.AmazonS3Settings);
-
-            if (uploader.TryGetObjectKey(selected!.Info.Result.URL, out string objectKey))
-            {
-                isSuccess = await uploader.DeleteObjectAsync(objectKey);
-            }
-        }
-        catch (Exception ex)
-        {
-            DebugHelper.WriteException(ex);
-        }
-
-        TaskHelpers.ShowNotificationTip(
-            isSuccess ? Strings.MainWindow_RemoteDeleteSucceeded : Strings.MainWindow_RemoteDeleteFailed,
-            "ShareX - " + Strings.MainWindow_RemoteDeletion);
     }
 
     private void ClearTasks()

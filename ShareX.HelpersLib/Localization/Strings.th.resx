@@ -792,6 +792,9 @@
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>จับภาพ พื้นที่</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>จับภาพหลายพื้นที่</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>จับภาพ พื้นที่ (โปร่งใส)</value>
   </data>

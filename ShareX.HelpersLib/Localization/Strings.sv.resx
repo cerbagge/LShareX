@@ -792,6 +792,9 @@ Vill du ändå köra det?</value>
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>Ta bild av område</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>Fånga flera områden</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>Ta bild av område (genomskinligt)</value>
   </data>

@@ -859,6 +859,9 @@ namespace ShareX.HelpersLib.Localization {
         public static string HotkeyType_RectangleRegion {
             get { return ResourceManager.GetString("HotkeyType_RectangleRegion", resourceCulture); }
         }
+        public static string HotkeyType_RectangleRegionMulti {
+            get { return ResourceManager.GetString("HotkeyType_RectangleRegionMulti", resourceCulture); }
+        }
         public static string HotkeyType_Ruler {
             get { return ResourceManager.GetString("HotkeyType_Ruler", resourceCulture); }
         }

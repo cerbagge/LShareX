@@ -1901,7 +1901,7 @@ public partial class RegionCaptureWindow : Window
             selection.Height >= RegionCaptureOptions.MinimumSize;
     }
 
-    private bool IsMultiRegionMode => _request is { AllowMultipleRegions: true, RegionCaptureOptions.MultiRegionMode: true };
+    private bool IsMultiRegionMode => _request is { AllowMultipleRegions: true };
 
     private bool IsQuickCapture => _request?.RegionCaptureOptions.QuickCapture == true && !IsMultiRegionMode;
 

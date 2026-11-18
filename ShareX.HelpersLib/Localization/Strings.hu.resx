@@ -792,6 +792,9 @@ Ennek ellenére szeretné futtatni?</value>
   <data name="HotkeyType_RectangleRegion" xml:space="preserve">
     <value>Téglalap régió képlopás</value>
   </data>
+  <data name="HotkeyType_RectangleRegionMulti" xml:space="preserve">
+    <value>Több terület rögzítése</value>
+  </data>
   <data name="HotkeyType_RectangleTransparent" xml:space="preserve">
     <value>Téglalap régió képlopás (Átlátszó)</value>
   </data>

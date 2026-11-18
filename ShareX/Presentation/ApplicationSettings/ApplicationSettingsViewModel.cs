@@ -1007,7 +1007,6 @@ public sealed class ApplicationSettingsViewModel : INotifyPropertyChanged, IDisp
             Nav("settings", Strings.ApplicationSettingsWindow_Settings, AppIcons.DatabaseBackup),
             Nav("main-window", Strings.ApplicationSettingsWindow_MainWindow, AppIcons.Monitor),
             Nav("clipboard-formats", Strings.ApplicationSettingsWindow_ClipboardFormats, AppIcons.ClipboardList),
-            Nav("upload", Strings.ApplicationSettingsWindow_Upload, AppIcons.Upload),
             Nav("history", Strings.ApplicationSettingsWindow_History, AppIcons.History),
             Nav("print", Strings.ApplicationSettingsWindow_Print, AppIcons.Printer),
             Nav("proxy", Strings.ApplicationSettingsWindow_Proxy, AppIcons.Network),
