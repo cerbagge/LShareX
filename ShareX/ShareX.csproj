@@ -2,6 +2,9 @@
   <PropertyGroup>
     <TargetFramework>net10.0-windows10.0.22621.0</TargetFramework>
     <OutputType>WinExe</OutputType>
+    <!-- LShareX: executable is LShareX.exe. RootNamespace stays ShareX. -->
+    <AssemblyName>LShareX</AssemblyName>
+    <RootNamespace>ShareX</RootNamespace>
     <ApplicationIcon>ShareX_Icon.ico</ApplicationIcon>
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Description>Screen capture, file sharing and productivity tool</Description>

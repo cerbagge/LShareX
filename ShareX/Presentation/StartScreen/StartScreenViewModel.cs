@@ -258,7 +258,7 @@ public sealed class StartScreenViewModel : INotifyPropertyChanged, IDisposable
         }
 
         string countryCode = LanguageHelper.GetCultureName(language).Split('-')[1].ToLowerInvariant();
-        using Stream stream = AssetLoader.Open(new Uri($"avares://ShareX/Resources/Flags/{countryCode}.png"));
+        using Stream stream = AssetLoader.Open(new Uri($"avares://LShareX/Resources/Flags/{countryCode}.png"));
         return new AvaloniaBitmap(stream);
     }
 

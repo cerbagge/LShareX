@@ -21,6 +21,7 @@ Changed:
 
 - Default after capture tasks: save image to file + copy image to clipboard + copy file to clipboard.
 - When both "Copy image to clipboard" and "Copy file to clipboard" are enabled, the image and the saved file are put on the clipboard together (image formats + `CF_HDROP`). Apps that can paste images get the image; apps that can't (file attachments, Explorer, upload fields) get the file. Screen recordings (MP4/GIF) are copied as files.
+- Executable `LShareX.exe` (assembly name `LShareX`, root namespace still `ShareX`); window title, tray icon and Task Manager show `LShareX`.
 - Separated from an installed ShareX so both can run side by side:
   - Personal folder `Documents\LShareX` (settings, history, logs, screenshots), `%LocalAppData%\LShareX\PersonalPath.cfg`, system options registry key `HKLM\SOFTWARE\LShareX`
   - Own single instance mutex and pipe name

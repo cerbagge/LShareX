@@ -1198,7 +1198,7 @@ public sealed class ApplicationSettingsViewModel : INotifyPropertyChanged, IDisp
 
         string resourceName = LanguageHelper.GetCultureName(language).Split('-')[1].ToLowerInvariant();
 
-        using Stream stream = AssetLoader.Open(new Uri($"avares://ShareX/Resources/Flags/{resourceName}.png"));
+        using Stream stream = AssetLoader.Open(new Uri($"avares://LShareX/Resources/Flags/{resourceName}.png"));
         return new AvaloniaBitmap(stream);
     }
 

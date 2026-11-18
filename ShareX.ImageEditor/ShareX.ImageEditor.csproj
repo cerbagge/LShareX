@@ -23,10 +23,6 @@
     <EmbeddedResource Include="Assets\Cursors\*.cur" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!-- The Photo editor applies effect parameters through EffectParameter.Apply. -->
-    <InternalsVisibleTo Include="ShareX.PhotoEditor" />
-  </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Localization\Strings.resx">

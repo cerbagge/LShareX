@@ -49,7 +49,7 @@ namespace ShareX.NativeMessagingHost
                     {
                         host.Write(input);
 
-                        string filePath = FileHelpers.GetAbsolutePath("ShareX.exe");
+                        string filePath = FileHelpers.GetAbsolutePath("LShareX.exe");
                         string tempFilePath = FileHelpers.GetTempFilePath("json");
                         File.WriteAllText(tempFilePath, input, Encoding.UTF8);
                         string argument = $"-NativeMessagingInput \"{tempFilePath}\"";
