@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Schaltfläche „Im ShareX-Bildeditor bearbeiten“ im Kontextmenü des Windows-Explorers anzeigen</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Schaltfläche „Im ShareX-Fotoeditor bearbeiten“ im Kontextmenü des Windows-Explorers anzeigen</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Vor dem Löschen von Dateien um Bestätigung bitten</value>
   </data>
@@ -1613,9 +1610,6 @@ Bitte wähle ein anderes Tastenkürzel aus oder beende das widersprüchliche Pro
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Bildeditor</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Bildeffekte</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Bildverlauf...</value>
   </data>
@@ -1658,12 +1652,6 @@ Bitte wähle ein anderes Tastenkürzel aus oder beende das widersprüchliche Pro
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Netzwerkmonitor...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Neu</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Keine Bildeffekt-Voreinstellungen</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Keine Fenster gefunden</value>
   </data>
@@ -1672,9 +1660,6 @@ Bitte wähle ein anderes Tastenkürzel aus oder beende das widersprüchliche Pro
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Öffnen</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Fotoeditor</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>An Bildschirm anheften</value>
@@ -1805,9 +1790,6 @@ Bitte wähle ein anderes Tastenkürzel aus oder beende das widersprüchliche Pro
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Workflows</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Bildeffekte hinzufügen...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Immer im Vordergrund</value>
   </data>
@@ -1852,9 +1834,6 @@ Bitte wähle ein anderes Tastenkürzel aus oder beende das widersprüchliche Pro
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Bild bearbeiten</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>In Fotoeditor bearbeiten...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Datei</value>
@@ -2531,9 +2510,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Bearbeiten...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Effekte</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Aktion aktivieren</value>
   </data>
@@ -2620,12 +2596,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Bildeditor</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Bildeffekte</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Bildeffekte konfigurieren...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Bilderweiterungen</value>
@@ -2824,9 +2794,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>OCR-Sprachen sind nicht verfügbar</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Effekte nur auf Bereichsaufnahmen anwenden</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Format zum Öffnen von URLs</value>
@@ -3047,9 +3014,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Beenden bestätigen</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Fenster für Bildeffekte nach der Aufnahme anzeigen</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Dialog zum Einfügen von Bildern anzeigen</value>
   </data>
@@ -3182,9 +3146,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Namensmuster für Datei-Uploads verwenden</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Zufälligen Bildeffekt verwenden</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Quadratische Lupe verwenden</value>
   </data>
@@ -3235,9 +3196,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Aktionen können unter Aufgaben nach der Aufnahme → Aktionen ausführen aktiviert oder deaktiviert werden.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Bildeffekte können unter Aufgaben nach der Aufnahme → Bildeffekte hinzufügen aktiviert oder deaktiviert werden.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Beim Öffnen an Fenster anpassen</value>
@@ -3325,11 +3283,6 @@ Möchten Sie die aktive Bildschirmaufzeichnung abbrechen?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>Konfiguration {0} ist ungültig oder fehlt. Zur Konfiguration überprüfen Sie das Fenster "Zieleinstellungen".</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Möchten Sie die Bildeffekte aktivieren?
-
-Sie können sie später im Menü „Aufgaben nach der Aufnahme“ deaktivieren.</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Möchten Sie das Hochladen der Zwischenablage wiederholen?</value>

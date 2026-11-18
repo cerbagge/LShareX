@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Knop "Bewerken in ShareX-afbeeldingseditor" weergeven in contextmenu van Windows Verkenner</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Knop "Bewerken in ShareX-foto-editor" weergeven in contextmenu van Windows Verkenner</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Om bevestiging vragen voordat bestanden worden verwijderd</value>
   </data>
@@ -1613,9 +1610,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Afbeelding bewerkenor</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Afbeeldingseffecten</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Afbeeldingsgeschiedenis...</value>
   </data>
@@ -1658,12 +1652,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Netwerkmonitor...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Nieuw</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Geen voorinstellingen voor afbeeldingseffecten</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Geen vensters gevonden</value>
   </data>
@@ -1672,9 +1660,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Openen</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Foto-editor</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Pin to scherm</value>
@@ -1805,9 +1790,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Werkstromen</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Toevoegen afbeelding effects...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Altijd op de voorgrond</value>
   </data>
@@ -1852,9 +1834,6 @@ Gelieve een andere sneltoets te selecteren of sluit het conflicterende programma
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Bewerken afbeelding</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Bewerken in foto-editor...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Bestand</value>
@@ -2531,9 +2510,6 @@ Do you want to abort the active scherm opname?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Bewerken...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Effecten</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Actie inschakelen</value>
   </data>
@@ -2620,12 +2596,6 @@ Do you want to abort the active scherm opname?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Afbeelding bewerkenor</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Afbeeldingseffecten</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Configuratie van afbeeldingseffecten...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Afbeeldingsextensies</value>
@@ -2824,9 +2794,6 @@ Do you want to abort the active scherm opname?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>OCR-talen zijn niet beschikbaar</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Effecten alleen toepassen op gebiedsopname</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Indeling voor URL openen</value>
@@ -3047,9 +3014,6 @@ Do you want to abort the active scherm opname?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Afsluitbevestiging tonen</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Venster voor afbeeldingseffecten tonen na opname</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Dialoogvenster voor afbeelding invoegen tonen</value>
   </data>
@@ -3182,9 +3146,6 @@ Do you want to abort the active scherm opname?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Naampatroon gebruiken voor bestandsuploads</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Willekeurig afbeeldingseffect gebruiken</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Vierkant vergrootglas gebruiken</value>
   </data>
@@ -3235,9 +3196,6 @@ Do you want to abort the active scherm opname?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>U kunt acties in- of uitschakelen via Taken na vastleggen → Acties uitvoeren.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>U kunt afbeeldingseffecten in- of uitschakelen via Taken na vastleggen → Afbeeldingseffecten toevoegen.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Bij openen passend zoomen</value>
@@ -3326,11 +3284,6 @@ Do you want to abort the active scherm opname?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} configuration is invalid or missing. Please check "Bestemmingsinstellingen" venster to configure it.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Would you like to inschakelen afbeelding effects?
-
-You can later disable it from "After opname taken" menu.</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Would you like to retry klembord uploaden?</value>

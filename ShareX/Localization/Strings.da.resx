@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Vis knappen ”Rediger i ShareX-billedredigering” i Stifinders hurtigmenu</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Vis knappen ”Rediger i ShareX-fotoredigering” i Stifinders hurtigmenu</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Bed om bekræftelse før sletning af filer</value>
   </data>
@@ -1613,9 +1610,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Billedredigering...</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Billedeffekter...</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Billedhistorik...</value>
   </data>
@@ -1658,12 +1652,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Netværksovervågning...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Ny</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Ingen forudindstillinger for billedeffekter</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Ingen vinduer blev fundet</value>
   </data>
@@ -1672,9 +1660,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Åbn</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Fotoredigering...</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Fastgør på skærmen...</value>
@@ -1805,9 +1790,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Arbejdsforløb</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Tilføj billedeffekter...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Altid øverst</value>
   </data>
@@ -1852,9 +1834,6 @@ Vælg en anden genvejstast, eller afslut det program, der forårsager konflikten
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Rediger billede...</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Rediger i fotoredigering...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Fil</value>
@@ -2531,9 +2510,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Rediger...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Effekter</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Aktivér handling</value>
   </data>
@@ -2620,12 +2596,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Billedredigering</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Billedeffekter</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Konfiguration af billedeffekter...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Billedfiltypenavn</value>
@@ -2824,9 +2794,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>OCR-sprog er ikke tilgængelige</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Anvend kun effekter ved områdeoptagelse</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Format for Åbn URL</value>
@@ -3047,9 +3014,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Vis bekræftelse ved avslut</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Vis vinduet Billedeffekter efter optagelse</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Vis dialogboksen Indsæt billede</value>
   </data>
@@ -3182,9 +3146,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Brug navnemønster for filuploads</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Brug tilfældig billedeffekt</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Brug kvadratisk forstørrelsesglas</value>
   </data>
@@ -3235,9 +3196,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Du kan aktivere eller deaktivere handlinger under Opgaver efter optagelse → Udfør handlinger.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Du kan aktivere eller deaktivere billedeffekter under Opgaver efter optagelse → Tilføj billedeffekter.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Tilpas zoom ved åbning</value>
@@ -3326,11 +3284,6 @@ Vil du afbryde den aktive skærmoptagelse?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>Konfigurationen for {0} er ugyldig eller mangler. Kontrollér den i vinduet "Destinationsindstillinger".</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Vil du aktivere billedeffekter?
-
-Du kan deaktivere dem senere fra menuen ”Opgaver efter optagelse”.</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Vil du forsøge upload fra udklipsholder igen?</value>

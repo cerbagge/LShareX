@@ -1,4 +1,4 @@
-﻿#region License Information (GPL v3)
+#region License Information (GPL v3)
 
 /*
     ShareX - A program that allows you to take screenshots and share any file type
@@ -23,33 +23,20 @@
 
 #endregion License Information (GPL v3)
 
-using ShareX.HelpersLib;
-using SkiaSharp;
-using System.ComponentModel;
-
-namespace ShareX.ImageEffectsLib
+namespace ShareX
 {
-    internal class Saturation : ImageEffect
+    // LShareX: the Photo editor (ShareX.PhotoEditor) and Image effects (ShareX.ImageEffectsLib) projects were removed.
+    // Their enum values are kept so that existing ShareX settings files still deserialize; they are only hidden from the UI.
+    internal static class RemovedFeatures
     {
-        [DefaultValue(1f)]
-        public float Value { get; set; }
-
-        public Saturation()
+        public static bool IsRemoved(HotkeyType hotkeyType)
         {
-            this.ApplyDefaultPropertyValues();
+            return hotkeyType is HotkeyType.PhotoEditor or HotkeyType.ImageEffects;
         }
 
-        public override SKBitmap Apply(SKBitmap bmp)
+        public static bool IsRemoved(AfterCaptureTasks afterCaptureTask)
         {
-            using (bmp)
-            {
-                return SkiaColorMatrixManager.Saturation(Value).Apply(bmp);
-            }
-        }
-
-        protected override string GetSummary()
-        {
-            return Value.ToString();
+            return afterCaptureTask is AfterCaptureTasks.AddImageEffects or AfterCaptureTasks.OpenInPhotoEditor;
         }
     }
 }

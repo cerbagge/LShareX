@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>在Windows上下文菜单中显示“使用ShareX图像编辑器编辑”</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>在Windows上下文菜单中显示“使用ShareX照片编辑器编辑”</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>删除文件前请求确认</value>
   </data>
@@ -1613,9 +1610,6 @@
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>图像编辑器</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>图像效果</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>图像历史记录...</value>
   </data>
@@ -1658,12 +1652,6 @@
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>网络监控器...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>新</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>没有图像效果预设</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>未找到窗口</value>
   </data>
@@ -1672,9 +1660,6 @@
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>打开</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>照片编辑器</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>固定到屏幕</value>
@@ -1805,9 +1790,6 @@
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>工作流</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>添加图像特效...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>总在最前</value>
   </data>
@@ -1852,9 +1834,6 @@
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>编辑图像</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>在照片编辑器中编辑...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>文件</value>
@@ -2531,9 +2510,6 @@
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>编辑...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>效果</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>启用操作</value>
   </data>
@@ -2620,12 +2596,6 @@
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>图像编辑器</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>图像效果</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>图像效果配置...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>图像扩展名</value>
@@ -2824,9 +2794,6 @@
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>OCR 语言不可用</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>仅对区域捕获应用效果</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>打开 URL 格式</value>
@@ -3047,9 +3014,6 @@
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>显示退出确认</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>捕获后显示图像效果窗口</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>显示插入图像对话框</value>
   </data>
@@ -3182,9 +3146,6 @@
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>文件上传使用名称模式</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>使用随机图像效果</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>使用方形放大镜</value>
   </data>
@@ -3235,9 +3196,6 @@
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>可在“捕获后任务 → 执行操作”中启用或禁用操作。</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>可在“捕获后任务 → 添加图像效果”中启用或禁用图像效果。</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>打开时适合窗口</value>
@@ -3326,11 +3284,6 @@
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} 配置无效或丢失。请转到“上传至...”窗口中进行设置。</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>要启用图像效果吗？
-
-之后可以从“截图后”菜单中禁用。</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>是否重试剪贴板上传？</value>

@@ -1,3 +1,29 @@
+# LShareX (Lite ShareX)
+
+LShareX is an **unofficial, modified version of [ShareX](https://github.com/ShareX/ShareX)**. It is not affiliated with or endorsed by the ShareX Team.
+
+- Based on: ShareX **v22.4.0** (tag `v22.4.0`)
+- Original copyright: Copyright (c) 2007-2026 ShareX Team
+- License: GNU General Public License v3 (see [LICENSE.txt](./LICENSE.txt)), the same license as ShareX. The original license, copyright headers and third-party licenses in [Licenses](./Licenses) are kept unchanged.
+
+## Modifications (2026-11-18)
+
+LShareX keeps the original ShareX source and removes parts that are not needed. All modified files keep their original ShareX license header; added code is marked with `LShareX:` comments.
+
+Removed:
+
+- `ShareX.PhotoEditor` project (Photo editor window, "Edit with ShareX Photo editor" context menu option, history/main window menu items)
+- `ShareX.ImageEffectsLib` project (Image effects tool, image effect presets, "Add image effects" after capture task, `.sxie` import, task settings "Effects" page)
+  - Thumbnail creation that used the removed `Resize` effect now calls `SkiaImageHelpers.ResizeImage` directly (same result).
+- The `AddImageEffects` / `OpenInPhotoEditor` after capture tasks and `PhotoEditor` / `ImageEffects` hotkey types are hidden from the UI but kept in the enums, so existing ShareX settings files still load.
+
+Changed:
+
+- Default after capture tasks: save image to file + copy image to clipboard + copy file to clipboard.
+- When both "Copy image to clipboard" and "Copy file to clipboard" are enabled, the image and the saved file are put on the clipboard together (image formats + `CF_HDROP`). Apps that can paste images get the image; apps that can't (file attachments, Explorer, upload fields) get the file. Screen recordings (MP4/GIF) are copied as files.
+
+---
+
 <p align="center"><a href="https://getsharex.com"><img src="https://getsharex.com/img/ShareX_Banner.png" alt="ShareX Banner"/></a></p>
 <h3 align="center">Screen capture, file sharing and productivity tool</h3>
 <br>

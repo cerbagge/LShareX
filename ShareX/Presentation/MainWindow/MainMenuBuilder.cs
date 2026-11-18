@@ -276,12 +276,9 @@ internal sealed class MainMenuBuilder
             Tool(nameof(Strings.MainMenuBuilder_ImageComparer), Strings.MainMenuBuilder_ImageComparer, AppIcons.ImageComparer, () => TaskHelpers.OpenImageComparer()),
             Tool(nameof(Strings.MainMenuBuilder_ImageConverter), Strings.MainMenuBuilder_ImageConverter, AppIcons.ImageConverter, () => TaskHelpers.OpenImageConverter()),
             Tool(nameof(Strings.MainMenuBuilder_ImageEditor), Strings.MainMenuBuilder_ImageEditor, AppIcons.ImageEditor, () => TaskHelpers.OpenImageEditor()),
-            Tool(nameof(Strings.MainMenuBuilder_ImageEffects), Strings.MainMenuBuilder_ImageEffects, AppIcons.MagicWand, () => TaskHelpers.OpenImageEffects()),
             Tool(nameof(Strings.MainMenuBuilder_ImageResizer), Strings.MainMenuBuilder_ImageResizer, AppIcons.Resize, () => TaskHelpers.OpenImageResizer()),
             Tool(nameof(Strings.MainMenuBuilder_ImageSplitter), Strings.MainMenuBuilder_ImageSplitter, AppIcons.Split, () => TaskHelpers.OpenImageSplitter()),
             Tool(nameof(Strings.MainMenuBuilder_ImageThumbnailer), Strings.MainMenuBuilder_ImageThumbnailer, AppIcons.ImageThumbnailer, () => TaskHelpers.OpenImageThumbnailer()),
-            Tool(nameof(Strings.MainMenuBuilder_PhotoEditor), Strings.MainMenuBuilder_PhotoEditor, AppIcons.Layers, () => TaskHelpers.OpenPhotoEditor(),
-                badgeText: Strings.MainMenuBuilder_NewBadge),
             Tool(nameof(Strings.MainMenuBuilder_ImageViewer), Strings.MainMenuBuilder_ImageViewer, AppIcons.Eye, () => TaskHelpers.OpenImageViewer()),
             Tool(nameof(Strings.MainMenuBuilder_ImageWatermark), Strings.MainMenuBuilder_ImageWatermark, AppIcons.Stamp, () => TaskHelpers.OpenImageWatermark())
         ]),
@@ -361,7 +358,6 @@ internal sealed class MainMenuBuilder
             option.Header,
             option.Icon,
             () => ApplicationState.DefaultTaskSettings.AfterCaptureJob = ApplicationState.DefaultTaskSettings.AfterCaptureJob.Swap(option.Task),
-            createChildren: option.Task == AfterCaptureTasks.AddImageEffects ? BuildImageEffectPresetMenu : null,
             isChecked: value.HasFlag(option.Task),
             toggleType: MainMenuToggleType.CheckBox,
             staysOpenOnClick: true,
@@ -370,44 +366,13 @@ internal sealed class MainMenuBuilder
 
     internal static IReadOnlyList<(AfterCaptureTasks Task, string Header, string Icon)> GetAfterCaptureTaskMenuOptions(bool includeUploadTasks = true)
     {
-        IEnumerable<AfterCaptureTasks> tasks = Helpers.GetEnums<AfterCaptureTasks>().Skip(1);
+        IEnumerable<AfterCaptureTasks> tasks = Helpers.GetEnums<AfterCaptureTasks>().Skip(1).Where(task => !RemovedFeatures.IsRemoved(task));
         if (!includeUploadTasks)
         {
             tasks = tasks.Except(new[] { AfterCaptureTasks.ShowBeforeUploadWindow, AfterCaptureTasks.UploadImageToHost });
         }
 
         return tasks.Select(task => (task, task.GetLocalizedDescription(), GetAfterCaptureTaskIcon(task))).ToArray();
-    }
-
-    private IReadOnlyList<MainMenuEntry> BuildImageEffectPresetMenu()
-    {
-        List<MainMenuEntry> items = new();
-        List<ImageEffectsLib.ImageEffectPreset>? presets = ApplicationState.DefaultTaskSettings.ImageSettings.ImageEffectPresets;
-
-        if (presets != null)
-        {
-            for (int i = 0; i < presets.Count; i++)
-            {
-                int index = i;
-                ImageEffectsLib.ImageEffectPreset? preset = presets[i];
-                if (preset != null)
-                {
-                    items.Add(new MainMenuEntry(preset.ToString(), string.Empty,
-                        () => ApplicationState.DefaultTaskSettings.ImageSettings.SelectedImageEffectPreset = index,
-                        isChecked: index == ApplicationState.DefaultTaskSettings.ImageSettings.SelectedImageEffectPreset,
-                        toggleType: MainMenuToggleType.Radio,
-                        staysOpenOnClick: true,
-                        boldWhenChecked: true));
-                }
-            }
-        }
-
-        if (items.Count == 0)
-        {
-            items.Add(new MainMenuEntry(Strings.MainMenuBuilder_NoImageEffectPresets, string.Empty, isEnabled: false));
-        }
-
-        return items;
     }
 
     private IReadOnlyList<MainMenuEntry> BuildAfterUploadMenu()

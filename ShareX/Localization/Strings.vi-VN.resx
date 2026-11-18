@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Hiện nút "Chỉnh sửa trong trình chỉnh sửa hình ảnh ShareX" trong menu ngữ cảnh của Windows Explorer</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Hiện nút "Chỉnh sửa trong trình chỉnh sửa ảnh ShareX" trong menu ngữ cảnh của Windows Explorer</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Yêu cầu xác nhận trước khi xóa tệp</value>
   </data>
@@ -1613,9 +1610,6 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Trình chỉnh sửa ảnh</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Hiệu ứng ảnh</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Lịch sử hình ảnh...</value>
   </data>
@@ -1658,12 +1652,6 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Trình giám sát mạng...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Mới</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Không có cài đặt sẵn hiệu ứng hình ảnh</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Không tìm thấy cửa sổ</value>
   </data>
@@ -1672,9 +1660,6 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Mở</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Trình chỉnh sửa ảnh chụp</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Ghim vào màn hình</value>
@@ -1805,9 +1790,6 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Quy trình làm việc</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Thêm hiệu ứng ảnh...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Luôn ở trên cùng</value>
   </data>
@@ -1852,9 +1834,6 @@ Vui lòng chọn phím tắt khác hoặc thoát ứng dụng đang gây lỗi v
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Chỉnh sửa hình ảnh</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Chỉnh sửa trong trình chỉnh sửa ảnh...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Tệp</value>
@@ -2531,9 +2510,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Chỉnh sửa...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Hiệu ứng</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Bật hành động</value>
   </data>
@@ -2620,12 +2596,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Trình chỉnh sửa ảnh</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Hiệu ứng ảnh</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Cấu hình hiệu ứng ảnh...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Phần mở rộng ảnh</value>
@@ -2824,9 +2794,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Không có ngôn ngữ OCR</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Chỉ áp dụng hiệu ứng cho chụp vùng</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Định dạng mở URL</value>
@@ -3047,9 +3014,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Hiện xác nhận thoát</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Hiển thị cửa sổ hiệu ứng ảnh sau khi chụp</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Hiện hộp thoại chèn hình ảnh</value>
   </data>
@@ -3182,9 +3146,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Dùng mẫu tên khi tải tệp lên</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Dùng hiệu ứng ảnh ngẫu nhiên</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Dùng kính lúp hình vuông</value>
   </data>
@@ -3235,9 +3196,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Bạn có thể bật hoặc tắt hành động tại Tác vụ sau khi chụp → Thực hiện hành động.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Bạn có thể bật hoặc tắt hiệu ứng ảnh tại Tác vụ sau khi chụp → Thêm hiệu ứng ảnh.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Vừa cửa sổ khi mở</value>
@@ -3326,11 +3284,6 @@ Bạn có muốn hủy phiên quay màn hình đang hoạt động không?</valu
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>Thiết lập {0} không đúng hoặc bị thiếu. Vui lòng kiểm tra cửa sổ "Cài đặt dịch vụ tải lên" để thiết lập.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Bạn có muốn bật hiệu ứng hình ảnh không?
-
-Sau đó, bạn có thể tắt nó từ menu "Sau khi chụp tác vụ".</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Would you like to retry clipboard tải lên?</value>

@@ -575,17 +575,6 @@ namespace ShareX
                 }
             }
 
-            if (Info.TaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.AddImageEffects))
-            {
-                Image = TaskHelpers.ApplyImageEffects(Image, Info.TaskSettings.ImageSettingsReference);
-
-                if (Image == null)
-                {
-                    DebugHelper.WriteLine("Error: Applying image effects resulted empty image.");
-                    return false;
-                }
-            }
-
             if (Info.TaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.AnnotateImage))
             {
                 // The editor blocks the task until it closes, so copy the capture now and let the user paste it without having to edit it.
@@ -600,17 +589,6 @@ namespace ShareX
                 if (Image == null)
                 {
                     return false;
-                }
-            }
-
-            if (Info.TaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.OpenInPhotoEditor))
-            {
-                Bitmap editedImage = TaskHelpers.OpenPhotoEditorTask(Image, Info.TaskSettings);
-
-                if (editedImage != null)
-                {
-                    Image.Dispose();
-                    Image = editedImage;
                 }
             }
 
@@ -753,7 +731,16 @@ namespace ShareX
 
                 if (Info.TaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.CopyFileToClipboard))
                 {
-                    ClipboardHelpers.CopyFile(Info.FilePath);
+                    // LShareX: when the image is also copied, put the image and the saved file on the clipboard together,
+                    // so apps that can't paste images attach the file instead.
+                    if (Image != null && Info.TaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.CopyImageToClipboard))
+                    {
+                        ClipboardHelpers.CopyImage(Image, Info.FileName, Info.FilePath);
+                    }
+                    else
+                    {
+                        ClipboardHelpers.CopyFile(Info.FilePath);
+                    }
                 }
                 else if (Info.TaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.CopyFilePathToClipboard))
                 {

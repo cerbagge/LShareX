@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Показывать пункт "Редактировать в редакторе изображений ShareX" в контекстном меню проводника Windows</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Показывать пункт "Редактировать в фоторедакторе ShareX" в контекстном меню проводника Windows</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Запрашивать подтверждение перед удалением файлов</value>
   </data>
@@ -1613,9 +1610,6 @@
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Редактор изображений</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Эффекты изображений</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>История изображений...</value>
   </data>
@@ -1658,12 +1652,6 @@
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Монитор сети...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Новое</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Нет предустановок эффектов изображения</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Окна не найдены</value>
   </data>
@@ -1672,9 +1660,6 @@
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Открыть</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Фоторедактор</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Закрепить на экране</value>
@@ -1805,9 +1790,6 @@
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Рабочие процессы</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Добавить эффекты изображений...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Поверх всех окон</value>
   </data>
@@ -1852,9 +1834,6 @@
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Редактировать изображение</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Редактировать в фоторедакторе...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Файл</value>
@@ -2531,9 +2510,6 @@
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Изменить...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Эффекты</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Включить действие</value>
   </data>
@@ -2620,12 +2596,6 @@
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Редактор изображений</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Эффекты изображения</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Настройка эффектов изображения...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Расширения изображений</value>
@@ -2824,9 +2794,6 @@
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Языки OCR недоступны</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Применять эффекты только к захвату области</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Формат открытия URL</value>
@@ -3047,9 +3014,6 @@
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Показывать подтверждение выхода</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Показывать окно эффектов изображения после захвата</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Показывать диалог вставки изображения</value>
   </data>
@@ -3182,9 +3146,6 @@
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Использовать шаблон имени для загрузки файлов</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Использовать случайный эффект изображения</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Использовать квадратную лупу</value>
   </data>
@@ -3235,9 +3196,6 @@
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Действия можно включить или отключить в разделе «Задачи после захвата → Выполнить действия».</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Эффекты изображения можно включить или отключить в разделе «Задачи после захвата → Добавить эффекты изображения».</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Вписывать в окно при открытии</value>
@@ -3326,11 +3284,6 @@
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} конфигурация не верна или отсутствует. Пожалуйста перейдите в окно "Настройки сервисов" чтобы ее настроить.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Хотите включить эффекты изображений?
-
-Их можно выключить из меню "После захвата".</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Хотите еще раз попробовать загрузить из буфера?</value>

@@ -47,6 +47,7 @@ internal sealed class HotkeySettingsAvaloniaService : IHotkeySettingsService
         _manager = manager;
         _closed = closed;
         _taskOptions = Helpers.GetEnums<HotkeyType>()
+            .Where(value => !RemovedFeatures.IsRemoved(value))
             .Select(value => new EnumInfo(value))
             .Select(info => new HotkeyTaskOption(
                 Convert.ToInt32(info.Value),

@@ -123,23 +123,6 @@ $projects = @(
         )
     }
     [pscustomobject]@{
-        Name = 'ShareX.ImageEffectsLib'
-        ResourceBaseName = 'ShareX.ImageEffectsLib.Localization.Strings'
-        DynamicPrefixes = @(
-            'ImageEffect_'
-            'ImageEffectProperty_'
-            'ImageEffectPropertyDescription_'
-            'ImageEffectEnum_'
-        )
-    }
-    [pscustomobject]@{
-        Name = 'ShareX.PhotoEditor'
-        ResourceBaseName = 'ShareX.PhotoEditor.Localization.Strings'
-        DynamicPrefixes = @(
-            'Enum_'
-        )
-    }
-    [pscustomobject]@{
         Name = 'ShareX.ScreenCaptureLib'
         ResourceBaseName = 'ShareX.ScreenCaptureLib.Localization.Strings'
         DynamicPrefixes = @()
@@ -665,20 +648,6 @@ foreach ($project in $projects)
                 $missingKeys = @($expectedEffectBrowserKeys | Where-Object { $_ -notin $actualEffectBrowserKeys })
                 $unexpectedKeys = @($actualEffectBrowserKeys | Where-Object { $_ -notin $expectedEffectBrowserKeys })
                 Add-ValidationError "$($project.Name): effect-browser resources differ from the discovered effect catalog. Missing: $($missingKeys -join ', '); unexpected: $($unexpectedKeys -join ', ')."
-            }
-        }
-        elseif ($project.Name -eq 'ShareX.ImageEffectsLib')
-        {
-            foreach ($prefix in $project.DynamicPrefixes)
-            {
-                if (-not $sourceText.Contains($prefix))
-                {
-                    Add-ValidationError "$($project.Name): data-driven localization prefix '$prefix' is not used by source."
-                }
-            }
-            if (-not $sourceText.Contains('Strings.ResourceManager.GetString(key'))
-            {
-                Add-ValidationError "$($project.Name): data-driven image-effect resource lookup is missing."
             }
         }
         elseif ($project.Name -eq 'ShareX.HelpersLib')

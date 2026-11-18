@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>"Szerkesztés a ShareX képszerkesztőben" gomb megjelenítése a Windows Intéző helyi menüjében</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>"Szerkesztés a ShareX fotószerkesztőben" gomb megjelenítése a Windows Intéző helyi menüjében</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Megerősítés kérése fájlok törlése előtt</value>
   </data>
@@ -1613,9 +1610,6 @@ Kérlek, válassz egy másik gyorsbillentyűt vagy zárd be a problémát okozó
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Képszerkesztő</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Kép effektek</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Képelőzmények...</value>
   </data>
@@ -1658,12 +1652,6 @@ Kérlek, válassz egy másik gyorsbillentyűt vagy zárd be a problémát okozó
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Hálózatfigyelő...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Új</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Nincsenek képeffektus-előbeállítások</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Nem találhatók ablakok</value>
   </data>
@@ -1672,9 +1660,6 @@ Kérlek, válassz egy másik gyorsbillentyűt vagy zárd be a problémát okozó
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Megnyitás</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Fotószerkesztő</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Pin to képernyő</value>
@@ -1805,9 +1790,6 @@ Kérlek, válassz egy másik gyorsbillentyűt vagy zárd be a problémát okozó
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Munkafolyamatok</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Hozzáadás képeffektusok...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Mindig felül</value>
   </data>
@@ -1852,9 +1834,6 @@ Kérlek, válassz egy másik gyorsbillentyűt vagy zárd be a problémát okozó
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Szerkesztés kép</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Szerkesztés a fotószerkesztőben...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Fájl</value>
@@ -2531,9 +2510,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Szerkesztés...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Effektusok</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Művelet engedélyezése</value>
   </data>
@@ -2620,12 +2596,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Képszerkesztő</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Képeffektusok</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Képeffektusok beállítása...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Képkiterjesztések</value>
@@ -2824,9 +2794,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Az OCR-nyelvek nem érhetők el</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Effektusok alkalmazása csak területrögzítésre</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>URL-megnyitási formátum</value>
@@ -3047,9 +3014,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Kilépési megerősítés megjelenítése</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Képeffektusok ablakának megjelenítése rögzítés után</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Képbeszúrási párbeszédpanel megjelenítése</value>
   </data>
@@ -3182,9 +3146,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Névminta használata fájlfeltöltésekhez</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Véletlenszerű képeffektus használata</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Négyzetes nagyító használata</value>
   </data>
@@ -3235,9 +3196,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>A műveletek a Rögzítés utáni feladatok → Műveletek végrehajtása menüben engedélyezhetők vagy tilthatók le.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>A képeffektusok a Rögzítés utáni feladatok → Képeffektusok hozzáadása menüben engedélyezhetők vagy tilthatók le.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Megnyitáskor ablakhoz igazítás</value>
@@ -3326,11 +3284,6 @@ Do you want to megszakítás the active képernyőfelvétel?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} configuration is invalid or missing. Please check "Célbeállítások" ablak to configure it.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Would you like to enable képeffektusok?
-
-You can later disable it from "Rögzítés után tasks" menü.</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Would you like to újrapróbálás vágólap feltöltés?</value>

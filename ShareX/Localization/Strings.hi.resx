@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Windows Explorer संदर्भ मेनू में "ShareX छवि संपादक में संपादित करें" बटन दिखाएँ</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Windows Explorer संदर्भ मेनू में "ShareX फ़ोटो संपादक में संपादित करें" बटन दिखाएँ</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>फ़ाइलें हटाने से पहले पुष्टि माँगें</value>
   </data>
@@ -1613,9 +1610,6 @@
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>छवि संपादक...</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>छवि प्रभाव...</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>छवि इतिहास...</value>
   </data>
@@ -1658,12 +1652,6 @@
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>नेटवर्क मॉनिटर...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>नया</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>कोई छवि प्रभाव प्रीसेट नहीं</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>कोई विंडो नहीं मिली</value>
   </data>
@@ -1672,9 +1660,6 @@
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>खोलें</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>फ़ोटो संपादक...</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>स्क्रीन पर पिन करें...</value>
@@ -1805,9 +1790,6 @@
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>कार्यप्रवाह</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>छवि प्रभाव जोड़ें...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>हमेशा ऊपर</value>
   </data>
@@ -1852,9 +1834,6 @@
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>छवि संपादित करें...</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>फ़ोटो संपादक में संपादित करें...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>फ़ाइल</value>
@@ -2531,9 +2510,6 @@
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>संपादित करें...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>प्रभाव</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>क्रिया सक्षम करें</value>
   </data>
@@ -2620,12 +2596,6 @@
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>छवि संपादक</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>छवि प्रभाव</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>छवि प्रभाव कॉन्फ़िगरेशन...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>छवि एक्सटेंशन</value>
@@ -2824,9 +2794,6 @@
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>OCR भाषाएँ अनुपलब्ध हैं</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>केवल क्षेत्र कैप्चर पर प्रभाव लागू करें</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>URL खोलने का प्रारूप</value>
@@ -3047,9 +3014,6 @@
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>बाहर निकलने की पुष्टि दिखाएँ</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>चित्र लेने के बाद छवि प्रभाव विंडो दिखाएँ</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>छवि सम्मिलन संवाद दिखाएँ</value>
   </data>
@@ -3182,9 +3146,6 @@
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>फ़ाइल अपलोड में नाम पैटर्न उपयोग करें</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>यादृच्छिक छवि प्रभाव उपयोग करें</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>वर्गाकार आवर्धक उपयोग करें</value>
   </data>
@@ -3235,9 +3196,6 @@
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>आप चित्र लेने के बाद के कार्य &gt; क्रियाएँ निष्पादित करें से क्रियाएँ सक्षम या अक्षम कर सकते हैं।</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>आप चित्र लेने के बाद के कार्य &gt; छवि प्रभाव जोड़ें से छवि प्रभाव सक्षम या अक्षम कर सकते हैं।</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>खोलते समय फ़िट करने के लिए ज़ूम करें</value>
@@ -3326,11 +3284,6 @@
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} कॉन्फ़िगरेशन अमान्य है या मौजूद नहीं है। इसे कॉन्फ़िगर करने के लिए "गंतव्य सेटिंग" विंडो जाँचें।</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>क्या आप छवि प्रभाव सक्षम करना चाहते हैं?
-
-आप बाद में "चित्र लेने के बाद के कार्य" मेनू से इन्हें अक्षम कर सकते हैं।</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>क्या आप क्लिपबोर्ड अपलोड फिर आज़माना चाहते हैं?</value>

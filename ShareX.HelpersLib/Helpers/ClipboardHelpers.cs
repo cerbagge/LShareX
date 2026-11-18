@@ -64,14 +64,14 @@ namespace ShareX.HelpersLib
             catch (Exception e) { DebugHelper.WriteException(e, "Clipboard copy text failed."); return false; }
         }
 
-        public static bool CopyImage(Image img, string fileName = null)
+        public static bool CopyImage(Image img, string fileName = null, string filePath = null)
         {
             if (img == null) return false;
             try
             {
                 using MemoryStream png = new();
                 img.Save(png, ImageFormat.Png);
-                return AvaloniaClipboard.SetImage(png.ToArray(), OperatingSystem.IsWindows() ? CreateDib(img) : null, CreateImageHtml(fileName));
+                return AvaloniaClipboard.SetImage(png.ToArray(), OperatingSystem.IsWindows() ? CreateDib(img) : null, CreateImageHtml(fileName), filePath);
             }
             catch (Exception e) { DebugHelper.WriteException(e, "Clipboard copy image failed."); return false; }
         }

@@ -424,24 +424,6 @@ namespace ShareX.Localization {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to Photo editor....
-        /// </summary>
-        public static string MainMenuBuilder_PhotoEditor {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_PhotoEditor", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Image effects....
-        /// </summary>
-        public static string MainMenuBuilder_ImageEffects {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_ImageEffects", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Image history....
         /// </summary>
         public static string MainMenuBuilder_ImageHistory {
@@ -555,15 +537,6 @@ namespace ShareX.Localization {
         public static string MainMenuBuilder_MonitorTest {
             get {
                 return ResourceManager.GetString("MainMenuBuilder_MonitorTest", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to No image effect presets.
-        /// </summary>
-        public static string MainMenuBuilder_NoImageEffectPresets {
-            get {
-                return ResourceManager.GetString("MainMenuBuilder_NoImageEffectPresets", resourceCulture);
             }
         }
         
@@ -945,15 +918,6 @@ namespace ShareX.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add image effects....
-        /// </summary>
-        public static string MainWindow_AddImageEffects {
-            get {
-                return ResourceManager.GetString("MainWindow_AddImageEffects", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Analyze image....
         /// </summary>
         public static string MainWindow_AnalyzeImage {
@@ -1094,15 +1058,6 @@ namespace ShareX.Localization {
         public static string MainWindow_EditImage {
             get {
                 return ResourceManager.GetString("MainWindow_EditImage", resourceCulture);
-            }
-        }
-
-        /// <summary>
-        ///   Looks up a localized string similar to Edit in Photo editor....
-        /// </summary>
-        public static string MainWindow_EditImageInPhotoEditor {
-            get {
-                return ResourceManager.GetString("MainWindow_EditImageInPhotoEditor", resourceCulture);
             }
         }
 
@@ -1700,11 +1655,6 @@ namespace ShareX.Localization {
         public static string ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu {
             get {
                 return ResourceManager.GetString("ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu", resourceCulture);
-            }
-        }
-        public static string ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu {
-            get {
-                return ResourceManager.GetString("ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu", resourceCulture);
             }
         }
         public static string ApplicationSettingsWindow_ShowShareXInSendToMenu {
@@ -3010,31 +2960,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("TaskSettingsWindow_SizeLimitKB", resourceCulture);
             }
         }
-        public static string TaskSettingsWindow_ShowImageEffectsWindowAfterCapture {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ShowImageEffectsWindowAfterCapture", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_OnlyApplyEffectsToRegionCapture {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_OnlyApplyEffectsToRegionCapture", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_UseRandomImageEffect {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_UseRandomImageEffect", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects", resourceCulture);
-            }
-        }
         public static string TaskSettingsWindow_ThumbnailName {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_ThumbnailName", resourceCulture);
@@ -3445,11 +3370,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("TaskSettingsWindow_AutomaticJPEG", resourceCulture);
             }
         }
-        public static string TaskSettingsWindow_ImageEffects {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_ImageEffects", resourceCulture);
-            }
-        }
         public static string TaskSettingsWindow_Thumbnail {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_Thumbnail", resourceCulture);
@@ -3573,11 +3493,6 @@ namespace ShareX.Localization {
         public static string TaskSettingsWindow_Image {
             get {
                 return ResourceManager.GetString("TaskSettingsWindow_Image", resourceCulture);
-            }
-        }
-        public static string TaskSettingsWindow_Effects {
-            get {
-                return ResourceManager.GetString("TaskSettingsWindow_Effects", resourceCulture);
             }
         }
         public static string TaskSettingsWindow_Capture {
@@ -5400,11 +5315,6 @@ namespace ShareX.Localization {
                 return ResourceManager.GetString("MainForm_tsmiTestTextUpload_Click_Text_upload_test", resourceCulture);
             }
         }
-        public static string WouldYouLikeToEnableImageEffects {
-            get {
-                return ResourceManager.GetString("WouldYouLikeToEnableImageEffects", resourceCulture);
-            }
-        }
         public static string IntegrationHelpers_EditWithShareX {
             get {
                 return ResourceManager.GetString("IntegrationHelpers_EditWithShareX", resourceCulture);
@@ -5747,7 +5657,6 @@ namespace ShareX.Localization {
         public static string ScreenRecorderBar_StartDelay_5Seconds => ResourceManager.GetString("ScreenRecorderBar_StartDelay_5Seconds", resourceCulture);
         public static string MainMenuBuilder_VideoPlayer => ResourceManager.GetString("MainMenuBuilder_VideoPlayer", resourceCulture);
         public static string MainMenuBuilder_Stats => ResourceManager.GetString("MainMenuBuilder_Stats", resourceCulture);
-        public static string MainMenuBuilder_NewBadge => ResourceManager.GetString("MainMenuBuilder_NewBadge", resourceCulture);
         public static string ApplicationSettingsWindow_IconPackLabel => ResourceManager.GetString("ApplicationSettingsWindow_IconPackLabel", resourceCulture);
         public static string ApplicationSettingsWindow_IconPackLegacy => ResourceManager.GetString("ApplicationSettingsWindow_IconPackLegacy", resourceCulture);
         public static string ApplicationSettingsWindow_IconPackModern => ResourceManager.GetString("ApplicationSettingsWindow_IconPackModern", resourceCulture);

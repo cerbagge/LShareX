@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Afficher le bouton « Modifier dans l’éditeur d’images ShareX » dans le menu contextuel de l’Explorateur Windows</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Afficher le bouton « Modifier dans l’éditeur de photos ShareX » dans le menu contextuel de l’Explorateur Windows</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Demander une confirmation avant de supprimer des fichiers</value>
   </data>
@@ -1613,9 +1610,6 @@ Veuillez sélectionner un raccourci différent ou quitter l'application en confl
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Éditeur d'image</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Effets d'image</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Historique des images...</value>
   </data>
@@ -1658,12 +1652,6 @@ Veuillez sélectionner un raccourci différent ou quitter l'application en confl
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Moniteur réseau...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Nouveau</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Aucun préréglage d’effet d’image</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Aucune fenêtre trouvée</value>
   </data>
@@ -1672,9 +1660,6 @@ Veuillez sélectionner un raccourci différent ou quitter l'application en confl
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Ouvrir</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Éditeur de photos</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Epingler à l'écran</value>
@@ -1805,9 +1790,6 @@ Veuillez sélectionner un raccourci différent ou quitter l'application en confl
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Flux de travail</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Ajouter des effets d'image...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Toujours au premier plan</value>
   </data>
@@ -1852,9 +1834,6 @@ Veuillez sélectionner un raccourci différent ou quitter l'application en confl
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Modifier l’image</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Modifier dans l’éditeur de photos...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Fichier</value>
@@ -2531,9 +2510,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Modifier...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Effets</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Activer l’action</value>
   </data>
@@ -2620,12 +2596,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Éditeur d'image</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Effets d’image</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Configuration des effets d’image...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Extensions d’image</value>
@@ -2824,9 +2794,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Les langues OCR ne sont pas disponibles</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Appliquer les effets uniquement aux captures de région</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Format d’ouverture d’URL</value>
@@ -3047,9 +3014,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Afficher la confirmation de fermeture</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Afficher la fenêtre des effets d’image après la capture</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Afficher la boîte de dialogue d’insertion d’image</value>
   </data>
@@ -3182,9 +3146,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Utiliser un modèle de nom pour l’envoi de fichiers</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Utiliser un effet d’image aléatoire</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Utiliser une loupe carrée</value>
   </data>
@@ -3235,9 +3196,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Vous pouvez activer ou désactiver les actions dans Tâches après la capture → Exécuter des actions.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Vous pouvez activer ou désactiver les effets d’image dans Tâches après la capture → Ajouter des effets d’image.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Ajuster à la fenêtre à l’ouverture</value>
@@ -3326,11 +3284,6 @@ Voulez-vous annuler l'enregistrement d'écran en cours ?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>La configuration {0} est invalide ou manquante. Merci de vérifier les "Paramètres de destination".</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Voulez-vous activer les effets d'image ?
-
-Vous pourrez les désactiver plus tard depuis le manu "Tâches après la capture".</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Voulez-vous réessayer la mise en ligne depuis le presse-papier ?</value>

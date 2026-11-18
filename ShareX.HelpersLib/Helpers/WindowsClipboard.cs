@@ -38,11 +38,12 @@ namespace ShareX.HelpersLib;
 internal static class WindowsClipboard
 {
     private const uint CF_DIB = 8;
+    private const uint CF_HDROP = 15;
     private const uint GMEM_MOVEABLE = 0x0002;
     private const int OpenRetryCount = 10;
     private const int OpenRetryDelay = 50;
 
-    public static void SetImage(IntPtr owner, byte[] png, byte[] dib, string html)
+    public static void SetImage(IntPtr owner, byte[] png, byte[] dib, string html, string filePath = null)
     {
         // A null owner makes SetClipboardData fail after EmptyClipboard.
         if (owner == IntPtr.Zero) throw new InvalidOperationException("Clipboard owner window is unavailable.");
@@ -53,11 +54,24 @@ internal static class WindowsClipboard
             SetData(CF_DIB, dib);
             if (png != null) SetData(RegisterFormat(ClipboardHelpers.FORMAT_PNG), png);
             if (!string.IsNullOrEmpty(html)) SetData(RegisterFormat(ClipboardDataFormats.Html), Encoding.UTF8.GetBytes(html + "\0"));
+            // LShareX: also offer the saved file, so apps that can't paste images attach the file instead.
+            if (!string.IsNullOrEmpty(filePath)) SetData(CF_HDROP, CreateDropFiles(filePath));
         }
         finally
         {
             NativeMethods.CloseClipboard();
         }
+    }
+
+    // DROPFILES header (pFiles = 20, pt = 0,0, fNC = 0, fWide = 1) followed by a double null terminated UTF-16 file list.
+    private static byte[] CreateDropFiles(string filePath)
+    {
+        byte[] path = Encoding.Unicode.GetBytes(filePath + "\0\0");
+        byte[] data = new byte[20 + path.Length];
+        BitConverter.GetBytes(20).CopyTo(data, 0);
+        BitConverter.GetBytes(1).CopyTo(data, 16);
+        path.CopyTo(data, 20);
+        return data;
     }
 
     private static void Open(IntPtr owner)

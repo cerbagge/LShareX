@@ -145,7 +145,6 @@ internal sealed class TaskSettingsPageBuilder
         pages.Add("general", ParentPage("general", Strings.TaskSettingsWindow_General, AppIcons.Settings, _generalOverride, Strings.TaskSettingsWindow_OverrideGeneralSettings));
         pages.Add("general-notifications", BuildNotificationsPage());
         pages.Add("image", BuildImagePage());
-        pages.Add("image-effects", BuildImageEffectsPage());
         pages.Add("image-thumbnail", BuildThumbnailPage());
         pages.Add("capture", BuildCapturePage());
         pages.Add("capture-region", BuildRegionCapturePage());
@@ -400,18 +399,6 @@ internal sealed class TaskSettingsPageBuilder
                 pngOptions, jpegOptions, gifOptions, bmpOptions, webpOptions,
                 Row(Strings.TaskSettingsWindow_IfFileExists, EnumCombo(() => image.FileExistAction, value => image.FileExistAction = value))),
             automaticJpeg);
-    }
-
-    private Control BuildImageEffectsPage()
-    {
-        TaskSettingsImage image = _settings.ImageSettings;
-        return Page("image-effects", Strings.TaskSettingsWindow_Effects, AppIcons.MagicWand,
-            EnabledCard(_imageOverride, Strings.TaskSettingsWindow_ImageEffects,
-                Check(Strings.TaskSettingsWindow_ShowImageEffectsWindowAfterCapture, () => image.ShowImageEffectsWindowAfterCapture, value => image.ShowImageEffectsWindowAfterCapture = value),
-                Check(Strings.TaskSettingsWindow_OnlyApplyEffectsToRegionCapture, () => image.ImageEffectOnlyRegionCapture, value => image.ImageEffectOnlyRegionCapture = value),
-                Check(Strings.TaskSettingsWindow_UseRandomImageEffect, () => image.UseRandomImageEffect, value => image.UseRandomImageEffect = value),
-                Button(Strings.TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis, () => TaskHelpers.OpenImageEffectsSingleton(_settings)),
-                Hint(Strings.TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects)));
     }
 
     private Control BuildThumbnailPage()
@@ -1604,7 +1591,7 @@ internal sealed class TaskSettingsPageBuilder
 
         button.Click += (_, _) =>
         {
-            List<HotkeyType> tasks = Helpers.GetEnums<HotkeyType>().ToList();
+            List<HotkeyType> tasks = Helpers.GetEnums<HotkeyType>().Where(task => !RemovedFeatures.IsRemoved(task)).ToList();
             List<MenuItem> rootItems = [CreateTaskMenuItem(HotkeyType.None, getter(), SelectTask)];
 
             foreach (IGrouping<string, HotkeyType> category in tasks

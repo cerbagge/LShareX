@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Afișați butonul "Editați în editorul de imagini ShareX" în meniul contextual al Windows Explorer</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Afișați butonul "Editați în editorul foto ShareX" în meniul contextual al Windows Explorer</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Solicită confirmare înainte de ștergerea fișierelor</value>
   </data>
@@ -1613,9 +1610,6 @@ Vă rugăm să selectați o altă tastatură rapidă sau să ieșiți din aplica
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Editor de imagini</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Efecte de imagine</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Istoric imagini...</value>
   </data>
@@ -1658,12 +1652,6 @@ Vă rugăm să selectați o altă tastatură rapidă sau să ieșiți din aplica
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Monitor de rețea...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Nou</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Nicio presetare pentru efecte de imagine</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Nu s-au găsit ferestre</value>
   </data>
@@ -1672,9 +1660,6 @@ Vă rugăm să selectați o altă tastatură rapidă sau să ieșiți din aplica
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Deschide</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Editor foto</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Fixează pe ecran</value>
@@ -1805,9 +1790,6 @@ Vă rugăm să selectați o altă tastatură rapidă sau să ieșiți din aplica
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Fluxuri de lucru</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Adăugați efecte de imagine...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Întotdeauna deasupra</value>
   </data>
@@ -1852,9 +1834,6 @@ Vă rugăm să selectați o altă tastatură rapidă sau să ieșiți din aplica
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Editați imaginea</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Editați în editorul foto...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Fișier</value>
@@ -2531,9 +2510,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Editează...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Efecte</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Activează acțiunea</value>
   </data>
@@ -2620,12 +2596,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Editor de imagini</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Efecte imagine</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Configurare efecte imagine...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Extensii de imagine</value>
@@ -2824,9 +2794,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Limbile OCR nu sunt disponibile</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Aplică efectele numai capturilor de regiune</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Format deschidere URL</value>
@@ -3047,9 +3014,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Afișează confirmarea la ieșire</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Afișează fereastra efectelor de imagine după captură</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Afișează dialogul de inserare a imaginii</value>
   </data>
@@ -3182,9 +3146,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Folosește model de nume pentru încărcările de fișiere</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Folosește un efect de imagine aleatoriu</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Folosește lupă pătrată</value>
   </data>
@@ -3235,9 +3196,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Puteți activa sau dezactiva acțiunile din Sarcini după captură → Efectuează acțiuni.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Puteți activa sau dezactiva efectele din Sarcini după captură → Adaugă efecte de imagine.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Potrivește în fereastră la deschidere</value>
@@ -3326,11 +3284,6 @@ Vrei să anulezi înregistrarea activă a ecranului?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>Configurația {0} nu este validă sau lipsește. Vă rugăm să verificați fereastra "Setări destinație" pentru a o configura.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Doriți să activați efectele de imagine?
-
-Puteți să le dezactivați ulterior din meniul "Sarcini după captură".</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Vrei să reîncerci încărcarea din clipboard?</value>

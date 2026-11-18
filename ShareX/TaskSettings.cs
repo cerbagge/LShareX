@@ -27,7 +27,6 @@ using Newtonsoft.Json;
 using ShareX.AvaloniaUI.Windows;
 using ShareX.HelpersLib;
 using ShareX.ImageEditor.Integration;
-using ShareX.ImageEffectsLib;
 using ShareX.ScreenCaptureLib;
 using ShareX.Tools;
 using ShareX.UploadersLib;
@@ -53,7 +52,7 @@ namespace ShareX
         public HotkeyType Job = HotkeyType.None;
 
         public bool UseDefaultAfterCaptureJob = true;
-        public AfterCaptureTasks AfterCaptureJob = AfterCaptureTasks.CopyImageToClipboard | AfterCaptureTasks.SaveImageToFile;
+        public AfterCaptureTasks AfterCaptureJob = AfterCaptureTasks.CopyImageToClipboard | AfterCaptureTasks.SaveImageToFile | AfterCaptureTasks.CopyFileToClipboard;
 
         public bool UseDefaultAfterUploadJob = true;
         public AfterUploadTasks AfterUploadJob = AfterUploadTasks.CopyURLToClipboard;
@@ -354,17 +353,6 @@ namespace ShareX
         public FileExistAction FileExistAction = FileExistAction.Ask;
 
         #endregion Image / General
-
-        #region Image / Effects
-
-        public List<ImageEffectPreset> ImageEffectPresets = new List<ImageEffectPreset>() { ImageEffectPreset.GetDefaultPreset() };
-        public int SelectedImageEffectPreset = 0;
-
-        public bool ShowImageEffectsWindowAfterCapture = false;
-        public bool ImageEffectOnlyRegionCapture = false;
-        public bool UseRandomImageEffect = false;
-
-        #endregion Image / Effects
 
         #region Image / Thumbnail
 

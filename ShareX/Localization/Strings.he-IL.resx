@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>הצג את כפתור "ערוך בעורך התמונה של ShareX" בתפריט ההקשר של סייר הקבצים</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>הצג את כפתור "ערוך בעורך התמונות של ShareX" בתפריט ההקשר של סייר הקבצים</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>בקש אישור לפני מחיקת קבצים</value>
   </data>
@@ -1613,9 +1610,6 @@
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>עורך תמונה</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>אפקטים לתמונה</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>היסטוריית תמונות...</value>
   </data>
@@ -1658,12 +1652,6 @@
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>מנטר רשת...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>חדש</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>אין הגדרות קבועות מראש לאפקטי תמונה</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>לא נמצאו חלונות</value>
   </data>
@@ -1672,9 +1660,6 @@
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>פתח</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>עורך צילומים</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>הצמד למסך</value>
@@ -1805,9 +1790,6 @@
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>זרימות עבודה</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>הוסף אפקטי תמונה...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>תמיד מעל</value>
   </data>
@@ -1852,9 +1834,6 @@
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>ערוך תמונה</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>ערוך בעורך התמונות...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>קובץ</value>
@@ -2531,9 +2510,6 @@
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>עריכה...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>אפקטים</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>הפעלת פעולה</value>
   </data>
@@ -2620,12 +2596,6 @@
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>עורך תמונה</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>אפקטי תמונה</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>הגדרת אפקטי תמונה...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>סיומות תמונה</value>
@@ -2824,9 +2794,6 @@
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>שפות OCR אינן זמינות</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>החלת אפקטים רק על לכידת אזור</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>תבנית פתיחת URL</value>
@@ -3047,9 +3014,6 @@
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>הצג אישור יציאה</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>הצגת חלון אפקטי תמונה לאחר לכידה</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>הצג תיבת דו־שיח להוספת תמונה</value>
   </data>
@@ -3182,9 +3146,6 @@
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>שימוש בתבנית שם להעלאת קבצים</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>שימוש באפקט תמונה אקראי</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>שימוש בזכוכית מגדלת מרובעת</value>
   </data>
@@ -3235,9 +3196,6 @@
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>ניתן להפעיל או להשבית פעולות דרך משימות לאחר לכידה ← ביצוע פעולות.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>ניתן להפעיל או להשבית אפקטי תמונה דרך משימות לאחר לכידה ← הוספת אפקטי תמונה.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>התאם לחלון בעת הפתיחה</value>
@@ -3326,11 +3284,6 @@
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>התצורה של {0} אינה חוקית או חסרה. אנא סמן את חלון "הגדרות יעד" כדי להגדיר אותו.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>האם תרצה לאפשר אפקטים של תמונה?
-
-מאוחר יותר תוכל להשבית אותם מתפריט "משימות לאחר צילום מסך".</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>האם תרצה לנסות להעלות את לוח הגזירה שוב?</value>

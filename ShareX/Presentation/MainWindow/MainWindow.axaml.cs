@@ -1740,8 +1740,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
             Item(Strings.MainWindow_EditImage, AppIcons.ImageEditor, _uploadInfoManager.EditImage,
                 hasSelection && !isWorking && selected!.IsImageFile,
                 new KeyGesture(Key.E, KeyModifiers.Control)),
-            Item(Strings.MainWindow_EditImageInPhotoEditor, AppIcons.Layers, _uploadInfoManager.EditImageInPhotoEditor,
-                hasSelection && !isWorking && statuses.Any(x => x.IsImageFile)),
             Item(Strings.MainWindow_ResizeImage, AppIcons.Resize, _uploadInfoManager.ResizeImages,
                 hasSelection && !isWorking && statuses.Any(x => x.IsImageFile)),
             Item(Strings.MainWindow_TrimVideo, AppIcons.Scissors, _uploadInfoManager.TrimVideo,
@@ -1750,8 +1748,6 @@ public partial class MainWindow : Window, INotifyPropertyChanged
                 hasSelection && !isWorking && selected!.IsFileExist &&
                 string.Equals(Path.GetExtension(selected.Info.FilePath), ".gif", StringComparison.OrdinalIgnoreCase)),
             Item(Strings.MainWindow_BeautifyImage, AppIcons.ImageBeautifier, _uploadInfoManager.BeautifyImage,
-                hasSelection && !isWorking && selected!.IsImageFile),
-            Item(Strings.MainWindow_AddImageEffects, AppIcons.MagicWand, _uploadInfoManager.AddImageEffects,
                 hasSelection && !isWorking && selected!.IsImageFile),
             Item(Strings.MainWindow_PinToScreen, AppIcons.Pin, _uploadInfoManager.PinToScreen,
                 hasSelection && !isWorking && selected!.IsImageFile,

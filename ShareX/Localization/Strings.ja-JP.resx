@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>エクスプローラのコンテキストメニューに「ShareX 画像エディターで編集」を表示</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>エクスプローラのコンテキストメニューに「ShareX フォトエディターで編集」を表示</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>ファイルを削除する前に確認する</value>
   </data>
@@ -1613,9 +1610,6 @@
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>画像エディター</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>画像エフェクト</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>画像履歴...</value>
   </data>
@@ -1658,12 +1652,6 @@
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>ネットワーク モニター...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>新機能</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>画像効果のプリセットがありません</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>ウィンドウが見つかりません</value>
   </data>
@@ -1672,9 +1660,6 @@
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>開く</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>フォトエディター</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>最前面に固定</value>
@@ -1805,9 +1790,6 @@
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>ワークフロー</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>画像エフェクトを追加...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>常に手前に表示</value>
   </data>
@@ -1852,9 +1834,6 @@
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>画像エディタで編集</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>フォトエディターで編集...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>ファイル</value>
@@ -2531,9 +2510,6 @@
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>編集...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>効果</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>アクションを有効化</value>
   </data>
@@ -2620,12 +2596,6 @@
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>画像エディター</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>画像効果</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>画像効果の設定...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>画像の拡張子</value>
@@ -2824,9 +2794,6 @@
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>OCR 言語を利用できません</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>範囲キャプチャにのみ効果を適用</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>URL を開く形式</value>
@@ -3047,9 +3014,6 @@
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>終了確認を表示</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>キャプチャ後に画像効果ウィンドウを表示</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>画像挿入ダイアログを表示</value>
   </data>
@@ -3182,9 +3146,6 @@
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>ファイルのアップロードに名前パターンを使用</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>ランダムな画像効果を使用</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>正方形の拡大鏡を使用</value>
   </data>
@@ -3235,9 +3196,6 @@
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>アクションは「キャプチャ後のタスク → アクションを実行」で有効または無効にできます。</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>画像効果は「キャプチャ後のタスク → 画像効果を追加」で有効または無効にできます。</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>開いたときにウィンドウに合わせる</value>
@@ -3326,11 +3284,6 @@
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} の構成が正しくないか存在しません。"アップロード先の設定" ウィンドウで構成を確認してください。</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>インストールした画像エフェクトを有効にしますか？
-
-後で「キャプチャー後のタスク」から無効化もできます。</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>クリップボードのアップロードを再試行しますか？</value>

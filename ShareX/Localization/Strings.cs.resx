@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Zobrazit tlačítko „Upravit v editoru obrázků ShareX“ v místní nabídce Průzkumníka Windows</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Zobrazit tlačítko „Upravit v editoru fotografií ShareX“ v místní nabídce Průzkumníka Windows</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Před odstraněním souborů požádat o potvrzení</value>
   </data>
@@ -1613,9 +1610,6 @@ Vyberte jinou klávesovou zkratku nebo ukončete konfliktní aplikaci a znovu ot
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Editor obrázků...</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Efekty obrázku...</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Historie obrázků...</value>
   </data>
@@ -1658,12 +1652,6 @@ Vyberte jinou klávesovou zkratku nebo ukončete konfliktní aplikaci a znovu ot
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Sledování sítě...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Nové</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Žádné předvolby efektů obrázku</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Nebyla nalezena žádná okna</value>
   </data>
@@ -1672,9 +1660,6 @@ Vyberte jinou klávesovou zkratku nebo ukončete konfliktní aplikaci a znovu ot
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Otevřít</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Editor fotografií...</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Připnout na obrazovku...</value>
@@ -1805,9 +1790,6 @@ Vyberte jinou klávesovou zkratku nebo ukončete konfliktní aplikaci a znovu ot
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Pracovní postupy</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Přidat efekty obrázku...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Vždy navrchu</value>
   </data>
@@ -1852,9 +1834,6 @@ Vyberte jinou klávesovou zkratku nebo ukončete konfliktní aplikaci a znovu ot
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Upravit obrázek...</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Upravit v editoru fotografií...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>Soubor</value>
@@ -2531,9 +2510,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Upravit...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Efekty</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Povolit akci</value>
   </data>
@@ -2620,12 +2596,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Editor obrázků</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Efekty obrázku</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Nastavení efektů obrázku...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Přípony obrázků</value>
@@ -2824,9 +2794,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Jazyky OCR nejsou dostupné</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Použít efekty pouze na zachycení oblasti</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Formát otevřené adresy URL</value>
@@ -3047,9 +3014,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Zobrazit potvrzení ukončení</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Po zachycení zobrazit okno efektů obrázku</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Zobrazit dialog vložení obrázku</value>
   </data>
@@ -3182,9 +3146,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Použít vzor názvu pro nahrávání souborů</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Použít náhodný efekt obrázku</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Použít čtvercovou lupu</value>
   </data>
@@ -3235,9 +3196,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Akce můžete povolit nebo zakázat v nabídce Úlohy po zachycení &gt; Provést akce.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Efekty obrázku můžete povolit nebo zakázat v nabídce Úlohy po zachycení &gt; Přidat efekty obrázku.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Po otevření přizpůsobit zobrazení</value>
@@ -3326,11 +3284,6 @@ Chcete aktivní nahrávání obrazovky přerušit?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>Konfigurace {0} je neplatná nebo chybí. Nastavte ji v okně „Nastavení cílů“.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Chcete povolit efekty obrázku?
-
-Později je můžete zakázat v nabídce „Úlohy po zachycení“.</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Chcete nahrání schránky zkusit znovu?</value>

@@ -81,7 +81,7 @@ public partial class ActionsToolbarEditorWindow : Window
         List<MenuItem> rootItems = [];
         Dictionary<string, List<MenuItem>> categories = [];
 
-        foreach (HotkeyType action in Helpers.GetEnums<HotkeyType>())
+        foreach (HotkeyType action in Helpers.GetEnums<HotkeyType>().Where(action => !RemovedFeatures.IsRemoved(action)))
         {
             EnumInfo info = new(action);
             string title = action == HotkeyType.None

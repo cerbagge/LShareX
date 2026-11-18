@@ -55,7 +55,7 @@ namespace ShareX
 
                     if (command.IsCommand)
                     {
-                        if (CheckCustomUploader(command) || CheckImageEffect(command) || await CheckCLIHotkey(command) || await CheckCLIWorkflow(command) ||
+                        if (CheckCustomUploader(command) || await CheckCLIHotkey(command) || await CheckCLIWorkflow(command) ||
                             await CheckNativeMessagingInput(command))
                         {
                         }
@@ -103,21 +103,6 @@ namespace ShareX
                 if (!string.IsNullOrEmpty(command.Parameter) && command.Parameter.EndsWith(".sxcu", StringComparison.OrdinalIgnoreCase))
                 {
                     TaskHelpers.ImportCustomUploader(command.Parameter);
-                }
-
-                return true;
-            }
-
-            return false;
-        }
-
-        private bool CheckImageEffect(CLICommand command)
-        {
-            if (command.Command.Equals("ImageEffect", StringComparison.OrdinalIgnoreCase))
-            {
-                if (!string.IsNullOrEmpty(command.Parameter) && command.Parameter.EndsWith(".sxie", StringComparison.OrdinalIgnoreCase))
-                {
-                    TaskHelpers.ImportImageEffect(command.Parameter);
                 }
 
                 return true;

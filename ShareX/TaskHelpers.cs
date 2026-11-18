@@ -29,8 +29,6 @@ using ShareX.HelpersLib;
 using ShareX.HistoryLib;
 using ShareX.Icons;
 using ShareX.ImageEditor.Integration;
-using ShareX.PhotoEditor.Integration;
-using ShareX.ImageEffectsLib;
 using ShareX.Localization;
 using ShareX.Properties;
 using ShareX.ScreenCaptureLib;
@@ -245,9 +243,6 @@ namespace ShareX
                         OpenImageEditor(safeTaskSettings);
                     }
                     break;
-                case HotkeyType.PhotoEditor:
-                    OpenPhotoEditor(filePath, safeTaskSettings);
-                    break;
                 case HotkeyType.ImageBeautifier:
                     if (!string.IsNullOrEmpty(filePath))
                     {
@@ -256,16 +251,6 @@ namespace ShareX
                     else
                     {
                         OpenImageBeautifier(safeTaskSettings);
-                    }
-                    break;
-                case HotkeyType.ImageEffects:
-                    if (!string.IsNullOrEmpty(filePath))
-                    {
-                        OpenImageEffects(filePath, safeTaskSettings);
-                    }
-                    else
-                    {
-                        OpenImageEffects(safeTaskSettings);
                     }
                     break;
                 case HotkeyType.ImageViewer:
@@ -469,7 +454,7 @@ namespace ShareX
                 if (!string.IsNullOrEmpty(thumbnailFilePath))
                 {
                     using (SKBitmap thumbnail = CopyBitmap(bmp))
-                    using (SKBitmap resizedImage = new Resize(taskSettings.ImageSettings.ThumbnailWidth, taskSettings.ImageSettings.ThumbnailHeight).Apply(thumbnail))
+                    using (SKBitmap resizedImage = SkiaImageHelpers.ResizeImage(thumbnail, SkiaImageHelpers.ApplyAspectRatio(taskSettings.ImageSettings.ThumbnailWidth, taskSettings.ImageSettings.ThumbnailHeight, thumbnail)))
                     using (SKBitmap newImage = SkiaImageHelpers.FillBackground(resizedImage, Color.White))
                     {
                         newImage.Save(thumbnailFilePath, SKEncodedImageFormat.Jpeg, 90);
@@ -748,41 +733,6 @@ namespace ShareX
             }
         }
 
-        public static Bitmap ApplyImageEffects(Bitmap bmp, TaskSettingsImage taskSettingsImage)
-        {
-            if (bmp != null)
-            {
-                if (taskSettingsImage.ShowImageEffectsWindowAfterCapture)
-                {
-                    ImageEffectsDialogResult result = ImageEffectsIntegration.ShowDialog(bmp,
-                        taskSettingsImage.ImageEffectPresets, taskSettingsImage.SelectedImageEffectPreset,
-                        ImageEffectsWindowMode.Editor);
-                    taskSettingsImage.SelectedImageEffectPreset = result.SelectedPresetIndex;
-                }
-
-                ImageEffectPreset imageEffect = null;
-
-                if (taskSettingsImage.UseRandomImageEffect)
-                {
-                    imageEffect = RandomFast.Pick(taskSettingsImage.ImageEffectPresets);
-                }
-                else if (taskSettingsImage.ImageEffectPresets.IsValidIndex(taskSettingsImage.SelectedImageEffectPreset))
-                {
-                    imageEffect = taskSettingsImage.ImageEffectPresets[taskSettingsImage.SelectedImageEffectPreset];
-                }
-
-                if (imageEffect != null)
-                {
-                    using (bmp)
-                    {
-                        return imageEffect.ApplyEffects(bmp);
-                    }
-                }
-            }
-
-            return bmp;
-        }
-
         public static void AddDefaultExternalPrograms(TaskSettings taskSettings)
         {
             if (taskSettings.ExternalPrograms == null)
@@ -927,7 +877,6 @@ namespace ShareX
                 {
                     UploadFile = filePath => UploadManager.UploadFile(filePath),
                     EditImage = filePath => AnnotateImageFromFile(filePath),
-                    EditImageInPhotoEditor = filePath => OpenPhotoEditor(filePath),
                     TrimVideo = filePath => OpenVideoTrimmer(inputFilePath: filePath),
                     TrimAnimatedGif = filePath => OpenAnimatedGifTrimmer(filePath),
                     PinToScreen = filePath => PinToScreen(filePath),
@@ -944,7 +893,6 @@ namespace ShareX
                 {
                     UploadFile = filePath => UploadManager.UploadFile(filePath),
                     EditImage = filePath => AnnotateImageFromFile(filePath),
-                    EditImageInPhotoEditor = filePath => OpenPhotoEditor(filePath),
                     TrimVideo = filePath => OpenVideoTrimmer(inputFilePath: filePath),
                     TrimAnimatedGif = filePath => OpenAnimatedGifTrimmer(filePath),
                     PinToScreen = filePath => PinToScreen(filePath),
@@ -1548,44 +1496,6 @@ namespace ShareX
             }
         }
 
-        public static void OpenPhotoEditor(string filePath = null, TaskSettings taskSettings = null)
-        {
-            OpenPhotoEditor(string.IsNullOrEmpty(filePath) ? null : [filePath], null, taskSettings);
-        }
-
-        public static void OpenPhotoEditor(IEnumerable<string> filePaths, Bitmap image, TaskSettings taskSettings = null)
-        {
-            if (taskSettings == null) taskSettings = TaskSettings.GetDefaultTaskSettings();
-
-            PhotoEditorIntegration.Show(CreatePhotoEditorServices(taskSettings), filePaths, image, image != null ? "Screenshot" : null);
-        }
-
-        // Blocks until the Photo editor window closes and returns the edited image.
-        public static Bitmap OpenPhotoEditorTask(Bitmap image, TaskSettings taskSettings)
-        {
-            return PhotoEditorIntegration.ShowTaskDialog(CreatePhotoEditorServices(taskSettings), image, "Screenshot");
-        }
-
-        private static PhotoEditorServices CreatePhotoEditorServices(TaskSettings taskSettings)
-        {
-            return new PhotoEditorServices
-            {
-                SettingsFilePath = StartupOptions.Sandbox ? null : Path.Combine(AppPaths.PersonalFolder, "PhotoEditor.json"),
-                DefaultFolder = GetScreenshotsFolder(taskSettings),
-                UploadImage = skBitmap => UploadImageOnUiThread(skBitmap.Copy(), taskSettings),
-                CopyImage = skBitmap => CopyImageOnUiThread(skBitmap),
-                PinImage = skBitmap => PinToScreen(skBitmap.Copy(), taskSettings),
-                PrintImage = skBitmap => PrintImageOnUiThread(skBitmap.Copy()),
-                RunImageTask = (skBitmap, path) =>
-                {
-                    Bitmap copy = skBitmap.Copy();
-                    InvokeOnUiThread(() => UploadManager.RunImageTask(copy, taskSettings));
-                },
-                CaptureRegion = async () => await RegionCaptureTasks.GetRegionImageAsync(taskSettings.CaptureSettings.RegionCaptureOptions),
-                CaptureFullscreen = () => Task.FromResult(GetScreenshot(taskSettings).CaptureFullscreen())
-            };
-        }
-
         public static void OpenImageBeautifier(TaskSettings taskSettings = null)
         {
             string filePath = SkiaImageHelpers.OpenImageFileDialog();
@@ -1640,70 +1550,6 @@ namespace ShareX
             }
 
             return null;
-        }
-
-        public static void OpenImageEffects(TaskSettings taskSettings = null)
-        {
-            string filePath = SkiaImageHelpers.OpenImageFileDialog();
-
-            OpenImageEffects(filePath, taskSettings);
-        }
-
-        public static void OpenImageEffects(string filePath, TaskSettings taskSettings = null)
-        {
-            if (!string.IsNullOrEmpty(filePath))
-            {
-                Bitmap bmp = SkiaImageHelpers.LoadImage(filePath);
-
-                if (bmp != null)
-                {
-                    if (taskSettings == null) taskSettings = ApplicationState.DefaultTaskSettings;
-
-                    using (bmp)
-                    {
-                        using SKBitmap skiaSource = CopyBitmap(bmp);
-                        ImageEffectsIntegration.ShowToolWindow(skiaSource,
-                            taskSettings.ImageSettingsReference.ImageEffectPresets,
-                            taskSettings.ImageSettings.SelectedImageEffectPreset,
-                            CreateImageEffectsCallbacks(taskSettings), filePath,
-                            selectedIndex => taskSettings.ImageSettingsReference.SelectedImageEffectPreset = selectedIndex);
-                    }
-                }
-            }
-        }
-
-        public static void OpenImageEffectsSingleton(TaskSettings taskSettings = null, string importJson = null)
-        {
-            if (taskSettings == null) taskSettings = ApplicationState.DefaultTaskSettings;
-
-            ImageEffectsIntegration.ShowPresetWindow(taskSettings.ImageSettings.ImageEffectPresets,
-                taskSettings.ImageSettings.SelectedImageEffectPreset,
-                selectedIndex => taskSettings.ImageSettings.SelectedImageEffectPreset = selectedIndex,
-                importJson, CreateImageEffectsCallbacks(taskSettings));
-        }
-
-        private static ImageEffectsCallbacks CreateImageEffectsCallbacks(TaskSettings taskSettings)
-        {
-            return new ImageEffectsCallbacks
-            {
-                LoadImageFromFile = () =>
-                {
-                    string path = SkiaImageHelpers.OpenImageFileDialog();
-                    SKBitmap image = !string.IsNullOrWhiteSpace(path) ? SkiaImageHelpers.LoadImage(path) : null;
-                    return image != null ? new ImageEffectsSource(image, path) : null;
-                },
-                LoadImageFromClipboard = () =>
-                {
-                    Bitmap image = ClipboardHelpers.GetImage();
-                    return image != null ? new ImageEffectsSource(image) : null;
-                },
-                SaveImage = (image, path) =>
-                {
-                    return SkiaImageHelpers.SaveImageFileDialog(image, path);
-                },
-                UploadImage = image => UploadManager.RunImageTask(image.Copy(), taskSettings),
-                OpenImageEffectsPage = () => URLHelpers.OpenURL(Links.ImageEffects)
-            };
         }
 
         public static void OpenImageViewer()
@@ -2596,33 +2442,6 @@ namespace ShareX
                 {
                     DebugHelper.WriteException(e);
                     e.ShowError(false);
-                }
-            }
-        }
-
-        public static void ImportImageEffect(string filePath)
-        {
-            string configJson = null;
-
-            try
-            {
-                configJson = ImageEffectPackager.ExtractPackage(filePath, AppPaths.ImageEffectsFolder);
-            }
-            catch (Exception ex)
-            {
-                ex.ShowError(false);
-            }
-
-            if (!string.IsNullOrEmpty(configJson))
-            {
-                OpenImageEffectsSingleton(ApplicationState.DefaultTaskSettings, configJson);
-
-                if (!ApplicationState.DefaultTaskSettings.AfterCaptureJob.HasFlag(AfterCaptureTasks.AddImageEffects) &&
-                    MessageBox.Show(Strings.WouldYouLikeToEnableImageEffects,
-                    "ShareX", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == MessageBoxResult.Yes)
-                {
-                    ApplicationState.DefaultTaskSettings.AfterCaptureJob = ApplicationState.DefaultTaskSettings.AfterCaptureJob.Add(AfterCaptureTasks.AddImageEffects);
-                    MainWindowIntegration.RefreshMenus();
                 }
             }
         }

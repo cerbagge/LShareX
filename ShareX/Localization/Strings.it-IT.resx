@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Mostra pulsante "Modifica nell'editor di immagini di ShareX" nel menu contestuale di Esplora file</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Mostra pulsante "Modifica nell'editor di foto di ShareX" nel menu contestuale di Esplora file</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Chiedi conferma prima di eliminare i file</value>
   </data>
@@ -1613,9 +1610,6 @@ Selezione una scorciatoia diversa o chiudi l'applicazione che crea conflitto e r
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Modificatore immagini</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Effetti Immagine</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Cronologia immagini...</value>
   </data>
@@ -1658,12 +1652,6 @@ Selezione una scorciatoia diversa o chiudi l'applicazione che crea conflitto e r
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Monitor di rete...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Nuovo</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Nessuna preimpostazione per effetti immagine</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Nessuna finestra trovata</value>
   </data>
@@ -1672,9 +1660,6 @@ Selezione una scorciatoia diversa o chiudi l'applicazione che crea conflitto e r
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Apri</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Editor di foto</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Fissa allo schermo</value>
@@ -1805,9 +1790,6 @@ Selezione una scorciatoia diversa o chiudi l'applicazione che crea conflitto e r
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Flussi di lavoro</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Aggiungi effetti immagine...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Sempre in primo piano</value>
   </data>
@@ -1852,9 +1834,6 @@ Selezione una scorciatoia diversa o chiudi l'applicazione che crea conflitto e r
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Modifica immagine</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Modifica nell'editor di foto...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>File</value>
@@ -2531,9 +2510,6 @@ Do you want to abort the active registrazione schermo?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Modifica...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Effetti</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Attiva azione</value>
   </data>
@@ -2620,12 +2596,6 @@ Do you want to abort the active registrazione schermo?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Modificatore immagini</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Effetti immagine</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Configurazione effetti immagine...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Estensioni immagine</value>
@@ -2824,9 +2794,6 @@ Do you want to abort the active registrazione schermo?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Le lingue OCR non sono disponibili</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Applica effetti solo all'acquisizione di una regione</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Formato apertura URL</value>
@@ -3047,9 +3014,6 @@ Do you want to abort the active registrazione schermo?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Mostra conferma di uscita</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Mostra la finestra degli effetti immagine dopo l'acquisizione</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Mostra finestra di inserimento immagine</value>
   </data>
@@ -3182,9 +3146,6 @@ Do you want to abort the active registrazione schermo?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Usa modello del nome per i caricamenti di file</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Usa un effetto immagine casuale</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Usa lente quadrata</value>
   </data>
@@ -3235,9 +3196,6 @@ Do you want to abort the active registrazione schermo?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Puoi attivare o disattivare le azioni da Attività dopo l'acquisizione → Esegui azioni.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Puoi attivare o disattivare gli effetti immagine da Attività dopo l'acquisizione → Aggiungi effetti immagine.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Adatta alla finestra all’apertura</value>
@@ -3326,11 +3284,6 @@ Do you want to abort the active registrazione schermo?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} configurazione non valida o mancante. Controllare la finestra "Impostazioni Destinazione".</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Would you like to enable immagine effects?
-
-You can later disable it from "After acquisizione tasks" menu.</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Would you like to retry appunti caricamento?</value>

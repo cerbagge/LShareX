@@ -39,11 +39,6 @@ internal static class FileTypeRegistration
         {
             IntegrationHelpers.CreateCustomUploaderExtension(true);
         }
-
-        if (!IntegrationHelpers.CheckImageEffectExtension())
-        {
-            IntegrationHelpers.CreateImageEffectExtension(true);
-        }
 #endif
     }
 }

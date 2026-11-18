@@ -700,9 +700,6 @@
   <data name="ApplicationSettingsWindow_ShowEditWithShareXButtonInWindowsExplorerContextMenu" xml:space="preserve">
     <value>Tampilkan "Edit di editor gambar ShareX" di menu konteks Windows Explorer</value>
   </data>
-  <data name="ApplicationSettingsWindow_ShowEditWithShareXPhotoEditorButtonInWindowsExplorerContextMenu" xml:space="preserve">
-    <value>Tampilkan "Edit di editor foto ShareX" di menu konteks Windows Explorer</value>
-  </data>
   <data name="ApplicationSettingsWindow_ShowFileDeleteConfirmation" xml:space="preserve">
     <value>Minta konfirmasi sebelum menghapus file</value>
   </data>
@@ -1613,9 +1610,6 @@ Silakan pilih tombol cepat yang berbeda atau keluar dari aplikasi yang bertentan
   <data name="MainMenuBuilder_ImageEditor" xml:space="preserve">
     <value>Editor gambar</value>
   </data>
-  <data name="MainMenuBuilder_ImageEffects" xml:space="preserve">
-    <value>Efek gambar</value>
-  </data>
   <data name="MainMenuBuilder_ImageHistory" xml:space="preserve">
     <value>Riwayat gambar...</value>
   </data>
@@ -1658,12 +1652,6 @@ Silakan pilih tombol cepat yang berbeda atau keluar dari aplikasi yang bertentan
   <data name="MainMenuBuilder_NetworkMonitor" xml:space="preserve">
     <value>Pemantau jaringan...</value>
   </data>
-  <data name="MainMenuBuilder_NewBadge" xml:space="preserve">
-    <value>Baru</value>
-  </data>
-  <data name="MainMenuBuilder_NoImageEffectPresets" xml:space="preserve">
-    <value>Tidak ada preset efek gambar</value>
-  </data>
   <data name="MainMenuBuilder_NoWindowsFound" xml:space="preserve">
     <value>Tidak ada jendela ditemukan</value>
   </data>
@@ -1672,9 +1660,6 @@ Silakan pilih tombol cepat yang berbeda atau keluar dari aplikasi yang bertentan
   </data>
   <data name="MainMenuBuilder_Open" xml:space="preserve">
     <value>Buka</value>
-  </data>
-  <data name="MainMenuBuilder_PhotoEditor" xml:space="preserve">
-    <value>Editor foto</value>
   </data>
   <data name="MainMenuBuilder_PinToScreenDialog" xml:space="preserve">
     <value>Sematkan ke layar</value>
@@ -1805,9 +1790,6 @@ Silakan pilih tombol cepat yang berbeda atau keluar dari aplikasi yang bertentan
   <data name="MainMenuBuilder_Workflows" xml:space="preserve">
     <value>Alur kerja</value>
   </data>
-  <data name="MainWindow_AddImageEffects" xml:space="preserve">
-    <value>Tambahkan efek gambar...</value>
-  </data>
   <data name="MainWindow_AlwaysOnTop" xml:space="preserve">
     <value>Selalu di atas</value>
   </data>
@@ -1852,9 +1834,6 @@ Silakan pilih tombol cepat yang berbeda atau keluar dari aplikasi yang bertentan
   </data>
   <data name="MainWindow_EditImage" xml:space="preserve">
     <value>Edit gambar</value>
-  </data>
-  <data name="MainWindow_EditImageInPhotoEditor" xml:space="preserve">
-    <value>Edit di editor foto...</value>
   </data>
   <data name="MainWindow_File" xml:space="preserve">
     <value>File</value>
@@ -2531,9 +2510,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   <data name="TaskSettingsWindow_EditWithEllipsis" xml:space="preserve">
     <value>Edit...</value>
   </data>
-  <data name="TaskSettingsWindow_Effects" xml:space="preserve">
-    <value>Efek</value>
-  </data>
   <data name="TaskSettingsWindow_EnableAction" xml:space="preserve">
     <value>Aktifkan tindakan</value>
   </data>
@@ -2620,12 +2596,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   </data>
   <data name="TaskSettingsWindow_ImageEditor" xml:space="preserve">
     <value>Editor gambar</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffects" xml:space="preserve">
-    <value>Efek gambar</value>
-  </data>
-  <data name="TaskSettingsWindow_ImageEffectsConfigurationWithEllipsis" xml:space="preserve">
-    <value>Konfigurasi efek gambar...</value>
   </data>
   <data name="TaskSettingsWindow_ImageExtensions" xml:space="preserve">
     <value>Ekstensi gambar</value>
@@ -2824,9 +2794,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   </data>
   <data name="TaskSettingsWindow_OCRLanguagesAreUnavailable" xml:space="preserve">
     <value>Bahasa OCR tidak tersedia</value>
-  </data>
-  <data name="TaskSettingsWindow_OnlyApplyEffectsToRegionCapture" xml:space="preserve">
-    <value>Terapkan efek hanya pada tangkapan wilayah</value>
   </data>
   <data name="TaskSettingsWindow_OpenURLFormat" xml:space="preserve">
     <value>Format buka URL</value>
@@ -3047,9 +3014,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   <data name="TaskSettingsWindow_ShowExitConfirmation" xml:space="preserve">
     <value>Tampilkan konfirmasi keluar</value>
   </data>
-  <data name="TaskSettingsWindow_ShowImageEffectsWindowAfterCapture" xml:space="preserve">
-    <value>Tampilkan jendela efek gambar setelah menangkap</value>
-  </data>
   <data name="TaskSettingsWindow_ShowInsertImageDialog" xml:space="preserve">
     <value>Tampilkan dialog sisipkan gambar</value>
   </data>
@@ -3182,9 +3146,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   <data name="TaskSettingsWindow_UseNamePatternForFileUploads" xml:space="preserve">
     <value>Gunakan pola nama untuk unggahan berkas</value>
   </data>
-  <data name="TaskSettingsWindow_UseRandomImageEffect" xml:space="preserve">
-    <value>Gunakan efek gambar acak</value>
-  </data>
   <data name="TaskSettingsWindow_UseSquareMagnifier" xml:space="preserve">
     <value>Gunakan kaca pembesar persegi</value>
   </data>
@@ -3235,9 +3196,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   </data>
   <data name="TaskSettingsWindow_YouCanEnableOrDisableActionsFromAfterCaptureTasksPerformActions" xml:space="preserve">
     <value>Anda dapat mengaktifkan atau menonaktifkan tindakan dari Tugas setelah menangkap → Lakukan tindakan.</value>
-  </data>
-  <data name="TaskSettingsWindow_YouCanEnableOrDisableImageEffectsFromAfterCaptureTasksAddImageEffects" xml:space="preserve">
-    <value>Anda dapat mengaktifkan atau menonaktifkan efek gambar dari Tugas setelah menangkap → Tambahkan efek gambar.</value>
   </data>
   <data name="TaskSettingsWindow_ZoomToFitOnOpen" xml:space="preserve">
     <value>Sesuaikan ke jendela saat dibuka</value>
@@ -3326,11 +3284,6 @@ Apakah Anda ingin membatalkan perekaman layar aktif?</value>
   </data>
   <data name="WorkerTask_GetInvalidConfigResult__0__configuration_is_invalid_or_missing__Please_check__Destination_settings__window_to_configure_it_" xml:space="preserve">
     <value>{0} konfigurasi tidak valid atau hilang. Silakan periksa jendela "Pengaturan tujuan" untuk mengkonfigurasinya.</value>
-  </data>
-  <data name="WouldYouLikeToEnableImageEffects" xml:space="preserve">
-    <value>Apakah Anda ingin mengaktifkan efek gambar?
-
-Anda dapat menonaktifkannya nanti dari menu "Tugas setelah tangkapan".</value>
   </data>
   <data name="WouldYouLikeToRetryClipboardUpload" xml:space="preserve">
     <value>Apakah Anda ingin mencoba ulang unggahan clipboard?</value>
