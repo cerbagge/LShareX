@@ -1845,7 +1845,8 @@
     <value>가로로</value>
   </data>
   <data name="MainWindow_HotkeyHint" xml:space="preserve">
-    <value>단축키를 사용하여 캡처하거나 업로드하세요. 결과가 여기에 축소판으로 표시됩니다.</value>
+    <value>단축키를 사용하여 캡처하거나 업로드하세요.
+결과가 여기에 축소판으로 표시됩니다.</value>
   </data>
   <data name="MainWindow_HtmlImage" xml:space="preserve">
     <value>HTML 이미지</value>
