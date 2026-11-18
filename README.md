@@ -22,6 +22,7 @@ Removed:
 - Background remover tool (Tools menu, hotkey, models folder) and the `Microsoft.ML.OnnxRuntime.DirectML` package it needed.
 - Resource strings that were only used by removed features.
 - Debug symbol files (`*.pdb`, ~100 MB) are deleted from the Release publish output.
+- Only Korean translation folders (`ko`, `ko-KR`) are kept in the Release publish output; English is built in. Other languages fall back to English. The translation `.resx` files stay in the source.
 
 Changed:
 

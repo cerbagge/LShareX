@@ -84,4 +84,15 @@
     </ItemGroup>
     <Delete Files="@(LShareXPublishedPdb)" />
   </Target>
+  <!-- LShareX: ship only Korean translations (ko: libraries, ko-KR: LShareX). English is built into the main assemblies. -->
+  <Target Name="LShareXRemovePublishedCultures" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
+    <ItemGroup>
+      <LShareXCultureFile Include="$(PublishDir)**\*.resources.dll" />
+      <!-- never remove the publish folder itself (a .resources.dll directly in it has an empty RecursiveDir) -->
+      <LShareXCultureFile Remove="$(PublishDir)*.resources.dll" />
+      <LShareXCultureDir Include="@(LShareXCultureFile->'$(PublishDir)%(RecursiveDir)'->Distinct())" />
+      <LShareXCultureDir Remove="$(PublishDir)ko\;$(PublishDir)ko-KR\" />
+    </ItemGroup>
+    <RemoveDir Directories="@(LShareXCultureDir)" />
+  </Target>
 </Project>
