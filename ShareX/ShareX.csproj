@@ -77,4 +77,11 @@
   <ItemGroup>
     <RuntimeHostConfigurationOption Include="System.Globalization.UseNls" Value="true" />
   </ItemGroup>
+  <!-- LShareX: do not ship debug symbol files (~100 MB, mostly SkiaSharp/HarfBuzz native .pdb). -->
+  <Target Name="LShareXRemovePublishedPdb" AfterTargets="Publish" Condition="'$(Configuration)' == 'Release'">
+    <ItemGroup>
+      <LShareXPublishedPdb Include="$(PublishDir)**\*.pdb" />
+    </ItemGroup>
+    <Delete Files="@(LShareXPublishedPdb)" />
+  </Target>
 </Project>

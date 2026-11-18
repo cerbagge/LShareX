@@ -20,6 +20,7 @@ Removed:
   - Upload results are replaced by a small local `UploadResult` class (errors and file paths only); captures are always saved locally.
 - The `AddImageEffects` / `OpenInPhotoEditor` / `ShowBeforeUploadWindow` / `UploadImageToHost` after capture tasks and the `PhotoEditor` / `ImageEffects` / upload hotkey types are hidden from the UI but kept in the enums, so existing ShareX settings files still load.
 - Resource strings that were only used by removed features.
+- Debug symbol files (`*.pdb`, ~100 MB) are deleted from the Release publish output.
 
 Changed:
 
