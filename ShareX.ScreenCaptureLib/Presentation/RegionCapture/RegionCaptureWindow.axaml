@@ -47,9 +47,12 @@
         </Style>
     </Window.Styles>
 
-    <Grid x:Name="RootGrid" Background="Black">
-        <!-- The shared editor workspace owns the frozen screenshot and annotations. -->
-        <views:EditorView x:Name="EditorWorkspace"/>
+    <Grid x:Name="RootGrid" Background="Black"
+          PointerPressed="OnRootPointerPressed"
+          PointerMoved="OnRootPointerMoved">
+        <!-- The shared editor workspace owns the frozen screenshot and annotations.
+             LShareX: it takes pointer input only in drawing mode (see ActivateAnnotationTool). -->
+        <views:EditorView x:Name="EditorWorkspace" IsHitTestVisible="False"/>
 
         <!-- The region overlay uses image-pixel coordinates and is scaled once to physical pixels. -->
         <LayoutTransformControl x:Name="RegionTransform"

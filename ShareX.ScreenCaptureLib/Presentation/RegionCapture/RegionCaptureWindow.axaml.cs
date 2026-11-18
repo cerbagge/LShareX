@@ -593,6 +593,7 @@ public partial class RegionCaptureWindow : Window
         _regionOverlay.ShowCursorCrosshair = _request?.RegionCaptureOptions.ShowScreenCrosshair == true;
         SetRegionResizeNodesVisible(!IsQuickCapture && HasValidSelection());
         _regionToolButton.Classes.Set("active", true);
+        _editorWorkspace.IsHitTestVisible = false;
         _viewModel?.SetHostToolbarToolsActive(false);
         _annotationToolbar.ShowToolOptions = false;
         _editorWorkspace.CancelActiveInteractionOrSelection();
@@ -625,11 +626,30 @@ public partial class RegionCaptureWindow : Window
         _regionOverlay.HoverRectangle = default;
         _hoverCandidate = null;
         _regionToolButton.Classes.Set("active", false);
+        _editorWorkspace.IsHitTestVisible = true;
         _viewModel?.SetHostToolbarToolsActive(true);
         _annotationToolbar.ShowToolOptions = true;
         _magnifierPanel.IsVisible = false;
         _selectionInfoPanel.IsVisible = false;
         _editorWorkspace.Focus();
+    }
+
+    // LShareX: the region input surface is centered and sized in image pixels, so it can leave a thin gap at a screen
+    // edge. A press in that gap used to reach the editor workspace and draw a rectangle; now it starts a region selection.
+    private void OnRootPointerPressed(object? sender, PointerPressedEventArgs e)
+    {
+        if (_regionToolActive && ReferenceEquals(e.Source, sender))
+        {
+            OnRegionPointerPressed(_regionInputSurface, e);
+        }
+    }
+
+    private void OnRootPointerMoved(object? sender, PointerEventArgs e)
+    {
+        if (_regionToolActive && ReferenceEquals(e.Source, sender))
+        {
+            OnRegionPointerMoved(_regionInputSurface, e);
+        }
     }
 
     private void OnRegionPointerPressed(object? sender, PointerPressedEventArgs e)

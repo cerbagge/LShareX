@@ -31,6 +31,7 @@ Changed:
 - Multi region capture is its own hotkey task, "Capture multiple regions". "Capture region" always captures a single region at once; the "Multi region mode" option in task settings was removed.
 - Pressing a capture or recording hotkey again while a region selection is open is ignored instead of opening another selection on top. Screen capture hotkeys are also ignored while a recording is running (recording hotkeys still stop the recording).
 - Region capture switches to drawing mode only when a tool is clicked on the toolbar. Tool keyboard shortcuts and the middle click no longer switch a region selection into drawing mode (the middle click still returns from drawing mode to region selection).
+- In region selection mode the editor workspace under the selection layer no longer takes mouse input, so a drag that starts at a screen edge (where the selection layer can leave a thin gap) selects a region instead of drawing a rectangle.
 - Multi region capture saves each selected region as its own image (each one is saved and copied separately) instead of one combined image with transparent gaps. "Capture last region" does the same for multiple regions.
 - Executable `LShareX.exe` (assembly name `LShareX`, root namespace still `ShareX`); window title, tray icon and Task Manager show `LShareX`.
 - Application, window and tray icon (`ShareX/ShareX_Icon.ico`, `ShareX.HelpersLib/Resources/ShareX_Icon.ico`) replaced with an LShareX icon derived from the ShareX logo.
