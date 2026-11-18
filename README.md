@@ -28,6 +28,7 @@ Changed:
 - Multi region capture is its own hotkey task, "Capture multiple regions". "Capture region" always captures a single region at once; the "Multi region mode" option in task settings was removed.
 - Multi region capture saves each selected region as its own image (each one is saved and copied separately) instead of one combined image with transparent gaps. "Capture last region" does the same for multiple regions.
 - Executable `LShareX.exe` (assembly name `LShareX`, root namespace still `ShareX`); window title, tray icon and Task Manager show `LShareX`.
+- Application, window and tray icon (`ShareX/ShareX_Icon.ico`, `ShareX.HelpersLib/Resources/ShareX_Icon.ico`) replaced with an LShareX icon derived from the ShareX logo.
 - Separated from an installed ShareX so both can run side by side:
   - Personal folder `Documents\LShareX` (settings, history, logs, screenshots), `%LocalAppData%\LShareX\PersonalPath.cfg`, system options registry key `HKLM\SOFTWARE\LShareX`
   - Own single instance mutex and pipe name
